@@ -40,9 +40,9 @@ export default function PricingCard({
   return (
     <div
       id={id}
-      className={`relative bg-white rounded-2xl p-8 ${
-        featured 
-          ? "pricing-featured shadow-2xl scale-105 z-10" 
+      className={`relative bg-white rounded-2xl p-8 flex flex-col h-full ${
+        featured
+          ? "pricing-featured shadow-2xl scale-105 z-10"
           : "shadow-lg hover:shadow-xl"
       } transition-all duration-300`}
     >
@@ -65,7 +65,7 @@ export default function PricingCard({
       </div>
 
       {/* Features */}
-      <ul className="space-y-4 mb-8">
+      <ul className="space-y-4 mb-8 flex-grow">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start gap-3">
             {feature.included ? (
@@ -101,16 +101,18 @@ export default function PricingCard({
       </ul>
 
       {/* CTA Button */}
-      <Link
-        href={ctaHref}
-        className={`block w-full text-center py-3.5 rounded-lg font-semibold transition-all duration-300 ${
-          featured
-            ? "btn-primary"
-            : "bg-[var(--color-navy-deep)] text-white hover:bg-[var(--color-navy-light)]"
-        }`}
-      >
-        {ctaText}
-      </Link>
+      <div className="mt-auto">
+        <Link
+          href={ctaHref}
+          className={`block w-full text-center py-3.5 rounded-lg font-semibold transition-all duration-300 ${
+            featured
+              ? "btn-primary"
+              : "bg-[var(--color-navy-deep)] text-white hover:bg-[var(--color-navy-light)]"
+          }`}
+        >
+          {ctaText}
+        </Link>
+      </div>
     </div>
   );
 }
