@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e293b;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#d4a853;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e8c879;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg-gradient)"/>
+  
+  <!-- Pattern dots -->
+  <g fill="#d4a853" fill-opacity="0.1">
+    <circle cx="100" cy="100" r="4"/>
+    <circle cx="200" cy="150" r="3"/>
+    <circle cx="1100" cy="500" r="5"/>
+    <circle cx="1000" cy="100" r="4"/>
+  </g>
+  
+  <!-- Logo -->
+  <rect x="80" y="260" width="80" height="80" rx="16" fill="url(#gold)"/>
+  <text x="120" y="315" font-family="system-ui, sans-serif" font-size="36" font-weight="700" fill="#0f172a" text-anchor="middle">NA</text>
+  
+  <!-- Main Text -->
+  <text x="200" y="295" font-family="system-ui, sans-serif" font-size="48" font-weight="700" fill="#ffffff">Nader Accountancy</text>
+  <text x="200" y="340" font-family="system-ui, sans-serif" font-size="24" fill="#d4a853">Real Estate Tax Strategy</text>
+  
+  <!-- Tagline -->
+  <text x="80" y="450" font-family="system-ui, sans-serif" font-size="28" fill="#94a3b8">Proactive tax planning for investors</text>
+  <text x="80" y="490" font-family="system-ui, sans-serif" font-size="28" fill="#94a3b8">and high-income professionals</text>
+  
+  <!-- Bottom accent line -->
+  <rect x="80" y="550" width="200" height="4" rx="2" fill="url(#gold)"/>
+</svg>
