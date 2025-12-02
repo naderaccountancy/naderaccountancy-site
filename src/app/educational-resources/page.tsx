@@ -23,7 +23,7 @@ const videos = [
     description: "Learn the basics of tax-efficient real estate investing and common strategies to maximize your returns.",
   },
   {
-    id: "Cjfsa-D4t6s",
+    id: "o2H9Fbc7NFc",
     title: "Advanced Tax Planning for Real Estate Investors",
     description: "Deep dive into advanced tax planning techniques including cost segregation and entity structuring.",
   },
