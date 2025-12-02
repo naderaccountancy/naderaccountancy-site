@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Script from "next/script";
 import { ContactForm } from "@/components";
 
 /* ===========================================
@@ -57,7 +58,7 @@ export default function ContactPage() {
                     {
                       step: "1",
                       title: "We Discuss Your Situation",
-                      description: "Tell me about your real estate portfolio, income sources, and current tax situation. No judgment—just information gathering.",
+                      description: "Tell me about your real estate portfolio, income sources, and current tax situation.",
                     },
                     {
                       step: "2",
@@ -93,36 +94,10 @@ export default function ContactPage() {
                   Book Directly
                 </h3>
                 
-                {/* Replace with actual Calendly embed or update the link below */}
-                <div className="border-2 border-dashed border-[var(--color-gray-200)] rounded-xl p-8 text-center bg-[var(--color-gray-50)]">
-                  <svg className="w-12 h-12 text-[var(--color-gold)] mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                  <p className="text-[var(--color-navy-deep)] font-semibold mb-2">
-                    Calendly Booking Widget
-                  </p>
-                  <p className="text-gray-500 text-sm mb-4">
-                    Embed your Calendly widget here or use the link below
-                  </p>
-                  
-                  {/* Calendly Link */}
-                  <a
-                    href={CONTACT_CONFIG.calendlyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn-primary inline-flex items-center gap-2"
-                  >
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                    </svg>
-                    Schedule on Calendly
-                  </a>
-
-                  {/* Instructions for embedding */}
-                  <p className="mt-4 text-xs text-gray-400">
-                    To embed: Add Calendly inline widget script here
-                  </p>
-                </div>
+                {/* Calendly inline widget begin */}
+                <div className="calendly-inline-widget" data-url="https://calendly.com/ben-naderaccountancy/new-meeting" style={{minWidth: '320px', height: '700px'}}></div>
+                <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
+                {/* Calendly inline widget end */}
               </div>
 
               {/* Direct Contact */}
