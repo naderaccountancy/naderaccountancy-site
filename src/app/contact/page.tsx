@@ -1,6 +1,5 @@
 import { Metadata } from "next";
-import Script from "next/script";
-import { ContactForm } from "@/components";
+import { ContactForm, CalendlyWidget } from "@/components";
 
 /* ===========================================
    CONTACT PAGE
@@ -94,10 +93,7 @@ export default function ContactPage() {
                   Book Directly
                 </h3>
                 
-                {/* Calendly inline widget begin */}
-                <div className="calendly-inline-widget" data-url="https://calendly.com/ben-naderaccountancy/new-meeting" style={{minWidth: '320px', height: '700px'}}></div>
-                <Script src="https://assets.calendly.com/assets/external/widget.js" strategy="lazyOnload" />
-                {/* Calendly inline widget end */}
+                <CalendlyWidget />
               </div>
 
               {/* Direct Contact */}
