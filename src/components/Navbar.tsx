@@ -67,14 +67,9 @@ export default function Navbar() {
           {/* Logo */}
           <Link 
             href="/" 
-            className="flex items-center space-x-2 group"
+            className="flex items-center group"
           >
-            <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
-              <span className="text-[var(--color-navy-deep)] font-bold text-lg">
-                NA
-              </span>
-            </div>
-            <span className="text-white font-semibold text-lg hidden sm:block group-hover:text-[var(--color-gold)] transition-colors">
+            <span className="text-[var(--color-gold)] font-semibold text-lg sm:text-xl tracking-wide group-hover:text-[var(--color-gold-light)] transition-colors">
               {SITE_NAME}
             </span>
           </Link>
