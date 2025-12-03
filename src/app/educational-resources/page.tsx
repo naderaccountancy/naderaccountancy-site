@@ -19,13 +19,13 @@ export const metadata: Metadata = {
 const videos = [
   {
     id: "KXZKfpBQAyQ",
-    title: "Real Estate Tax Strategy Fundamentals",
-    description: "Learn the basics of tax-efficient real estate investing and common strategies to maximize your returns.",
+    title: "Ultimate Tax Write-Off Guide",
+    description: "Comprehensive guide to everyday tax write-offs, from depreciation to deductible expenses, so you can capture every available savings opportunity.",
   },
   {
     id: "o2H9Fbc7NFc",
-    title: "Advanced Tax Planning for Real Estate Investors",
-    description: "Deep dive into advanced tax planning techniques including cost segregation and entity structuring.",
+    title: "Travel Write-Offs Guide",
+    description: "Detailed walkthrough of travel-related write-offs—documenting trips, booking rules, and staying compliant when travel supports your real estate business.",
   },
 ];
 
