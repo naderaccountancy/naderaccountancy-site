@@ -42,7 +42,7 @@ export default function HighlightBox() {
 
             {/* CTA Button */}
             <Link
-              href="/contact"
+              href="/claim-offer"
               className="inline-flex items-center justify-center gap-2 btn-primary"
             >
               <span>Claim Your Complimentary Month</span>
