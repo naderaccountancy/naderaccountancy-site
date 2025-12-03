@@ -76,7 +76,7 @@ export default function AnnouncementBar() {
 
               {/* CTA Button - refined styling */}
               <Link
-                href="/contact"
+                href="/claim-offer"
                 className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 w-full sm:w-auto border border-[var(--color-gold)]/35 text-[var(--color-gold)] text-sm font-semibold tracking-wide rounded-lg bg-[var(--color-gold)]/6 transition-all duration-300 hover:border-[var(--color-gold)]/70 hover:bg-[var(--color-gold)]/12 hover:shadow-[0_0_10px_rgba(212,168,83,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)]/40"
               >
                 <span>Claim Offer</span>

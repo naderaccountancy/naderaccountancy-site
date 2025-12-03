@@ -25,7 +25,7 @@ const videos = [
   {
     id: "o2H9Fbc7NFc",
     title: "Travel Write-Offs Guide",
-    description: "Detailed walkthrough of travel-related write-offs—documenting trips, booking rules, and staying compliant when travel supports your real estate business.",
+    description: "Detailed walkthrough of travel-related write-offs—documenting trips, booking rules, and staying compliant when travel supports your business.",
   },
 ];
 

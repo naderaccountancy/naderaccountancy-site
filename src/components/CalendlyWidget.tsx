@@ -16,9 +16,19 @@ declare global {
 }
 
 const SCRIPT_ID = "calendly-widget-script";
-const WIDGET_URL = "https://calendly.com/ben-naderaccountancy/new-meeting";
+const DEFAULT_WIDGET_URL = "https://calendly.com/ben-naderaccountancy/new-meeting";
 
-export default function CalendlyWidget() {
+type CalendlyWidgetProps = {
+  url?: string;
+  minWidth?: number;
+  height?: number;
+};
+
+export default function CalendlyWidget({
+  url = DEFAULT_WIDGET_URL,
+  minWidth = 320,
+  height = 700,
+}: CalendlyWidgetProps) {
   const containerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -28,7 +38,7 @@ export default function CalendlyWidget() {
       // Calendly expects the container to be empty before initializing
       containerRef.current.innerHTML = "";
       window.Calendly.initInlineWidget({
-        url: WIDGET_URL,
+        url,
         parentElement: containerRef.current,
       });
     };
@@ -58,14 +68,14 @@ export default function CalendlyWidget() {
         containerRef.current.innerHTML = "";
       }
     };
-  }, []);
+  }, [url]);
 
   return (
     <div
       ref={containerRef}
       className="calendly-inline-widget"
-      data-url={WIDGET_URL}
-      style={{ minWidth: 320, height: 700 }}
+      data-url={url}
+      style={{ minWidth, height }}
     />
   );
 }
