@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { Navbar, Footer } from "@/components";
+import { Navbar, Footer, AnnouncementBar } from "@/components";
 
 /* ===========================================
    ROOT LAYOUT
@@ -109,6 +109,9 @@ export default function RootLayout({
         >
           Skip to main content
         </a>
+
+        {/* Announcement Bar */}
+        <AnnouncementBar />
 
         {/* Navigation */}
         <Navbar />

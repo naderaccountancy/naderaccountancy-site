@@ -1,5 +1,6 @@
 import {
   Hero,
+  HighlightBox,
   WhoIServe,
   ThreePillars,
   HowItWorks,
@@ -19,6 +20,9 @@ export default function Home() {
     <main>
       {/* Hero Section */}
       <Hero />
+
+      {/* Complimentary Onboarding Highlight */}
+      <HighlightBox />
 
       {/* Who I Serve Section */}
       <WhoIServe />

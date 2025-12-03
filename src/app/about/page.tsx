@@ -21,7 +21,7 @@ export default function AboutPage() {
   return (
     <main>
       {/* Hero Section */}
-      <section className="bg-gradient-navy pt-32 pb-20">
+      <section className="bg-gradient-navy pt-44 pb-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">

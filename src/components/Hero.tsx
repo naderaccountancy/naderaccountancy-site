@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-[var(--color-gold)]/50 rounded-full animate-pulse animation-delay-200" />
       <div className="absolute bottom-1/4 left-1/4 w-2 h-2 bg-[var(--color-gold)]/70 rounded-full animate-pulse animation-delay-400" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-40">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 pt-52">
         <div className="max-w-3xl">
           {/* Badge */}
           <div className="animate-fade-in-up opacity-0 mb-6">

@@ -7,6 +7,8 @@
 export { default as Navbar } from "./Navbar";
 export { default as Footer } from "./Footer";
 export { default as Hero } from "./Hero";
+export { default as AnnouncementBar } from "./AnnouncementBar";
+export { default as HighlightBox } from "./HighlightBox";
 export { default as WhoIServe } from "./WhoIServe";
 export { default as ThreePillars } from "./ThreePillars";
 export { default as HowItWorks } from "./HowItWorks";
