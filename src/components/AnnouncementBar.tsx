@@ -49,39 +49,39 @@ export default function AnnouncementBar() {
 
   return (
     <div ref={barRef} className="fixed top-0 left-0 right-0 z-[60]">
-      {/* Main Bar with subtle gold-tinted gradient background */}
-      <div className="relative bg-[var(--color-navy-deep)]">
-        {/* Subtle gold radial glow behind content */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--color-gold)_0%,_transparent_70%)] opacity-[0.03]" />
-        {/* Thin gold divider line beneath the bar */}
-        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[var(--color-gold)]/40 to-transparent" />
+      {/* Main Bar with gold gradient background */}
+      <div className="relative bg-gradient-to-r from-[var(--color-gold-dark)] via-[var(--color-gold)] to-[var(--color-gold-dark)]">
+        {/* Subtle shimmer overlay */}
+        <div className="absolute inset-0 bg-[linear-gradient(110deg,transparent_25%,rgba(255,255,255,0.15)_50%,transparent_75%)] bg-[length:200%_100%]" />
+        {/* Bottom shadow for depth */}
+        <div className="pointer-events-none absolute bottom-0 left-0 right-0 h-px bg-[var(--color-gold-dark)]/50" />
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center py-3.5 sm:py-4 relative">
+          <div className="flex items-center justify-center py-3 sm:py-3.5 relative">
             <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center gap-3 sm:gap-5 text-center sm:text-left w-full sm:w-auto mr-8">
               <div className="flex items-center gap-2 sm:gap-2.5">
-                {/* Minimalist gold diamond icon */}
-                <span className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[var(--color-gold)] rotate-45 opacity-80" />
+                {/* Minimalist navy diamond icon */}
+                <span className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 bg-[var(--color-navy-deep)] rotate-45" />
                 
-                {/* Announcement Text - increased font weight and line height */}
-                <p className="text-sm sm:text-[15px] text-gray-200 tracking-wide font-normal leading-[1.55]">
-                  <span className="text-[var(--color-gold)] font-semibold">New Clients:</span>
-                  <span className="mx-1.5 sm:mx-2 text-[var(--color-gold)]/40">|</span>
-                  <span className="text-gray-200">
+                {/* Announcement Text */}
+                <p className="text-sm sm:text-[15px] text-[var(--color-navy-deep)] tracking-wide font-medium leading-[1.55]">
+                  <span className="font-bold">New Clients:</span>
+                  <span className="mx-1.5 sm:mx-2 text-[var(--color-navy-deep)]/30">|</span>
+                  <span>
                     Complimentary 30-Day Tax Strategy Onboarding
                   </span>
-                  <span className="hidden md:inline text-gray-400 ml-1">— Limited Openings</span>
+                  <span className="hidden md:inline text-[var(--color-navy-deep)]/70 font-semibold ml-1">— Limited Openings</span>
                 </p>
               </div>
 
-              {/* CTA Button - refined styling */}
+              {/* CTA Button - navy on gold */}
               <Link
                 href="/claim-offer"
-                className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 w-full sm:w-auto border border-[var(--color-gold)]/35 text-[var(--color-gold)] text-sm font-semibold tracking-wide rounded-lg bg-[var(--color-gold)]/6 transition-all duration-300 hover:border-[var(--color-gold)]/70 hover:bg-[var(--color-gold)]/12 hover:shadow-[0_0_10px_rgba(212,168,83,0.12)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)]/40"
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 w-full sm:w-auto border-2 border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] text-sm font-bold tracking-wide rounded-lg bg-transparent transition-all duration-300 hover:bg-[var(--color-navy-deep)] hover:text-[var(--color-gold)] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-navy-deep)]/40"
               >
                 <span>Claim Offer</span>
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9 5l6 7-6 7" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l6 7-6 7" />
                 </svg>
               </Link>
             </div>
@@ -89,11 +89,11 @@ export default function AnnouncementBar() {
             {/* Close Button */}
             <button
               onClick={() => setIsVisible(false)}
-              className="absolute right-4 p-1.5 text-gray-500 hover:text-gray-300 transition-colors duration-200"
+              className="absolute right-4 p-1.5 text-[var(--color-navy-deep)]/60 hover:text-[var(--color-navy-deep)] transition-colors duration-200"
               aria-label="Dismiss announcement"
             >
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6 18L18 6M6 6l12 12" />
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
               </svg>
             </button>
           </div>
