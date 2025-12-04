@@ -3,7 +3,7 @@ import Link from "next/link";
 /* ===========================================
    HIGHLIGHT BOX COMPONENT
    
-   Premium offer highlight for creators
+   30-Day Complimentary Experience highlight
    =========================================== */
 
 export default function HighlightBox() {
@@ -25,25 +25,26 @@ export default function HighlightBox() {
           <div className="relative text-center">
             {/* Label */}
             <span className="inline-block text-[var(--color-gold)] text-xs font-semibold tracking-[0.2em] uppercase mb-4">
-              Free Discovery Call
+              Limited Availability
             </span>
 
             {/* Title */}
             <h3 className="text-2xl md:text-3xl font-bold text-white mb-4">
-              Not Sure If We&apos;re a Fit?
+              Complimentary 30-Day Strategy Experience
             </h3>
 
             {/* Description */}
             <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto mb-8">
-              Book a free 15-minute call. We&apos;ll talk through your situation, I&apos;ll share some initial thoughts, and we&apos;ll see if working together makes sense. No pressure, no obligation.
+              Experience what dedicated, creator-focused tax strategy feels like. 
+              Comprehensive assessment, personalized planning, and 30 days of support—at no cost, with no obligation.
             </p>
 
             {/* CTA Button */}
             <Link
-              href="/contact"
+              href="/claim-offer"
               className="inline-flex items-center justify-center gap-2 btn-primary"
             >
-              <span>Book Your Free Call</span>
+              <span>Start Your Experience</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
               </svg>
