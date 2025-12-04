@@ -2,40 +2,41 @@
    THREE PILLARS COMPONENT
    
    Section showcasing the core value propositions
+   Content Creator focused
    =========================================== */
 
 const pillars = [
   {
     number: "01",
-    title: "Maximize Cash Flow Through Tax Optimization",
-    description: "Every dollar saved in taxes is a dollar that can be reinvested. I identify every legal deduction, credit, and strategy to put more money back in your pocket.",
+    title: "No More Tax Surprises",
+    description: "That April panic when you owe $30K and haven't saved for it? Totally preventable. I'll set up quarterly estimates and help you save the right amount all year long.",
     features: [
-      "Cost segregation analysis",
-      "Depreciation optimization",
-      "Entity structure planning",
-      "Passive loss strategies",
+      "Quarterly tax payment calculations",
+      "Income forecasting",
+      "Cash flow planning",
+      "Year-end projections",
     ],
   },
   {
     number: "02",
-    title: "Proactive Year-Round Planning",
-    description: "Tax planning shouldn't happen once a year in April. I work with you throughout the year to make strategic decisions before they become missed opportunities.",
+    title: "Keep More of What You Earn",
+    description: "Most creators miss thousands in legitimate deductions and overpay on self-employment tax. I'll make sure you're capturing every savings opportunity available.",
     features: [
-      "Quarterly strategy reviews",
-      "Real-time law monitoring",
-      "Estimated tax planning",
-      "Purchase timing optimization",
+      "Complete deduction optimization",
+      "S-corp analysis & setup",
+      "Equipment & software write-offs",
+      "Home office deduction",
     ],
   },
   {
     number: "03",
-    title: "Audit-Ready Documentation",
-    description: "Sleep soundly knowing your tax positions are defensible. I ensure every strategy is properly documented and compliant with current regulations.",
+    title: "Someone Who Gets It",
+    description: "I won't ask you to explain what a brand deal is. I understand creator income streams, the platforms you use, and the specific tax rules that apply to your business.",
     features: [
-      "Detailed record keeping",
-      "IRS-compliant documentation",
-      "Contemporaneous substantiation",
-      "Audit defense preparation",
+      "Multi-platform income handling",
+      "Sponsorship & affiliate tracking",
+      "Contractor 1099 management",
+      "Platform-specific deductions",
     ],
   },
 ];
@@ -47,13 +48,13 @@ export default function ThreePillars() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-            My Approach
+            Why Creators Choose Me
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-            The Three Pillars of Smart Tax Strategy
+            Tax Strategy That Actually Makes Sense
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            A comprehensive approach that goes beyond basic tax preparation to deliver real, measurable results.
+            Clear, creator-focused tax help that eliminates confusion and keeps more money in your pocket.
           </p>
         </div>
 
@@ -106,5 +107,3 @@ export default function ThreePillars() {
     </section>
   );
 }
-
-

@@ -4,116 +4,113 @@ import { PricingCard, CTAStrip } from "@/components";
 /* ===========================================
    SERVICES PAGE
    
-   Pricing plans and FAQ section
-   
-   To customize pricing:
-   - Update the pricingPlans array below
-   - Prices are strings so you can format them as needed
+   Pricing plans for content creators
+   $300/$500/$800 per month
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Services & Pricing | Nader Accountancy - Real Estate Tax Strategy",
-  description: "Explore our real estate-focused tax planning subscription plans. From essential tax reviews to elite advisory services for high-net-worth investors.",
+  title: "Pricing | Nader Accountancy - Tax Strategy for Creators",
+  description: "Clear, flat-rate pricing for content creators. Tax strategy, preparation, and year-round support. $300-$800/month based on your needs.",
 };
 
 const pricingPlans = [
   {
-    id: "essentials",
-    name: "Essentials",
-    price: "$200",
-    description: "Perfect for new or early-stage investors with 1-2 properties",
+    id: "starter",
+    name: "Starter",
+    price: "$300",
+    description: "For emerging creators ready to get their taxes handled right",
     features: [
-      { text: "Annual tax return preparation included", included: true },
-      { text: "Annual real estate-focused tax review", included: true },
-      { text: "Entity structure review & recommendations", included: true },
+      { text: "Federal and state tax return preparation", included: true },
+      { text: "Deduction optimization", included: true },
+      { text: "Income categorization (all platforms)", included: true },
+      { text: "Quarterly estimated tax calculations", included: true },
+      { text: "Year-end tax planning", included: true },
       { text: "Email support (48hr response)", included: true },
-      { text: "Basic depreciation & expense guidance", included: true },
-      { text: "Annual year-end planning call", included: true },
-      { text: "Quarterly strategy sessions", included: false },
-      { text: "Multi-state tax review", included: false },
+      { text: "S-corp analysis", included: false },
+      { text: "Quarterly strategy calls", included: false },
     ],
     featured: false,
-    ctaText: "Start with Essentials",
+    ctaText: "Get Started",
   },
   {
     id: "growth",
     name: "Growth",
-    price: "$400",
-    description: "For growing portfolios of ~5-7 properties, potentially multi-state",
+    price: "$500",
+    description: "For growing creators who need real tax strategy",
     features: [
-      { text: "Everything in Essentials, plus:", included: true },
-      { text: "Full tax preparation included", included: true },
-      { text: "Quarterly strategy sessions", included: true },
-      { text: "Cost segregation analysis guidance", included: true },
-      { text: "RE Pro status / STR loophole analysis", included: true },
-      { text: "1031 exchange planning support", included: true },
-      { text: "Multi-state tax review", included: true },
-      { text: "Custom estimated tax calculations", included: true },
+      { text: "Everything in Starter", included: true },
+      { text: "S-corp election & setup", included: true },
+      { text: "Payroll setup and management", included: true },
+      { text: "Mid-year strategy call", included: true },
+      { text: "Entity structure guidance", included: true },
+      { text: "Priority email support (24hr response)", included: true },
+      { text: "Contractor 1099 preparation", included: true },
+      { text: "Multi-state tax handling", included: false },
     ],
     featured: true,
-    ctaText: "Choose Growth",
+    ctaText: "Most Popular",
   },
   {
-    id: "elite",
-    name: "Elite",
-    price: "$600",
-    description: "For larger portfolios and high-net-worth investors",
+    id: "pro",
+    name: "Pro",
+    price: "$800",
+    description: "For established creators with complex tax needs",
     features: [
-      { text: "Everything in Growth, plus:", included: true },
-      { text: "Comprehensive tax preparation included", included: true },
-      { text: "Monthly check-ins & strategy calls", included: true },
-      { text: "Coordination with your advisors (CFA, attorney)", included: true },
-      { text: "Advanced 1031 & passive loss planning", included: true },
-      { text: "Estate & wealth considerations", included: true },
-      { text: "Priority support (24hr response)", included: true },
-      { text: "Annual audit-readiness review", included: true },
+      { text: "Everything in Growth", included: true },
+      { text: "Quarterly strategy calls (4x/year)", included: true },
+      { text: "Multi-state tax handling", included: true },
+      { text: "Retirement planning (Solo 401k/SEP)", included: true },
+      { text: "Same-week response guarantee", included: true },
+      { text: "Unlimited email support", included: true },
+      { text: "Audit representation included", included: true },
+      { text: "Priority scheduling", included: true },
     ],
     featured: false,
-    ctaText: "Go Elite",
+    ctaText: "Go Pro",
   },
 ];
 
-// FAQ Items
+// FAQ Items for creators
 const faqItems = [
   {
-    question: "Who is this service best suited for?",
-    answer: "This service is designed for real estate investors (from 1 property to large portfolios), S-Corp business owners with real estate holdings, high-income W-2 professionals looking to offset income through real estate, and content creators/entrepreneurs who've invested in property. If you're serious about minimizing taxes and want year-round proactive planning, this is for you.",
+    question: "Who is this service for?",
+    answer: "This service is designed specifically for content creators and online business owners—YouTubers, podcasters, course creators, streamers, TikTokers, and anyone earning income from digital content. If you're making money online and want to stop overpaying on taxes, this is for you.",
+  },
+  {
+    question: "What's included in tax return preparation?",
+    answer: "I handle your federal and state tax returns completely. This includes all your creator income (AdSense, sponsorships, affiliates, digital products, etc.), deductions, and any necessary schedules. You don't need to figure anything out—just send me your documents and I handle the rest.",
+  },
+  {
+    question: "What is an S-corp and do I need one?",
+    answer: "An S-corp is a tax election that can save you significant money on self-employment taxes—often $10,000-$20,000+ per year for creators earning $80K+. I'll analyze your situation and tell you honestly if it makes sense for you. If it does, I'll handle the setup and ongoing payroll.",
   },
   {
     question: "Can I cancel or change plans?",
-    answer: "Yes! You can upgrade or downgrade your plan at any time. If you need to cancel, simply provide 30 days notice. There are no long-term contracts or cancellation penalties. I want you to stay because you see value, not because you're locked in.",
+    answer: "Yes! You can upgrade or downgrade your plan at any time. If you need to cancel, just give me 30 days notice. No long-term contracts or cancellation fees. I want you to stay because you see value, not because you're locked in.",
   },
   {
-    question: "Is tax preparation included?",
-    answer: "Yes! Tax preparation is included in all subscription plans. Having your strategist also prepare your returns ensures nothing falls through the cracks and all the strategies we discuss get properly implemented on your returns.",
+    question: "How do the strategy calls work?",
+    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your situation, discuss upcoming plans, and make sure you're set up for tax success. Depending on your plan, these happen mid-year, quarterly, or as needed. You'll get a summary email after each call.",
   },
   {
-    question: "What if I have properties in multiple states?",
-    answer: "Multi-state tax situations are fully supported in the Growth and Elite plans. I'll help you understand nexus requirements, state-specific deductions, and ensure you're compliant across all jurisdictions while minimizing overall tax burden.",
-  },
-  {
-    question: "How do the strategy sessions work?",
-    answer: "Strategy sessions are conducted via video call (Zoom or Google Meet) and are typically 30-60 minutes depending on your plan and needs. We'll review your portfolio, discuss any changes, analyze opportunities, and create action items. You'll receive a summary email after each call.",
-  },
-  {
-    question: "What makes you different from other tax advisors?",
-    answer: "I specialize exclusively in real estate taxation, not general tax preparation. My background in real estate means I understand the business side and can proactively identify opportunities that generalist CPAs often miss. I work year-round, not just during tax season, and focus on strategy first, preparation second.",
+    question: "What if I have income from multiple platforms?",
+    answer: "That's exactly who I work with! Most creators have income from 3-7+ sources—AdSense, sponsors, affiliates, merch, courses, Patreon, etc. I'll organize it all, categorize everything properly, and make sure you're capturing every deduction.",
   },
   {
     question: "How quickly do you respond to questions?",
-    answer: "Response times depend on your plan: Essentials clients receive responses within 48 hours, while Elite clients get priority support within 24 hours. Urgent tax deadline matters are handled immediately. I aim to be proactive rather than reactive with your tax strategy.",
+    answer: "Response times depend on your plan: Starter clients get responses within 48 hours, Growth clients within 24 hours, and Pro clients get same-week guaranteed responses. Urgent tax deadline matters are always handled immediately.",
   },
   {
-    question: "What happens if my situation changes significantly?",
-    answer: "Life changes happen! Whether you acquire new properties, sell assets, have a baby, get divorced, or start a business, I'll work with you to adjust your tax strategy. All plans include support for major life changes that impact your tax situation.",
+    question: "What if I'm just starting out and don't make much yet?",
+    answer: "If you're earning self-employment income, you need to be handling your taxes correctly—even at lower income levels. Starting with good habits now means you're ready when you grow. The Starter plan is designed exactly for this situation.",
   },
   {
-    question: "Do you work with clients outside California?",
-    answer: "Absolutely! I work with clients across the United States. Multi-state tax situations are handled in the Growth and Elite plans. While I'm based in California, modern tools and video calls make it easy to serve clients nationwide.",
+    question: "Do you work with creators outside California?",
+    answer: "Absolutely! I work with creators across the United States. Multi-state situations are handled in all plans (with dedicated multi-state support in the Pro tier). Video calls make it easy to work together regardless of location.",
   },
   {
-    question: "Can I get help with property acquisitions or dispositions?",
-    answer: "Yes, that's one of my specialties. I can help you structure purchases for maximum tax benefits, time 1031 exchanges properly, and ensure dispositions are tax-efficient. This is included in all plans and is particularly valuable for active investors.",
+    question: "What makes you different from other accountants?",
+    answer: "I work exclusively with content creators—that's it. I understand your income streams, your platforms, and your deductions. You won't have to explain what a brand deal is or how AdSense works. Plus, I focus on strategy year-round, not just filing at tax time.",
   },
 ];
 
@@ -125,13 +122,13 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-              Services & Pricing
+              Pricing
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Real Estate Tax Planning Subscriptions
+              Simple, Clear Pricing for Creators
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Proactive, year-round tax strategy tailored to real estate investors. Choose the plan that matches your portfolio size and goals. All plans include dedicated support and real estate-focused expertise.
+              No hourly billing surprises. No confusing invoices. Just flat-rate monthly pricing that includes everything you need to handle your taxes with confidence.
             </p>
           </div>
         </div>
@@ -159,9 +156,9 @@ export default function ServicesPage() {
           {/* Additional Note */}
           <div className="mt-12 text-center">
             <p className="text-gray-600 text-sm">
-              All prices are monthly. Annual prepayment available with 10% discount.{" "}
+              Not sure which plan is right for you?{" "}
               <span className="text-[var(--color-gold)] font-medium">
-                Not sure which plan? Book a free consultation.
+                Book a free call and I&apos;ll help you figure it out.
               </span>
             </p>
           </div>
@@ -194,11 +191,11 @@ export default function ServicesPage() {
               {
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
                 ),
-                title: "Real Estate Focus",
-                description: "Specialized in investor tax strategy",
+                title: "Creator-Focused",
+                description: "I understand your income streams",
               },
               {
                 icon: (
@@ -206,8 +203,8 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 ),
-                title: "Email Support",
-                description: "Direct access for questions",
+                title: "Direct Access",
+                description: "Email me anytime with questions",
               },
               {
                 icon: (
@@ -215,8 +212,8 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 ),
-                title: "Year-Round Planning",
-                description: "Proactive, not reactive",
+                title: "Year-Round Support",
+                description: "Not just during tax season",
               },
             ].map((item) => (
               <div
@@ -285,9 +282,9 @@ export default function ServicesPage() {
 
       {/* CTA Strip */}
       <CTAStrip
-        title="Ready to Get Started?"
-        subtitle="Book a free consultation to discuss which plan is right for you."
-        primaryButtonText="Book Consultation"
+        title="Ready to Stop Stressing About Taxes?"
+        subtitle="Book a free call and let's see if we're a good fit."
+        primaryButtonText="Book a Free Call"
         primaryButtonHref="/contact"
         secondaryButtonText="Have Questions?"
         secondaryButtonHref="/contact"
@@ -295,5 +292,3 @@ export default function ServicesPage() {
     </main>
   );
 }
-
-

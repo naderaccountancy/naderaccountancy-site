@@ -4,17 +4,15 @@ import Script from "next/script";
 import "./globals.css";
 import { Navbar, Footer, AnnouncementBar } from "@/components";
 
+const GTM_ID = "GTM-T5LTVRHC";
+
 /* ===========================================
    ROOT LAYOUT
    
    Main layout wrapper for all pages
-   
-   To customize:
-   - Update metadata below with your information
-   - Change font if desired
    =========================================== */
 
-// Font configuration - CHANGE THIS if you want a different font
+// Font configuration
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
@@ -22,23 +20,22 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  // Site title template - individual pages can override
   title: {
-    default: "Nader Accountancy | Real Estate Tax Strategy",
+    default: "Nader Accountancy | Tax Strategy for Content Creators",
     template: "%s | Nader Accountancy",
   },
-  description: "Proactive real estate tax planning and strategy for investors and high-income professionals. Licensed CPA with specialized expertise in real estate taxation.",
+  description: "Tax strategy for content creators and online business owners. YouTubers, podcasters, course creators, and influencers. Stop overpaying on taxes. Licensed CPA.",
   keywords: [
-    "real estate tax",
-    "CPA",
-    "tax strategy",
-    "real estate investor",
-    "tax planning",
-    "cost segregation",
-    "1031 exchange",
-    "depreciation",
-    "rental property tax",
-    "S-corp tax",
+    "content creator taxes",
+    "YouTuber CPA",
+    "influencer accountant",
+    "creator tax strategy",
+    "S-corp for creators",
+    "self-employment tax",
+    "1099 taxes",
+    "online business taxes",
+    "course creator taxes",
+    "podcaster accountant",
   ],
   authors: [{ name: "Ben Nader, CPA" }],
   creator: "Nader Accountancy",
@@ -48,21 +45,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://naderaccountancy.com",
     siteName: "Nader Accountancy",
-    title: "Nader Accountancy | Real Estate Tax Strategy",
-    description: "Proactive real estate tax planning and strategy for investors and high-income professionals.",
+    title: "Nader Accountancy | Tax Strategy for Content Creators",
+    description: "Tax strategy for content creators and online business owners. Stop overpaying on taxes.",
     images: [
       {
-        url: "/og-image.jpg", // Add this image to /public folder
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nader Accountancy - Real Estate Tax Strategy",
+        alt: "Nader Accountancy - Tax Strategy for Content Creators",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nader Accountancy | Real Estate Tax Strategy",
-    description: "Proactive real estate tax planning and strategy for investors and high-income professionals.",
+    title: "Nader Accountancy | Tax Strategy for Content Creators",
+    description: "Tax strategy for content creators and online business owners. Stop overpaying on taxes.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -76,10 +73,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  // CHANGE THIS: Add your verification codes
-  // verification: {
-  //   google: "your-google-verification-code",
-  // },
 };
 
 export default function RootLayout({
@@ -90,38 +83,34 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
+        {/* Google Tag Manager */}
+        <Script id="gtm-script" strategy="afterInteractive">
+          {`
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','${GTM_ID}');
+          `}
+        </Script>
+
         {/* Preconnect to external resources for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         
-        {/* Favicon - CHANGE THIS: Add your favicon to /public */}
+        {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         
         {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#0f172a" />
-
-        {/* Google Tag Manager */}
-        <Script
-          id="gtm-base"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id=GTM-T5LTVRHC'+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-T5LTVRHC');
-            `,
-          }}
-        />
       </head>
       <body className={`${plusJakartaSans.variable} font-sans antialiased`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-T5LTVRHC"
+            src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}

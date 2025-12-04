@@ -4,27 +4,26 @@ import { CalendlyWidget } from "@/components";
 /* ===========================================
    CLAIM OFFER PAGE
    
-   Premium landing page for the 30-Day Tax Strategy
-   Onboarding offer with Calendly booking
+   Free discovery call landing page for creators
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Claim Your Free 30-Day Tax Strategy Onboarding | Nader Accountancy",
-  description: "Start your complimentary 30-day tax strategy onboarding. Get a personalized tax assessment, strategic planning session, and ongoing support—all at no cost.",
+  title: "Book Your Free Discovery Call | Nader Accountancy",
+  description: "Book a free 15-minute call. Let's talk about your creator business and see if we're a good fit. No pressure, no obligation.",
 };
 
 const includedItems = [
   {
-    title: "Comprehensive Tax Assessment",
-    description: "A thorough review of your current tax situation to identify immediate opportunities and areas for optimization.",
+    title: "Understand Your Situation",
+    description: "We'll talk through your content business, your income streams, and your current tax setup.",
   },
   {
-    title: "Personalized Strategy Session",
-    description: "One-on-one consultation to develop a customized tax plan aligned with your financial goals.",
+    title: "Identify Quick Wins",
+    description: "I'll share initial thoughts on opportunities you might be missing—deductions, S-corp potential, quarterly planning.",
   },
   {
-    title: "30 Days of Priority Support",
-    description: "Direct access to guidance and answers throughout your onboarding period—no question too small.",
+    title: "See If We're a Fit",
+    description: "If it makes sense, I'll explain how we'd work together. If not, no worries—at least you'll have some clarity.",
   },
 ];
 
@@ -36,12 +35,12 @@ export default function ClaimOfferPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-              Limited Time Offer
+              Free Discovery Call
             </span>
             <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Complimentary 30-Day
+              Let&apos;s Talk About
               <br />
-              <span className="text-gradient-gold">Tax Strategy Onboarding</span>
+              <span className="text-gradient-gold">Your Creator Taxes</span>
             </h1>
             
             {/* Gold Divider */}
@@ -50,8 +49,8 @@ export default function ClaimOfferPage() {
             </div>
             
             <p className="mt-8 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Discover how proactive tax planning can transform your financial future. 
-              Start with a complimentary onboarding—no commitment, no pressure.
+              Not sure if you need a CPA? Curious about S-corps? Stressed about quarterly taxes? 
+              Let&apos;s chat—no pressure, no obligation, just a helpful conversation.
             </p>
           </div>
         </div>
@@ -62,15 +61,15 @@ export default function ClaimOfferPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              What&apos;s Included
+              What We&apos;ll Cover
             </h2>
             <p className="mt-4 text-gray-600">
-              Everything you need to get started on the right foot
+              A quick 15-minute call to see how I can help
             </p>
           </div>
 
           <div className="space-y-8">
-            {includedItems.map((item, index) => (
+            {includedItems.map((item) => (
               <div 
                 key={item.title}
                 className="flex gap-5 sm:gap-6"
@@ -99,17 +98,17 @@ export default function ClaimOfferPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              Schedule Your Onboarding Call
+              Pick a Time That Works
             </h2>
             <p className="mt-4 text-gray-600">
-              Select a time that works best for you
+              Select a slot and I&apos;ll send you a confirmation
             </p>
           </div>
 
-          {/* Premium Calendly Container */}
+          {/* Calendly Container */}
           <div className="bg-white rounded-2xl shadow-lg border border-[var(--color-gray-200)] overflow-hidden">
             <CalendlyWidget
-              url="https://calendly.com/ben-naderaccountancy/complimentary-30-day-onboarding"
+              url="https://calendly.com/ben-naderaccountancy/discovery-call"
               height={700}
             />
           </div>
@@ -130,13 +129,13 @@ export default function ClaimOfferPage() {
               <svg className="w-4 h-4 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              100% Confidential
+              100% Free
             </span>
             <span className="flex items-center gap-2">
               <svg className="w-4 h-4 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
               </svg>
-              Limited Availability
+              Zero Pressure
             </span>
           </div>
         </div>
@@ -144,4 +143,3 @@ export default function ClaimOfferPage() {
     </main>
   );
 }
-

@@ -3,7 +3,7 @@ import Link from "next/link";
 /* ===========================================
    CTA STRIP COMPONENT
    
-   Final call-to-action section for pages
+   Call-to-action section for creators
    =========================================== */
 
 interface CTAStripProps {
@@ -16,9 +16,9 @@ interface CTAStripProps {
 }
 
 export default function CTAStrip({
-  title = "Ready to Optimize Your Real Estate Tax Strategy?",
-  subtitle = "Book a free consultation call and discover how much you could be saving.",
-  primaryButtonText = "Book Your Consultation",
+  title = "Ready to Stop Stressing About Taxes?",
+  subtitle = "Book a free call and let's see if we're a good fit.",
+  primaryButtonText = "Book a Free Call",
   primaryButtonHref = "/contact",
   secondaryButtonText = "View Pricing",
   secondaryButtonHref = "/services",
@@ -53,11 +53,9 @@ export default function CTAStrip({
 
         {/* Trust Note */}
         <p className="mt-8 text-gray-400 text-sm">
-          No commitment required • Free discovery call • Personalized strategy discussion
+          No pressure • No obligation • Just a conversation
         </p>
       </div>
     </section>
   );
 }
-
-

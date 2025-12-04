@@ -6,8 +6,7 @@ import Link from "next/link";
 /* ===========================================
    ANNOUNCEMENT BAR COMPONENT
    
-   Premium announcement bar fixed at top of page
-   Elegant, minimal design matching site aesthetics
+   Creator-focused announcement bar
    =========================================== */
 
 export default function AnnouncementBar() {
@@ -65,21 +64,21 @@ export default function AnnouncementBar() {
                 
                 {/* Announcement Text */}
                 <p className="text-sm sm:text-[15px] text-[var(--color-navy-deep)] tracking-wide font-medium leading-[1.55]">
-                  <span className="font-bold">New Clients:</span>
+                  <span className="font-bold">Creators:</span>
                   <span className="mx-1.5 sm:mx-2 text-[var(--color-navy-deep)]/30">|</span>
                   <span>
-                    Complimentary 30-Day Tax Strategy Onboarding
+                    Free Discovery Call — See If We&apos;re a Fit
                   </span>
-                  <span className="hidden md:inline text-[var(--color-navy-deep)]/70 font-semibold ml-1">— Limited Openings</span>
+                  <span className="hidden md:inline text-[var(--color-navy-deep)]/70 font-semibold ml-1">— No Pressure</span>
                 </p>
               </div>
 
               {/* CTA Button - navy on gold */}
               <Link
-                href="/claim-offer"
+                href="/contact"
                 className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 w-full sm:w-auto border-2 border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] text-sm font-bold tracking-wide rounded-lg bg-transparent transition-all duration-300 hover:bg-[var(--color-navy-deep)] hover:text-[var(--color-gold)] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-navy-deep)]/40"
               >
-                <span>Claim Offer</span>
+                <span>Book Call</span>
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l6 7-6 7" />
                 </svg>

@@ -5,16 +5,12 @@ import { CTAStrip } from "@/components";
 /* ===========================================
    ABOUT PAGE
    
-   Personal bio and credentials
-   
-   To customize:
-   - Update the bio text and credentials below
-   - Replace placeholder headshot with actual image
+   Personal bio for creator-focused CPA
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "About | Nader Accountancy - Real Estate Tax Strategist",
-  description: "Learn about Ben Nader, CPA - a licensed CPA with a Master's in Taxation specializing in real estate tax strategy for investors and high-income professionals.",
+  title: "About | Nader Accountancy - Your Creator-Focused CPA",
+  description: "Meet Ben Nader, CPA - a licensed accountant who works exclusively with content creators. I understand your income streams and speak your language.",
 };
 
 export default function AboutPage() {
@@ -28,7 +24,7 @@ export default function AboutPage() {
               About
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              About Your Real Estate Tax Strategist
+              Your Creator-Focused CPA
             </h1>
           </div>
         </div>
@@ -45,7 +41,7 @@ export default function AboutPage() {
                 <div className="aspect-[4/5] rounded-2xl bg-[var(--color-gray-100)] overflow-hidden shadow-xl">
                   <Image
                     src="/headshot.jpg"
-                    alt="Ben Nader, CPA - Real Estate Tax Strategist"
+                    alt="Ben Nader, CPA - Tax Strategy for Content Creators"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
@@ -74,19 +70,19 @@ export default function AboutPage() {
                   M.S. Taxation – LMU
                 </span>
                 <span className="inline-flex items-center px-4 py-2 rounded-full bg-[var(--color-navy-deep)]/5 text-[var(--color-navy-deep)] text-sm font-medium">
-                  B.A. Business Economics – UC Irvine
+                  Creator-Focused Practice
                 </span>
               </div>
 
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong> and a <strong className="text-[var(--color-navy-deep)]">B.A. in Business Economics from UC Irvine</strong>. For the past 5+ years, I&apos;ve focused exclusively on real estate taxation, helping investors and high-income professionals keep more of what they earn.
+                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I work exclusively with content creators and online business owners.
                 </p>
                 <p>
-                  My approach is different from traditional CPAs. Instead of being reactive—scrambling at tax time to find deductions—I work with clients <strong className="text-[var(--color-navy-deep)]">year-round</strong> to plan strategically. This means we make decisions <em>before</em> they become missed opportunities.
+                  I grew up in the creator world. I understand how AdSense works. I know the difference between a sponsorship and an affiliate deal. I won&apos;t ask you to explain what a brand partnership is or look confused when you mention your Patreon income.
                 </p>
                 <p>
-                  I leverage modern tools and automation to monitor tax law changes and track your portfolio moves in real-time. When something changes that affects you, you&apos;ll hear from me proactively—not six months later when it&apos;s too late to act.
+                  Most accountants treat creators like any other small business—and miss thousands in deductions and savings opportunities as a result. I built my practice specifically to fix that problem.
                 </p>
               </div>
             </div>
@@ -94,32 +90,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Real Estate Section */}
+      {/* Why Creators Section */}
       <section className="py-20 bg-[var(--color-gray-50)] pattern-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              Why I Specialize in Real Estate
+              Why I Work With Creators
             </h2>
           </div>
 
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="leading-relaxed mb-6">
-                Real estate is one of the most tax-advantaged asset classes available—but only if you know how to leverage it properly. Most accountants treat rental properties like any other investment. They miss the nuances of cost segregation, the RE Pro status rules, the 1031 exchange timing requirements, and dozens of other opportunities.
+                Content creators have unique tax situations that most accountants don&apos;t understand. You&apos;ve got income from five different platforms, you&apos;re not sure what&apos;s deductible, you&apos;ve heard about S-corps but don&apos;t know if they apply to you, and April feels like a nightmare waiting to happen.
               </p>
               <p className="leading-relaxed mb-6">
-                I saw too many investors leaving money on the table simply because their accountant didn&apos;t understand real estate. That&apos;s why I decided to specialize. Every client I work with benefits from strategies that generalist CPAs often overlook.
+                I saw too many creators overpaying on taxes, missing obvious deductions, or getting hit with surprise bills because their accountant didn&apos;t understand their business. That&apos;s why I decided to specialize.
               </p>
               <p className="leading-relaxed">
-                Whether you&apos;re buying your first rental or building a portfolio across multiple states, I&apos;m here to ensure you&apos;re optimizing every aspect of your tax position.
+                When you work with me, you get someone who actually speaks your language. No explaining your business model. No confused looks when you mention your revenue streams. Just clear, creator-focused tax strategy that keeps more money in your pocket.
               </p>
             </div>
 
-              {/* Quote */}
+            {/* Quote */}
             <blockquote className="mt-10 pt-10 border-t border-gray-200">
               <p className="text-xl font-medium text-[var(--color-navy-deep)] italic">
-                &ldquo;Every dollar saved in taxes is a dollar that can be reinvested. My job is to find those dollars.&rdquo;
+                &ldquo;Every dollar you save on taxes is a dollar you can reinvest in your content, your team, or yourself. My job is to find those dollars.&rdquo;
               </p>
               <footer className="mt-4 text-[var(--color-gold)] font-semibold">
                 — Ben Nader, CPA
@@ -129,8 +125,48 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Credentials Detail Section */}
+      {/* What I Understand Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
+              I Get It
+            </span>
+            <h2 className="mt-3 text-3xl font-bold text-[var(--color-navy-deep)]">
+              Creator Income I Work With
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            {[
+              "YouTube AdSense",
+              "Sponsorships",
+              "Affiliate Income",
+              "Course Sales",
+              "Coaching",
+              "Merch Revenue",
+              "Patreon/Memberships",
+              "Twitch/Streaming",
+              "TikTok Creator Fund",
+              "Podcast Ads",
+              "Digital Products",
+              "Consulting",
+            ].map((income) => (
+              <div
+                key={income}
+                className="text-center p-4 rounded-xl bg-[var(--color-gray-50)] hover:bg-[var(--color-gold)]/10 transition-colors"
+              >
+                <p className="text-sm font-medium text-[var(--color-navy-deep)]">
+                  {income}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Credentials Detail Section */}
+      <section className="py-20 bg-[var(--color-gray-50)]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
@@ -177,17 +213,17 @@ export default function AboutPage() {
               {
                 icon: (
                   <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+                    <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
                 ),
-                title: "5+ Years Specialized Experience",
-                subtitle: "Real Estate Taxation",
-                detail: "Dedicated focus on investor tax strategy",
+                title: "Creator-Focused Practice",
+                subtitle: "100% Specialized",
+                detail: "Exclusively serving content creators & online businesses",
               },
             ].map((credential) => (
               <div
                 key={credential.title}
-                className="text-center p-6 rounded-xl bg-[var(--color-gray-50)] hover:shadow-lg transition-shadow"
+                className="text-center p-6 rounded-xl bg-white hover:shadow-lg transition-shadow"
               >
                 <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-[var(--color-gold)]/10 text-[var(--color-gold)] mb-4">
                   {credential.icon}
@@ -208,13 +244,12 @@ export default function AboutPage() {
       {/* CTA Strip */}
       <CTAStrip
         title="Let's Work Together"
-        subtitle="Ready to optimize your real estate tax strategy? Book a free consultation."
-        primaryButtonText="Book Your Consultation"
+        subtitle="Book a free call and let's see if we're a good fit."
+        primaryButtonText="Book a Free Call"
         primaryButtonHref="/contact"
-        secondaryButtonText="View Services"
+        secondaryButtonText="View Pricing"
         secondaryButtonHref="/services"
       />
     </main>
   );
 }
-

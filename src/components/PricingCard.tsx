@@ -59,8 +59,8 @@ export default function PricingCard({
         <div className="flex items-baseline">
           <span className="text-4xl font-bold text-[var(--color-navy-deep)]">
             {price}
+            <span className="text-2xl font-semibold">{period}</span>
           </span>
-          <span className="text-gray-500 ml-2">{period}</span>
         </div>
       </div>
 

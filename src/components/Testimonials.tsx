@@ -5,34 +5,29 @@ import { useState, useEffect } from "react";
 /* ===========================================
    TESTIMONIALS COMPONENT
    
-   Social proof section with client testimonials
-   
-   To customize:
-   - Add real testimonials below
-   - Replace placeholder names/content
+   Social proof section with creator testimonials
    =========================================== */
 
-// Add your real testimonials here
 const testimonials = [
   {
-    quote: "Working with Ben completely transformed how I approach my real estate taxes. The cost segregation analysis alone saved me over $50,000 in the first year.",
-    author: "Michael R.",
-    role: "Real Estate Investor",
-    properties: "12 Properties",
-    image: null, // Add image path or leave null for initials
-  },
-  {
-    quote: "Finally, a CPA who actually understands real estate investing. The proactive approach means I'm never scrambling at tax time. Worth every penny.",
-    author: "Sarah T.",
-    role: "High-Income Professional",
-    properties: "6 Properties",
+    quote: "I was doing my own taxes and leaving thousands on the table. Ben helped me set up an S-corp and I'm saving over $15K a year in self-employment tax alone. Plus, no more April panic.",
+    author: "YouTube Creator",
+    role: "500K+ Subscribers",
+    properties: "Tech & Education Content",
     image: null,
   },
   {
-    quote: "I was leaving so much money on the table before. The quarterly strategy sessions have helped me make smarter decisions about when to buy and how to structure deals.",
-    author: "David K.",
-    role: "S-Corp Owner & Investor",
-    properties: "8 Properties",
+    quote: "Finally, an accountant who doesn't ask me to explain what AdSense is. Ben understands creator income inside and out. The quarterly planning alone has been a game-changer for my stress levels.",
+    author: "Course Creator",
+    role: "$300K+ Annual Revenue",
+    properties: "Online Education",
+    image: null,
+  },
+  {
+    quote: "I had income from Twitch, YouTube, sponsors, and Patreon—all mixed together and confusing. Ben organized everything, found deductions I didn't know existed, and made tax season actually manageable.",
+    author: "Streamer & Podcaster",
+    role: "Full-Time Creator",
+    properties: "Gaming & Entertainment",
     image: null,
   },
 ];
@@ -54,13 +49,13 @@ export default function Testimonials() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-            Testimonials
+            Creator Experiences
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-            What Clients Say
+            What Creators Are Saying
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Real results from real estate investors who transformed their tax strategy.
+            Hear from content creators who stopped stressing about taxes.
           </p>
         </div>
 
@@ -138,10 +133,10 @@ export default function Testimonials() {
         {/* Stats Bar */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { number: "100+", label: "Clients Served" },
-            { number: "$2M+", label: "Tax Savings Identified" },
-            { number: "500+", label: "Properties Analyzed" },
-            { number: "5+", label: "Years Experience" },
+            { number: "$10K+", label: "Avg. Annual Savings" },
+            { number: "100%", label: "Creator-Focused" },
+            { number: "0", label: "April Surprises" },
+            { number: "24hr", label: "Response Time" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="text-3xl sm:text-4xl font-bold text-[var(--color-gold)]">
@@ -155,5 +150,3 @@ export default function Testimonials() {
     </section>
   );
 }
-
-
