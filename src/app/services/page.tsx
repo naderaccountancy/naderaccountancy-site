@@ -5,12 +5,12 @@ import { PricingCard, CTAStrip } from "@/components";
    SERVICES PAGE
    
    Pricing plans for content creators
-   $300/$500/$800 per month
+   $300/$400/$600 per month
    =========================================== */
 
 export const metadata: Metadata = {
   title: "Pricing | Nader Accountancy - Tax Strategy for Creators",
-  description: "Clear, flat-rate pricing for content creators. Tax strategy, preparation, and year-round support. $300-$800/month based on your needs.",
+  description: "Clear, flat-rate pricing for content creators. Tax strategy, preparation, and year-round support. $300-$600/month based on your needs.",
 };
 
 const pricingPlans = [
@@ -35,7 +35,7 @@ const pricingPlans = [
   {
     id: "growth",
     name: "Growth",
-    price: "$500",
+    price: "$400",
     description: "For growing creators who need real tax strategy",
     features: [
       { text: "Everything in Starter", included: true },
@@ -53,7 +53,7 @@ const pricingPlans = [
   {
     id: "pro",
     name: "Pro",
-    price: "$800",
+    price: "$600",
     description: "For established creators with complex tax needs",
     features: [
       { text: "Everything in Growth", included: true },
