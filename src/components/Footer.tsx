@@ -14,9 +14,9 @@ const FOOTER_CONFIG = {
 
 const footerLinks = {
   services: [
-    { href: "/services#starter", label: "Starter Plan" },
-    { href: "/services#growth", label: "Growth Plan" },
-    { href: "/services#pro", label: "Pro Plan" },
+    { href: "/services#essential", label: "Essential Plan" },
+    { href: "/services#advantage", label: "Advantage Plan" },
+    { href: "/services#premier", label: "Premier Plan" },
     { href: "/services#faq", label: "FAQ" },
   ],
   company: [

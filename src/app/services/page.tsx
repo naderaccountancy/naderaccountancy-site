@@ -15,8 +15,8 @@ export const metadata: Metadata = {
 
 const pricingPlans = [
   {
-    id: "starter",
-    name: "Starter",
+    id: "essential",
+    name: "Essential",
     price: "$300",
     description: "For emerging creators ready to get their taxes handled right",
     features: [
@@ -33,12 +33,12 @@ const pricingPlans = [
     ctaText: "Get Started",
   },
   {
-    id: "growth",
-    name: "Growth",
+    id: "advantage",
+    name: "Advantage",
     price: "$400",
     description: "For growing creators who need real tax strategy",
     features: [
-      { text: "Everything in Starter", included: true },
+      { text: "Everything in Essential", included: true },
       { text: "S-corp election & setup", included: true },
       { text: "Payroll setup and management", included: true },
       { text: "Mid-year strategy call", included: true },
@@ -51,12 +51,12 @@ const pricingPlans = [
     ctaText: "Most Popular",
   },
   {
-    id: "pro",
-    name: "Pro",
+    id: "premier",
+    name: "Premier",
     price: "$600",
     description: "For established creators with complex tax needs",
     features: [
-      { text: "Everything in Growth", included: true },
+      { text: "Everything in Advantage", included: true },
       { text: "Quarterly strategy calls (4x/year)", included: true },
       { text: "Multi-state tax handling", included: true },
       { text: "Retirement planning (Solo 401k/SEP)", included: true },
@@ -66,7 +66,7 @@ const pricingPlans = [
       { text: "Priority scheduling", included: true },
     ],
     featured: false,
-    ctaText: "Go Pro",
+    ctaText: "Go Premier",
   },
 ];
 
@@ -98,15 +98,15 @@ const faqItems = [
   },
   {
     question: "How quickly do you respond to questions?",
-    answer: "Response times depend on your plan: Starter clients get responses within 48 hours, Growth clients within 24 hours, and Pro clients get same-week guaranteed responses. Urgent tax deadline matters are always handled immediately.",
+    answer: "Response times depend on your plan: Essential clients get responses within 48 hours, Advantage clients within 24 hours, and Premier clients get same-week guaranteed responses. Urgent tax deadline matters are always handled immediately.",
   },
   {
     question: "What if I'm just starting out and don't make much yet?",
-    answer: "If you're earning self-employment income, you need to be handling your taxes correctly—even at lower income levels. Starting with good habits now means you're ready when you grow. The Starter plan is designed exactly for this situation.",
+    answer: "If you're earning self-employment income, you need to be handling your taxes correctly—even at lower income levels. Starting with good habits now means you're ready when you grow. The Essential plan is designed exactly for this situation.",
   },
   {
     question: "Do you work with creators outside California?",
-    answer: "Absolutely! I work with creators across the United States. Multi-state situations are handled in all plans (with dedicated multi-state support in the Pro tier). Video calls make it easy to work together regardless of location.",
+    answer: "Absolutely! I work with creators across the United States. Multi-state situations are handled in all plans (with dedicated multi-state support in the Premier tier). Video calls make it easy to work together regardless of location.",
   },
   {
     question: "What makes you different from other accountants?",
