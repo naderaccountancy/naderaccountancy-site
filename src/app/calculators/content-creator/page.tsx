@@ -11,7 +11,7 @@ import { ContentCreatorCalculator, CTAStrip } from "@/components";
 
 export const metadata: Metadata = {
   title: "Content Creator Tax Calculator | Nader Accountancy",
-  description: "Calculate your after-tax earnings as a content creator. Estimate taxes on OnlyFans, YouTube, Twitch, TikTok, and Patreon income after platform fees.",
+  description: "Calculate your after-tax earnings as a content creator. Estimate taxes on YouTube, Twitch, TikTok, Patreon, and OnlyFans income after platform fees.",
 };
 
 export default function ContentCreatorCalculatorPage() {
@@ -38,7 +38,7 @@ export default function ContentCreatorCalculatorPage() {
               Content Creator Tax Calculator
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Earning from OnlyFans, YouTube, Twitch, TikTok, or Patreon? Use this calculator to see 
+              Earning from YouTube, Twitch, TikTok, Patreon, or OnlyFans? Use this calculator to see 
               how much you&apos;ll actually keep after platform fees and taxes.
             </p>
           </div>
