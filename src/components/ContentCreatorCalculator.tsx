@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useMemo } from 'react';
+import React, { useState, useMemo } from 'react';
 import type { FilingStatus } from '@/lib/taxBrackets';
 import { calculateFederalTaxOnPrize, getMarginalFederalRate } from '@/lib/taxBrackets';
 import { US_STATES, STATE_TAX_RATES, calculateStateTaxOnPrize } from '@/lib/stateTaxRates';
