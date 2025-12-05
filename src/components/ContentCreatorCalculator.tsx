@@ -58,7 +58,7 @@ const FILING_STATUS_OPTIONS: { value: FilingStatus; label: string }[] = [
 /**
  * Category icons for the recommendations panel
  */
-const CATEGORY_ICONS: Record<RecommendationCategory, JSX.Element> = {
+const CATEGORY_ICONS: Record<RecommendationCategory, React.ReactNode> = {
   'Immediate action items': (
     <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
