@@ -15,6 +15,18 @@ export const metadata: Metadata = {
 
 const calculators = [
   {
+    id: "content-creator",
+    title: "Content Creator Tax Calculator",
+    description: "Calculate your after-tax earnings from OnlyFans, YouTube, Twitch, TikTok, or Patreon after platform fees and taxes.",
+    icon: (
+      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+      </svg>
+    ),
+    href: "/calculators/content-creator",
+    available: true,
+  },
+  {
     id: "prize-winnings",
     title: "Prize Winnings Calculator",
     description: "Won a contest or cash prize? Calculate how much you'll actually keep after federal and state taxes.",
@@ -35,8 +47,8 @@ const calculators = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
       </svg>
     ),
-    href: "#",
-    available: false,
+    href: "/calculators/scorp-savings",
+    available: true,
   },
   {
     id: "quarterly-tax",
@@ -47,8 +59,8 @@ const calculators = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
       </svg>
     ),
-    href: "#",
-    available: false,
+    href: "/calculators/quarterly-tax",
+    available: true,
   },
   {
     id: "self-employment-tax",
@@ -59,8 +71,8 @@ const calculators = [
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
       </svg>
     ),
-    href: "#",
-    available: false,
+    href: "/calculators/self-employment-tax",
+    available: true,
   },
 ];
 

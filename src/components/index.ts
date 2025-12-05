@@ -19,4 +19,8 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Testimonials } from "./Testimonials";
 export { default as CalendlyWidget } from "./CalendlyWidget";
 export { default as PrizeTaxCalculator } from "./PrizeTaxCalculator";
+export { default as ContentCreatorCalculator } from "./ContentCreatorCalculator";
+export { default as SelfEmploymentTaxCalculator } from "./SelfEmploymentTaxCalculator";
+export { default as SCorpSavingsCalculator } from "./SCorpSavingsCalculator";
+export { default as QuarterlyTaxCalculator } from "./QuarterlyTaxCalculator";
 
