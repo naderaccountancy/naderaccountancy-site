@@ -18,4 +18,5 @@ export { default as PricingCard } from "./PricingCard";
 export { default as ContactForm } from "./ContactForm";
 export { default as Testimonials } from "./Testimonials";
 export { default as CalendlyWidget } from "./CalendlyWidget";
+export { default as PrizeTaxCalculator } from "./PrizeTaxCalculator";
 
