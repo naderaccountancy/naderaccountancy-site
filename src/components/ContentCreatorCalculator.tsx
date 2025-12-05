@@ -240,7 +240,7 @@ export default function ContentCreatorCalculator() {
   // Check if all required fields are valid
   const isValid = grossRevenue > 0 && 
     otherIncome >= 0 && 
-    formData.state && 
+    formData.state !== '' && 
     (isCustomPlatform ? formData.platformFeeOverride !== '' : true);
 
   // Calculate all values
