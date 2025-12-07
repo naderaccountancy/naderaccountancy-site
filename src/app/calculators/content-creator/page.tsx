@@ -65,20 +65,25 @@ export default function ContentCreatorCalculatorPage() {
                 your contract, partner level, revenue source (ads vs subs vs tips), and payment method.
               </p>
               <p>
-                <strong>Federal tax:</strong> Uses 2024 IRS ordinary income brackets. Tax is calculated incrementally 
-                based on how your creator income stacks on top of other income.
+                <strong>Self-employment tax:</strong> Includes Social Security (12.4% up to $168,600 wage base), 
+                Medicare (2.9% on all earnings), and Additional Medicare Tax (0.9% on earnings above $200K single / $250K MFJ). 
+                The deductible employer-equivalent portion is factored into income tax calculations.
               </p>
               <p>
-                <strong>State tax:</strong> Uses simplified marginal rates. Most states have progressive brackets 
+                <strong>Federal income tax:</strong> Uses 2024 IRS ordinary income brackets. Tax is calculated 
+                incrementally based on how your creator income stacks on top of other income.
+              </p>
+              <p>
+                <strong>State tax:</strong> Uses simplified top marginal rates. Most states have progressive brackets 
                 similar to federal taxes.
               </p>
               <p>
-                <strong>Not included:</strong> Self-employment tax (15.3%), local/city taxes, AMT, NIIT, 
-                quarterly estimated payments, business deductions, retirement contributions, or health insurance deductions.
+                <strong>Not included:</strong> Local/city taxes, AMT, NIIT, business deductions, 
+                retirement contributions, health insurance deductions, or other adjustments to income.
               </p>
               <p className="text-[var(--color-gold-dark)] font-medium">
                 This is an estimate for educational purposes only and is not tax advice. 
-                Actual taxes may be higher due to self-employment tax and other factors.
+                Actual taxes may differ based on deductions, credits, and other factors specific to your situation.
               </p>
             </div>
           </div>

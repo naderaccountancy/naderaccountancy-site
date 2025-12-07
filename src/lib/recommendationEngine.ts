@@ -174,15 +174,14 @@ const ruleEstimatedPayments: RecommendationRule = (input) => {
   const shouldRecommend = input.effectiveTaxRate > 0.25 || input.netRevenueBeforeTax > 40000;
   
   if (shouldRecommend && input.netRevenueBeforeTax > 0) {
-    // Calculate suggested tax set-aside percentage (effective rate + ~15% SE tax estimate)
-    const suggestedSetAside = Math.min(0.40, input.effectiveTaxRate + 0.15);
-    const lowerPercent = Math.round(suggestedSetAside * 100) - 5;
-    const upperPercent = Math.round(suggestedSetAside * 100) + 5;
+    // Effective tax rate now includes SE taxes, so use it directly
+    const lowerPercent = Math.round(input.effectiveTaxRate * 100) - 5;
+    const upperPercent = Math.round(input.effectiveTaxRate * 100) + 5;
     
     return {
       id: 'estimated-payments',
       title: 'Make Quarterly Estimated Tax Payments',
-      explanation: `With ${formatCurrency(totalIncome)} in total projected income and an effective tax rate around ${formatPercent(input.effectiveTaxRate)}, you likely need to make quarterly estimated payments to avoid underpayment penalties. Consider setting aside ${lowerPercent}–${upperPercent}% of your net creator income into a separate "tax savings" account each month.`,
+      explanation: `With ${formatCurrency(totalIncome)} in total projected income and an effective tax rate of ${formatPercent(input.effectiveTaxRate)} (including self-employment tax), you likely need to make quarterly estimated payments to avoid underpayment penalties. Consider setting aside ${lowerPercent}–${upperPercent}% of your net creator income into a separate "tax savings" account each month.`,
       impact: 'High impact',
       category: 'Immediate action items',
       priority: 2,
@@ -272,12 +271,13 @@ const ruleRetirementAccounts: RecommendationRule = (input) => {
   if (input.netRevenueBeforeTax >= 30000) {
     // SEP IRA allows up to 25% of net self-employment income (roughly 20% of net profit)
     const maxSepContribution = Math.min(69000, input.netRevenueBeforeTax * 0.20);
-    const taxSavings = Math.round(maxSepContribution * (input.effectiveTaxRate + 0.15)); // Include SE tax estimate
+    // Effective tax rate now includes SE tax, use it directly
+    const taxSavings = Math.round(maxSepContribution * input.effectiveTaxRate);
     
     return {
       id: 'retirement-accounts',
       title: 'Open a SEP IRA or Solo 401(k)',
-      explanation: `With ${formatCurrency(input.netRevenueBeforeTax)} in net creator income, you could contribute up to ${formatCurrency(maxSepContribution)} to a SEP IRA this year—reducing your taxable income while building retirement savings. A Solo 401(k) offers even higher limits. This could save you roughly ${formatCurrency(taxSavings)} in taxes.`,
+      explanation: `With ${formatCurrency(input.netRevenueBeforeTax)} in net creator income, you could contribute up to ${formatCurrency(maxSepContribution)} to a SEP IRA this year—reducing your taxable income while building retirement savings. A Solo 401(k) offers even higher limits. This could save you roughly ${formatCurrency(taxSavings)} in federal and state income taxes.`,
       impact: 'High impact',
       category: 'Long-term strategy',
       priority: 5,
@@ -329,7 +329,7 @@ const ruleNoTaxState: RecommendationRule = (input) => {
     return {
       id: 'no-tax-state',
       title: 'Federal Tax Remains Your Primary Focus',
-      explanation: `${input.state} has no state income tax, which simplifies your situation. However, federal income tax and self-employment tax are still significant—estimated at ${formatCurrency(input.federalTax + input.netRevenueBeforeTax * 0.15)} on your creator income. Focus your planning efforts on federal strategies like retirement contributions and business deductions.`,
+      explanation: `${input.state} has no state income tax, which simplifies your situation. However, federal income tax and self-employment tax are still significant—totaling ${formatCurrency(input.totalTax)} on your creator income. Focus your planning efforts on federal strategies like retirement contributions, business deductions, and potentially S-Corp election.`,
       impact: 'Foundational',
       category: 'Planning opportunities',
       priority: 35,
@@ -419,18 +419,19 @@ const ruleProfessionalHelpModerate: RecommendationRule = (input) => {
 };
 
 /**
- * Rule: Self-employment tax awareness
+ * Rule: Self-employment tax awareness and reduction strategies
+ * Now focuses on strategies to reduce SE tax since the calculator shows actual SE tax
  */
 const ruleSelfEmploymentTax: RecommendationRule = (input) => {
-  if (input.netRevenueBeforeTax > 1000) {
-    const estimatedSETax = Math.round(input.netRevenueBeforeTax * 0.9235 * 0.153);
+  // SE tax is significant (~15.3%), suggest strategies to reduce it
+  if (input.netRevenueBeforeTax >= 40000 && input.netRevenueBeforeTax < 60000) {
     return {
       id: 'self-employment-tax',
-      title: 'Don\'t Forget Self-Employment Tax',
-      explanation: `This calculator shows income tax, but as a self-employed creator you also owe self-employment tax (Social Security + Medicare) of about 15.3% on net earnings. On ${formatCurrency(input.netRevenueBeforeTax)}, that's roughly ${formatCurrency(estimatedSETax)} additional tax. Factor this into your tax savings and quarterly payments.`,
-      impact: 'High impact',
-      category: 'Immediate action items',
-      priority: 4,
+      title: 'Understand Your Self-Employment Tax',
+      explanation: `Self-employment tax (15.3%) is one of your largest tax burdens as a creator. At your income level, consider strategies like maximizing business deductions to reduce net income, or contributing to a SEP IRA which lowers both income tax and the amount subject to SE tax. As income grows, an S-Corp election could provide significant SE tax savings.`,
+      impact: 'Medium impact',
+      category: 'Planning opportunities',
+      priority: 8,
     };
   }
   return null;

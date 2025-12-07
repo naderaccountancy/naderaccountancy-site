@@ -2,9 +2,16 @@
 
 import React, { useState, useMemo } from 'react';
 import type { FilingStatus } from '@/lib/taxBrackets';
-import { calculateFederalTaxOnPrize, getMarginalFederalRate } from '@/lib/taxBrackets';
+import { calculateFederalTax, getMarginalFederalRate } from '@/lib/taxBrackets';
 import { US_STATES, STATE_TAX_RATES, calculateStateTaxOnPrize } from '@/lib/stateTaxRates';
 import { PLATFORMS, getPlatformById, getPlatformFee, calculatePlatformFeeAmount } from '@/lib/platformConfig';
+import { 
+  calculateSelfEmploymentTax,
+  type SelfEmploymentTaxResult,
+  SOCIAL_SECURITY_RATE,
+  MEDICARE_RATE,
+  ADDITIONAL_MEDICARE_RATE,
+} from '@/lib/selfEmploymentTax';
 import { 
   generateRecommendations, 
   groupRecommendationsByCategory, 
@@ -18,7 +25,11 @@ import {
    CONTENT CREATOR TAX CALCULATOR COMPONENT
    
    Calculates after-tax earnings for content creators
-   Accounts for platform fees, federal tax, and state tax
+   Accounts for:
+   - Platform fees
+   - Self-employment tax (Social Security + Medicare)
+   - Federal income tax
+   - State income tax
    Includes a Recommendations & Actions engine
    =========================================== */
 
@@ -33,14 +44,26 @@ interface FormData {
 }
 
 interface CalculationResult {
+  // Revenue
   grossRevenue: number;
   platformFeeRate: number;
   platformFeeAmount: number;
   netRevenueBeforeTax: number;
+  
+  // Self-Employment Tax breakdown
+  selfEmploymentTax: SelfEmploymentTaxResult;
+  
+  // Income taxes (federal calculated after SE tax deduction)
   federalTax: number;
   stateTax: number;
+  
+  // Totals
+  totalSETax: number;
+  totalIncomeTax: number;
   totalTax: number;
   afterTaxIncome: number;
+  
+  // Effective rates
   effectiveTaxRate: number;
   effectivePlatformFeeRate: number;
   effectiveOverallRate: number;
@@ -257,32 +280,45 @@ export default function ContentCreatorCalculator() {
     // Step 2: Net revenue before tax (after platform fee)
     const netRevenueBeforeTax = grossRevenue - platformFeeAmount;
 
-    // Step 3: Federal tax on creator income
-    // Uses incremental tax calculation (tax with creator income minus tax without)
-    const federalTax = calculateFederalTaxOnPrize(
+    // Step 3: Calculate self-employment tax
+    // Note: We assume otherIncome is W-2 income for SE tax calculations
+    const selfEmploymentTax = calculateSelfEmploymentTax(
       netRevenueBeforeTax,
-      otherIncome,
+      0, // No other SE income assumed
+      otherIncome, // Treat other income as W-2 (affects SS wage base)
       formData.filingStatus
     );
 
-    // Step 4: State tax on creator income
+    // Step 4: Calculate federal income tax
+    // The deductible half of SE tax reduces AGI
+    const adjustedGrossIncome = otherIncome + netRevenueBeforeTax - selfEmploymentTax.deductibleSETax;
+    
+    // Calculate incremental federal tax on creator income
+    // Tax with creator income minus tax without
+    const taxWithCreatorIncome = calculateFederalTax(adjustedGrossIncome, formData.filingStatus);
+    const taxWithoutCreatorIncome = calculateFederalTax(otherIncome, formData.filingStatus);
+    const federalTax = taxWithCreatorIncome - taxWithoutCreatorIncome;
+
+    // Step 5: State tax on creator income
     const stateTax = calculateStateTaxOnPrize(
       netRevenueBeforeTax,
       formData.state,
       stateRateOverride
     );
 
-    // Step 5: Calculate totals
-    const totalTax = federalTax + stateTax;
+    // Step 6: Calculate totals
+    const totalSETax = selfEmploymentTax.totalSETax;
+    const totalIncomeTax = federalTax + stateTax;
+    const totalTax = totalSETax + totalIncomeTax;
     const afterTaxIncome = netRevenueBeforeTax - totalTax;
 
-    // Step 6: Calculate effective rates
+    // Step 7: Calculate effective rates
     const effectiveTaxRate = netRevenueBeforeTax > 0 ? totalTax / netRevenueBeforeTax : 0;
     const effectivePlatformFeeRate = grossRevenue > 0 ? platformFeeAmount / grossRevenue : 0;
     const effectiveOverallRate = grossRevenue > 0 ? (platformFeeAmount + totalTax) / grossRevenue : 0;
     
     const marginalFederalRate = getMarginalFederalRate(
-      otherIncome + netRevenueBeforeTax,
+      adjustedGrossIncome,
       formData.filingStatus
     );
     const stateRate = stateRateOverride ?? STATE_TAX_RATES[formData.state] ?? 0;
@@ -292,8 +328,11 @@ export default function ContentCreatorCalculator() {
       platformFeeRate: currentPlatformFee,
       platformFeeAmount,
       netRevenueBeforeTax,
+      selfEmploymentTax,
       federalTax,
       stateTax,
+      totalSETax,
+      totalIncomeTax,
       totalTax,
       afterTaxIncome,
       effectiveTaxRate,
@@ -484,7 +523,7 @@ export default function ContentCreatorCalculator() {
                 />
               </div>
               <p className="mt-1.5 text-xs text-[var(--color-gray-500)]">
-                W-2 income, other 1099 work, etc. (determines your tax bracket)
+                W-2 wages, interest, etc. (determines tax bracket &amp; SS wage base)
               </p>
             </div>
 
@@ -592,10 +631,44 @@ export default function ContentCreatorCalculator() {
                 </div>
               </div>
 
-              {/* Tax Breakdown */}
+              {/* Self-Employment Tax Breakdown */}
               <div className="space-y-3">
                 <h3 className="text-sm font-semibold text-[var(--color-navy-deep)] uppercase tracking-wide">
-                  Taxes on Creator Income
+                  Self-Employment Tax
+                </h3>
+                <div className="flex justify-between items-center py-3 border-b border-[var(--color-gray-200)]">
+                  <div>
+                    <span className="text-[var(--color-gray-600)]">Social Security</span>
+                    <span className="text-xs text-[var(--color-gray-400)] ml-2">({formatPercent(SOCIAL_SECURITY_RATE)})</span>
+                  </div>
+                  <span className="text-red-600 font-semibold">−{formatCurrency(result.selfEmploymentTax.socialSecurityTax)}</span>
+                </div>
+                <div className="flex justify-between items-center py-3 border-b border-[var(--color-gray-200)]">
+                  <div>
+                    <span className="text-[var(--color-gray-600)]">Medicare</span>
+                    <span className="text-xs text-[var(--color-gray-400)] ml-2">({formatPercent(MEDICARE_RATE)})</span>
+                  </div>
+                  <span className="text-red-600 font-semibold">−{formatCurrency(result.selfEmploymentTax.medicareTax)}</span>
+                </div>
+                {result.selfEmploymentTax.additionalMedicareTax > 0 && (
+                  <div className="flex justify-between items-center py-3 border-b border-[var(--color-gray-200)]">
+                    <div>
+                      <span className="text-[var(--color-gray-600)]">Additional Medicare</span>
+                      <span className="text-xs text-[var(--color-gray-400)] ml-2">({formatPercent(ADDITIONAL_MEDICARE_RATE)})</span>
+                    </div>
+                    <span className="text-red-600 font-semibold">−{formatCurrency(result.selfEmploymentTax.additionalMedicareTax)}</span>
+                  </div>
+                )}
+                <div className="flex justify-between items-center py-3 bg-[var(--color-gray-50)] rounded-lg px-4 -mx-4">
+                  <span className="text-[var(--color-navy-deep)] font-semibold">Total SE tax</span>
+                  <span className="text-red-600 font-bold">−{formatCurrency(result.totalSETax)}</span>
+                </div>
+              </div>
+
+              {/* Income Tax Breakdown */}
+              <div className="space-y-3">
+                <h3 className="text-sm font-semibold text-[var(--color-navy-deep)] uppercase tracking-wide">
+                  Income Tax
                 </h3>
                 <div className="flex justify-between items-center py-3 border-b border-[var(--color-gray-200)]">
                   <div>
@@ -607,14 +680,20 @@ export default function ContentCreatorCalculator() {
                 <div className="flex justify-between items-center py-3 border-b border-[var(--color-gray-200)]">
                   <div>
                     <span className="text-[var(--color-gray-600)]">State income tax</span>
-                    <span className="text-xs text-[var(--color-gray-400)] ml-2">({formatPercent(result.stateRate)} rate)</span>
+                    <span className="text-xs text-[var(--color-gray-400)] ml-2">({formatPercent(result.stateRate)})</span>
                   </div>
                   <span className="text-red-600 font-semibold">−{formatCurrency(result.stateTax)}</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-[var(--color-gray-200)]">
-                  <span className="text-[var(--color-gray-600)]">Total taxes</span>
-                  <span className="text-red-600 font-semibold">−{formatCurrency(result.totalTax)}</span>
+                <div className="flex justify-between items-center py-3 bg-[var(--color-gray-50)] rounded-lg px-4 -mx-4">
+                  <span className="text-[var(--color-navy-deep)] font-semibold">Total income tax</span>
+                  <span className="text-red-600 font-bold">−{formatCurrency(result.totalIncomeTax)}</span>
                 </div>
+              </div>
+
+              {/* Total Taxes Summary */}
+              <div className="flex justify-between items-center py-3 border-t-2 border-[var(--color-gray-300)]">
+                <span className="text-[var(--color-navy-deep)] font-bold">Total all taxes</span>
+                <span className="text-red-600 font-bold text-lg">−{formatCurrency(result.totalTax)}</span>
               </div>
 
               {/* Final Result */}
@@ -634,7 +713,7 @@ export default function ContentCreatorCalculator() {
                     <p className="text-lg font-bold text-[var(--color-navy-deep)]">{formatPercent(result.effectivePlatformFeeRate)}</p>
                   </div>
                   <div className="text-center p-3 bg-[var(--color-gray-50)] rounded-lg">
-                    <p className="text-xs text-[var(--color-gray-500)] mb-1">Tax Rate</p>
+                    <p className="text-xs text-[var(--color-gray-500)] mb-1">All Taxes</p>
                     <p className="text-lg font-bold text-[var(--color-navy-deep)]">{formatPercent(result.effectiveTaxRate)}</p>
                   </div>
                   <div className="text-center p-3 bg-[var(--color-gold)]/10 rounded-lg col-span-2 sm:col-span-1">
@@ -643,9 +722,19 @@ export default function ContentCreatorCalculator() {
                   </div>
                 </div>
                 <p className="text-xs text-[var(--color-gray-400)] text-center mt-2">
-                  Total take rate = platform fees + taxes as % of gross revenue
+                  Total take rate = platform fees + all taxes as % of gross revenue
                 </p>
               </div>
+
+              {/* Deductible SE Tax Note */}
+              {result.selfEmploymentTax.deductibleSETax > 0 && (
+                <div className="p-3 bg-blue-50 rounded-lg border border-blue-100">
+                  <p className="text-xs text-blue-700">
+                    <strong>Note:</strong> {formatCurrency(result.selfEmploymentTax.deductibleSETax)} of your SE tax is deductible from income, 
+                    which reduces your federal income tax. This is already factored into the calculations above.
+                  </p>
+                </div>
+              )}
             </div>
           )}
         </div>
