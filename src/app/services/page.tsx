@@ -24,10 +24,11 @@ const pricingPlans = [
       { text: "Deduction optimization", included: true },
       { text: "Income categorization (all platforms)", included: true },
       { text: "Quarterly estimated tax calculations", included: true },
+      { text: "Quarterly estimated tax payment reminders", included: true },
       { text: "Year-end tax planning", included: true },
+      { text: "Bi-annual strategy calls (2x/year)", included: true },
       { text: "Email support (48hr response)", included: true },
       { text: "S-corp analysis", included: false },
-      { text: "Quarterly strategy calls", included: false },
     ],
     featured: false,
     ctaText: "Get Started",
@@ -39,13 +40,14 @@ const pricingPlans = [
     description: "For growing creators who need real tax strategy",
     features: [
       { text: "Everything in Essential", included: true },
+      { text: "Quarterly strategy calls (4x/year)", included: true },
+      { text: "Quarterly P&L statements", included: true },
+      { text: "Home office deduction optimization", included: true },
       { text: "S-corp election & setup", included: true },
-      { text: "Payroll setup and management", included: true },
-      { text: "Mid-year strategy call", included: true },
       { text: "Entity structure guidance", included: true },
       { text: "Priority email support (24hr response)", included: true },
       { text: "Contractor 1099 preparation", included: true },
-      { text: "Multi-state tax handling", included: false },
+      { text: "Retirement planning (Solo 401k/SEP)", included: false },
     ],
     featured: true,
     ctaText: "Most Popular",
@@ -57,12 +59,12 @@ const pricingPlans = [
     description: "For established creators with complex tax needs",
     features: [
       { text: "Everything in Advantage", included: true },
-      { text: "Quarterly strategy calls (4x/year)", included: true },
-      { text: "Multi-state tax handling", included: true },
+      { text: "Strategy calls (8x/year)", included: true },
+      { text: "Contract review for major deals", included: true },
+      { text: "Multi-entity planning & strategy", included: true },
       { text: "Retirement planning (Solo 401k/SEP)", included: true },
-      { text: "Same-week response guarantee", included: true },
+      { text: "Priority same-day response", included: true },
       { text: "Unlimited email support", included: true },
-      { text: "Audit representation included", included: true },
       { text: "Priority scheduling", included: true },
     ],
     featured: false,
@@ -82,7 +84,7 @@ const faqItems = [
   },
   {
     question: "What is an S-corp and do I need one?",
-    answer: "An S-corp is a tax election that can save you significant money on self-employment taxes—often $10,000-$20,000+ per year for creators earning $80K+. I'll analyze your situation and tell you honestly if it makes sense for you. If it does, I'll handle the setup and ongoing payroll.",
+    answer: "An S-corp is a tax election that can save you significant money on self-employment taxes—often $10,000-$20,000+ per year for creators earning $80K+. I'll analyze your situation and tell you honestly if it makes sense for you. If it does, I'll handle the setup.",
   },
   {
     question: "Can I cancel or change plans?",
@@ -90,7 +92,7 @@ const faqItems = [
   },
   {
     question: "How do the strategy calls work?",
-    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your situation, discuss upcoming plans, and make sure you're set up for tax success. Depending on your plan, these happen mid-year, quarterly, or as needed. You'll get a summary email after each call.",
+    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your situation, discuss upcoming plans, and make sure you're set up for tax success. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get 8 calls per year. You'll get a summary email after each call.",
   },
   {
     question: "What if I have income from multiple platforms?",
@@ -98,7 +100,7 @@ const faqItems = [
   },
   {
     question: "How quickly do you respond to questions?",
-    answer: "Response times depend on your plan: Essential clients get responses within 48 hours, Advantage clients within 24 hours, and Premier clients get same-week guaranteed responses. Urgent tax deadline matters are always handled immediately.",
+    answer: "Response times depend on your plan: Essential clients receive responses within 48 hours, Advantage clients within 24 hours, and Premier clients receive priority same-day responses. Urgent tax deadline matters are always handled immediately.",
   },
   {
     question: "What if I'm just starting out and don't make much yet?",
@@ -106,7 +108,7 @@ const faqItems = [
   },
   {
     question: "Do you work with creators outside California?",
-    answer: "Absolutely! I work with creators across the United States. Multi-state situations are handled in all plans (with dedicated multi-state support in the Premier tier). Video calls make it easy to work together regardless of location.",
+    answer: "Absolutely! I work with creators across the United States. All plans include federal and state tax return preparation regardless of where you're located. Video calls make it easy to work together regardless of location.",
   },
   {
     question: "What makes you different from other accountants?",
