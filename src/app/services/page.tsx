@@ -221,7 +221,7 @@ export default function ServicesPage() {
               {/* Decorative Line */}
               <div className="w-20 h-1 bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-light)] mx-auto mb-8 rounded-full" />
               <p className="text-gray-600 text-lg leading-relaxed mb-10 min-h-[140px]">
-                Maximize your tax savings when earning ~$100k+/yr. Everything in Essential plus S-Corp election, payroll management, quarterly strategy sessions, quarterly financial health check-ups, and more!
+                Designed for creators earning over ~$100k/yr. Everything in Essential plus S-Corp election, payroll management, quarterly strategy sessions, quarterly financial health check-ups, and more!
               </p>
               <Link 
                 href="/contact" 
