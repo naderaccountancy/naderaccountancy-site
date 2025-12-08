@@ -77,6 +77,7 @@ export default function AnnouncementBar() {
               <Link
                 href="/claim-offer"
                 className="inline-flex items-center justify-center gap-1.5 px-4 py-1.5 w-full sm:w-auto border-2 border-[var(--color-navy-deep)] text-[var(--color-navy-deep)] text-sm font-bold tracking-wide rounded-lg bg-transparent transition-all duration-300 hover:bg-[var(--color-navy-deep)] hover:text-[var(--color-gold)] hover:shadow-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-navy-deep)]/40"
+                data-gtm="announcement-get-yours-free"
               >
                 <span>Get Yours Free</span>
                 <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
