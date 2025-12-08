@@ -21,7 +21,6 @@ const navLinks = [
   { href: "/about", label: "About" },
   { href: "/educational-resources", label: "Resources" },
   { href: "/calculators", label: "Calculators" },
-  { href: "/contact", label: "Contact" },
 ];
 
 const socialLinks = [
@@ -94,7 +93,7 @@ export default function Navbar() {
               href="/contact"
               className="ml-4 btn-primary text-sm !py-2.5 !px-5"
             >
-              Book Consultation
+              Book a Call
             </Link>
             {/* Social Media Icons */}
             <div className="ml-4 flex items-center space-x-2">
@@ -171,7 +170,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="btn-primary text-sm text-center mt-2 !py-3"
             >
-              Book Consultation
+              Book a Call
             </Link>
             {/* Social Media Icons - Mobile */}
             <div className="flex items-center justify-center space-x-4 mt-4 pt-4 border-t border-white/10">
