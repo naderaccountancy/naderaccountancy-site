@@ -192,8 +192,8 @@ export default function ServicesPage() {
               </div>
               {/* Decorative Line */}
               <div className="w-20 h-1 bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-light)] mx-auto mb-8 rounded-full" />
-              <p className="text-gray-600 leading-relaxed mb-10 min-h-[100px]">
-                Built for creators earning under ~$100k/yr. Monthly bookkeeping, complete tax preparation, quarterly estimates, deduction optimization, and two strategy sessions per year.
+              <p className="text-gray-600 text-lg leading-relaxed mb-10 min-h-[140px]">
+                Built for creators earning under ~$100k/yr. Monthly bookkeeping, complete tax preparation, quarterly estimates, deduction optimization, two strategy sessions per year, and more!
               </p>
               <Link 
                 href="/services#essential" 
@@ -214,8 +214,8 @@ export default function ServicesPage() {
               </div>
               {/* Decorative Line */}
               <div className="w-20 h-1 bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-light)] mx-auto mb-8 rounded-full" />
-              <p className="text-gray-600 leading-relaxed mb-10 min-h-[100px]">
-                Maximize your tax savings when earning ~$100k+/yr. Everything in Essential plus S-Corp election, payroll management, and quarterly strategy sessions to optimize year-round.
+              <p className="text-gray-600 text-lg leading-relaxed mb-10 min-h-[140px]">
+                Maximize your tax savings when earning ~$100k+/yr. Everything in Essential plus S-Corp election, payroll management, quarterly strategy sessions, quarterly financial health check-ups, and more!
               </p>
               <Link 
                 href="/services#premier" 
