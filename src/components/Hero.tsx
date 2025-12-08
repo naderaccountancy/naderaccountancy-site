@@ -28,21 +28,21 @@ export default function Hero() {
           <div className="animate-fade-in-up opacity-0 mb-6">
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 text-[var(--color-gold)] text-sm font-medium">
               <span className="w-2 h-2 bg-[var(--color-gold)] rounded-full mr-2 animate-pulse" />
-              Tax Strategy for High Earners
+              Strategic Financial Guidance for High Earners
             </span>
           </div>
 
           {/* Headline */}
           <h1 className="animate-fade-in-up opacity-0 animation-delay-100 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Sophisticated Tax Strategy.{" "}
+            Your Financial Partner.{" "}
             <span className="text-gradient-gold">
-              Built for Those Who&apos;ve Earned It.
+              Tax Strategy at the Core.
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="animate-fade-in-up opacity-0 animation-delay-200 text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
-            Proactive tax planning for entrepreneurs, executives, and successful professionals. Preserve more of what you&apos;ve built with strategies tailored to complex financial situations.
+            More than a CPA—a trusted advisor for your complete financial picture. From proactive tax strategy to financial clarity, I help high earners make confident decisions and build lasting wealth.
           </p>
 
           {/* CTAs */}
@@ -76,7 +76,7 @@ export default function Hero() {
                   <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
                 </svg>
-                <span className="text-white text-sm font-medium">Entity Strategist</span>
+                <span className="text-white text-sm font-medium">Financial Strategist</span>
               </div>
             </div>
             {/* Client types */}

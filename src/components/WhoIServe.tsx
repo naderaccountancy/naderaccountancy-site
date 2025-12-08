@@ -12,8 +12,8 @@ const clientTypes = [
       </svg>
     ),
     title: "Business Owners & Entrepreneurs",
-    subtitle: "Multiple entities, complex structures",
-    description: "From single-member LLCs to multi-entity structures, I help optimize your business taxes, manage S-corp elections, and coordinate personal and business planning for maximum savings.",
+    subtitle: "Strategic guidance for growth",
+    description: "From tax optimization to financial clarity, I help you understand your numbers, structure your entities for success, and make confident decisions as you scale your business.",
   },
   {
     icon: (
@@ -22,8 +22,8 @@ const clientTypes = [
       </svg>
     ),
     title: "Executives & High Earners",
-    subtitle: "W-2 income plus investments",
-    description: "Maximize deductions, optimize equity compensation, and coordinate investment income with your salary. Strategic planning for stock options, RSUs, and deferred compensation.",
+    subtitle: "Comprehensive financial oversight",
+    description: "More than just tax returns—I coordinate your complete financial picture. Equity compensation, investment income, retirement planning, and strategic tax moves that preserve your wealth.",
   },
   {
     icon: (
@@ -32,8 +32,8 @@ const clientTypes = [
       </svg>
     ),
     title: "Investors & Real Estate Owners",
-    subtitle: "Portfolio income and property holdings",
-    description: "Navigate capital gains strategies, real estate depreciation, 1031 exchanges, and investment income optimization. Comprehensive planning across your entire portfolio.",
+    subtitle: "Holistic wealth strategy",
+    description: "Navigate your portfolio with a partner who sees the whole picture. Tax-efficient strategies, investment coordination, and long-term planning to grow and protect your wealth.",
   },
 ];
 
@@ -50,7 +50,7 @@ export default function WhoIServe() {
             Built for High-Achieving Professionals
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            I work with successful individuals who have complex financial situations—and who expect their tax strategy to match their ambition.
+            I partner with successful individuals who want more than a tax preparer—they want a trusted advisor who understands their complete financial picture.
           </p>
         </div>
 

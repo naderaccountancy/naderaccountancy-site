@@ -8,35 +8,35 @@
 const pillars = [
   {
     number: "01",
-    title: "Proactive Tax Planning",
+    title: "Proactive Tax Strategy",
     description: "Tax season shouldn't bring surprises. With year-round strategy and quarterly check-ins, you'll always know where you stand—and you'll never overpay because of poor planning.",
     features: [
       "Quarterly tax projections",
-      "Income forecasting & modeling",
       "Strategic timing of income/deductions",
+      "Entity structure optimization",
       "Year-end tax optimization",
     ],
   },
   {
     number: "02",
-    title: "Maximize What You Keep",
-    description: "High earners face complex tax situations—and without the right strategy, you're leaving significant money on the table. I identify every legitimate opportunity to reduce your burden.",
+    title: "Financial Clarity",
+    description: "Understanding your numbers is the foundation of smart decisions. I provide clear financial insights so you always know exactly where you stand and where you're headed.",
     features: [
-      "Entity structure optimization",
-      "S-corp analysis & implementation",
-      "Investment tax coordination",
-      "Retirement contribution strategies",
+      "Cash flow analysis & forecasting",
+      "Profit & loss insights",
+      "Income stream coordination",
+      "Decision support for major moves",
     ],
   },
   {
     number: "03",
-    title: "A Strategic Partner",
-    description: "You need more than someone who files returns. You need a tax strategist who understands complex situations, communicates clearly, and helps you make informed decisions.",
+    title: "Wealth Building Guidance",
+    description: "Beyond taxes, I help you see the bigger picture. From retirement planning to long-term strategy, I'm your partner in building and preserving wealth for the future.",
     features: [
-      "Multi-entity coordination",
-      "Equity compensation planning",
-      "Real estate tax strategy",
+      "Retirement planning guidance",
+      "Investment tax coordination",
       "Long-term wealth preservation",
+      "Coordination with your advisors",
     ],
   },
 ];
@@ -51,10 +51,10 @@ export default function ThreePillars() {
             Why High Earners Choose Me
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-            Tax Strategy That Matches Your Success
+            More Than a CPA—Your Financial Partner
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Clear, sophisticated tax planning that eliminates surprises and ensures you keep more of what you&apos;ve earned.
+            Tax strategy is my foundation, but I go beyond filing returns. I help you understand your finances, make confident decisions, and build lasting wealth.
           </p>
         </div>
 

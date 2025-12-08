@@ -16,8 +16,8 @@ interface CTAStripProps {
 }
 
 export default function CTAStrip({
-  title = "Ready to Stop Stressing About Taxes?",
-  subtitle = "Book a free call and let's see if we're a good fit.",
+  title = "Ready for a True Financial Partner?",
+  subtitle = "Book a free call and let's discuss how I can help you gain clarity and build wealth.",
   primaryButtonText = "Book a Free Call",
   primaryButtonHref = "/contact",
   secondaryButtonText = "View Pricing",

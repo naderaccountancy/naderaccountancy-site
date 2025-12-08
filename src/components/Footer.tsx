@@ -48,7 +48,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Sophisticated tax strategy for high-earning professionals and business owners. Preserve more of what you&apos;ve built.
+              Your strategic financial partner. Tax strategy at the core, with year-round guidance to help you build and preserve wealth.
             </p>
             <div className="flex space-x-4">
               {/* YouTube */}

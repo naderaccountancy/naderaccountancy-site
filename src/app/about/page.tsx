@@ -9,8 +9,8 @@ import { CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "About | Nader Accountancy - Tax Strategy for High Earners",
-  description: "Meet Ben Nader, CPA - a licensed accountant with an M.S. in Taxation, specializing in sophisticated tax strategy for high-earning professionals and business owners.",
+  title: "About | Nader Accountancy - Your Strategic Financial Partner",
+  description: "Meet Ben Nader, CPA - a licensed accountant with an M.S. in Taxation. More than a tax preparer, I'm a strategic financial partner for high-earning professionals and business owners.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
               About
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Your Strategic Tax Partner
+              Your Strategic Financial Partner
             </h1>
           </div>
         </div>
@@ -70,19 +70,19 @@ export default function AboutPage() {
                   M.S. Taxation – LMU
                 </span>
                 <span className="inline-flex items-center px-4 py-2 rounded-full bg-[var(--color-navy-deep)]/5 text-[var(--color-navy-deep)] text-sm font-medium">
-                  High-Earner Focused Practice
+                  Strategic Financial Partner
                 </span>
               </div>
 
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I specialize in sophisticated tax strategy for high-earning professionals and business owners.
+                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I&apos;m more than a tax preparer—I&apos;m a strategic financial partner for high-earning professionals and business owners.
                 </p>
                 <p>
-                  I understand complex financial situations—multi-entity structures, investment portfolios, equity compensation, real estate holdings. I won&apos;t ask you to explain your business model or look confused by your income streams.
+                  I understand complex financial situations—multi-entity structures, investment portfolios, equity compensation, real estate holdings. Beyond just filing your returns, I help you understand your numbers, make confident financial decisions, and build lasting wealth.
                 </p>
                 <p>
-                  Most accountants treat high earners like any other client—and miss significant opportunities as a result. I built my practice specifically to provide the proactive, strategic planning that successful people deserve.
+                  Most accountants treat high earners like any other client—filing returns and moving on. I built my practice to be different: proactive strategy, year-round guidance, and a true partnership focused on your complete financial picture.
                 </p>
               </div>
             </div>
@@ -102,20 +102,20 @@ export default function AboutPage() {
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="leading-relaxed mb-6">
-                High-earning professionals and business owners have unique tax situations that most accountants don&apos;t adequately address. You have multiple income streams, complex entity structures, significant investments—and April shouldn&apos;t feel like a nightmare.
+                High-earning professionals and business owners need more than someone who files returns once a year. You have multiple income streams, complex entity structures, significant investments—and you deserve a partner who sees the whole picture.
               </p>
               <p className="leading-relaxed mb-6">
-                I saw too many successful people overpaying on taxes, missing optimization opportunities, or getting hit with surprise bills because their accountant wasn&apos;t being proactive. That&apos;s why I decided to specialize.
+                I saw too many successful people working with accountants who were purely reactive—filing returns and moving on. No proactive strategy. No financial clarity. No guidance on the decisions that actually matter. That&apos;s why I built a different kind of practice.
               </p>
               <p className="leading-relaxed">
-                When you work with me, you get a strategic partner who understands sophisticated financial situations. No explaining your business structure. No blank stares when discussing equity compensation. Just clear, proactive tax strategy that preserves more of what you&apos;ve built.
+                When you work with me, you get a strategic partner who understands sophisticated financial situations. Someone who helps you understand your numbers, coordinates with your other advisors, and ensures tax strategy is woven into every financial decision you make.
               </p>
             </div>
 
             {/* Quote */}
             <blockquote className="mt-10 pt-10 border-t border-gray-200">
               <p className="text-xl font-medium text-[var(--color-navy-deep)] italic">
-                &ldquo;Every dollar you save on taxes is a dollar you can reinvest in your business, your portfolio, or your future. My job is to find those dollars.&rdquo;
+                &ldquo;My job isn&apos;t just to file your taxes—it&apos;s to be the financial partner you can rely on year-round. Every decision, every strategy, every dollar preserved.&rdquo;
               </p>
               <footer className="mt-4 text-[var(--color-gold)] font-semibold">
                 — Ben Nader, CPA

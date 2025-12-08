@@ -9,8 +9,8 @@ import { PricingCard, CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Pricing | Nader Accountancy - Tax Strategy for High Earners",
-  description: "Clear, flat-rate pricing for high-earning professionals. Proactive tax strategy, preparation, and year-round support. $300-$600/month based on your needs.",
+  title: "Pricing | Nader Accountancy - Strategic Financial Partnership",
+  description: "Clear, flat-rate pricing for high-earning professionals. Proactive tax strategy, financial clarity, and year-round guidance. $300-$600/month based on your needs.",
 };
 
 const pricingPlans = [
@@ -18,7 +18,7 @@ const pricingPlans = [
     id: "essential",
     name: "Essential",
     price: "$300",
-    description: "For professionals ready to elevate their tax strategy",
+    description: "For professionals ready for proactive tax strategy",
     features: [
       { text: "Federal and state tax return preparation", included: true },
       { text: "Deduction optimization", included: true },
@@ -37,17 +37,17 @@ const pricingPlans = [
     id: "advantage",
     name: "Advantage",
     price: "$400",
-    description: "For high earners who need sophisticated tax planning",
+    description: "For high earners who want a true financial partner",
     features: [
       { text: "Everything in Essential", included: true },
       { text: "Quarterly strategy calls (4x/year)", included: true },
-      { text: "Quarterly P&L statements", included: true },
+      { text: "Quarterly P&L statements & insights", included: true },
       { text: "Investment income coordination", included: true },
       { text: "S-corp election & setup", included: true },
       { text: "Entity structure optimization", included: true },
       { text: "Priority email support (24hr response)", included: true },
       { text: "Contractor 1099 preparation", included: true },
-      { text: "Retirement planning (Solo 401k/SEP)", included: false },
+      { text: "Retirement planning guidance", included: false },
     ],
     featured: true,
     ctaText: "Most Popular",
@@ -56,13 +56,13 @@ const pricingPlans = [
     id: "premier",
     name: "Premier",
     price: "$600",
-    description: "For those with complex, multi-faceted tax situations",
+    description: "Comprehensive financial partnership for complex situations",
     features: [
       { text: "Everything in Advantage", included: true },
       { text: "Monthly strategy calls (12x/year)", included: true },
       { text: "Contract & compensation review", included: true },
       { text: "Multi-entity planning & coordination", included: true },
-      { text: "Retirement planning (Solo 401k/SEP)", included: true },
+      { text: "Retirement planning guidance", included: true },
       { text: "Priority same-day response", included: true },
       { text: "Unlimited email support", included: true },
       { text: "Priority scheduling", included: true },
@@ -76,7 +76,11 @@ const pricingPlans = [
 const faqItems = [
   {
     question: "Who is this service for?",
-    answer: "This service is designed for high-earning professionals and business owners—entrepreneurs, executives, investors, medical professionals, attorneys, and anyone with complex financial situations. If you have significant income and want sophisticated tax strategy (not just filing), this is for you.",
+    answer: "This service is designed for high-earning professionals and business owners—entrepreneurs, executives, investors, medical professionals, attorneys, and anyone with complex financial situations. If you want more than a tax preparer—a strategic financial partner who helps you understand your numbers and build wealth—this is for you.",
+  },
+  {
+    question: "What do you mean by 'financial partner'?",
+    answer: "I go beyond filing tax returns. I help you understand your complete financial picture, provide clarity on your cash flow and profitability, coordinate tax strategy with your other financial decisions, and serve as a trusted advisor you can rely on year-round. Tax is at the core, but I'm here for the bigger picture.",
   },
   {
     question: "What's included in tax return preparation?",
@@ -92,11 +96,11 @@ const faqItems = [
   },
   {
     question: "How do the strategy calls work?",
-    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your financial situation, discuss upcoming plans, and optimize your tax position. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get monthly calls. You'll get a summary email after each call.",
+    answer: "Strategy calls are video calls where we review your financial situation, discuss upcoming decisions, and optimize your tax position. We'll cover cash flow, profitability, tax projections, and any financial questions you have. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get monthly calls.",
   },
   {
     question: "What if I have multiple income streams?",
-    answer: "That's exactly who I work with! Most of my clients have income from multiple sources—business income, W-2 salary, investments, rental properties, and more. I'll coordinate everything, optimize across all sources, and ensure you're capturing every legitimate savings opportunity.",
+    answer: "That's exactly who I work with! Most of my clients have income from multiple sources—business income, W-2 salary, investments, rental properties, and more. I'll coordinate everything, give you clarity on each stream, and ensure you're optimizing across your entire financial picture.",
   },
   {
     question: "How quickly do you respond to questions?",
@@ -104,7 +108,7 @@ const faqItems = [
   },
   {
     question: "What if my situation is particularly complex?",
-    answer: "Complex situations are my specialty. Multi-entity structures, equity compensation, real estate portfolios, international considerations—I'm equipped to handle sophisticated tax planning. The Premier plan is designed for the most complex situations.",
+    answer: "Complex situations are my specialty. Multi-entity structures, equity compensation, real estate portfolios, international considerations—I'm equipped to handle sophisticated financial planning with tax strategy at the core. The Premier plan is designed for the most complex situations.",
   },
   {
     question: "Do you work with clients outside California?",
@@ -112,7 +116,7 @@ const faqItems = [
   },
   {
     question: "What makes you different from other accountants?",
-    answer: "I focus on proactive strategy, not just compliance. Most accountants file your return and move on—I plan year-round to minimize your tax burden. With an M.S. in Taxation and a focus on high-income situations, I bring sophisticated strategy that goes far beyond basic tax prep.",
+    answer: "I'm a financial partner, not just a tax preparer. Most accountants file your return and move on—I provide year-round guidance, financial clarity, and proactive strategy. With an M.S. in Taxation and a focus on high-income situations, I bring sophisticated thinking to your complete financial picture.",
   },
 ];
 
@@ -127,10 +131,10 @@ export default function ServicesPage() {
               Pricing
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Transparent Pricing for Sophisticated Clients
+              A Financial Partner, Not Just a Tax Preparer
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              No hourly billing surprises. No confusing invoices. Just flat-rate monthly pricing that includes proactive strategy and year-round support.
+              Flat-rate monthly pricing that includes proactive tax strategy, financial clarity, and year-round guidance. No hourly surprises—just a true partnership.
             </p>
           </div>
         </div>
@@ -188,7 +192,7 @@ export default function ServicesPage() {
                   </svg>
                 ),
                 title: "Licensed CPA",
-                description: "Work with a credentialed professional",
+                description: "Credentialed professional you can trust",
               },
               {
                 icon: (
@@ -196,8 +200,8 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 ),
-                title: "High-Earner Focused",
-                description: "I understand complex situations",
+                title: "Financial Clarity",
+                description: "Understand your complete picture",
               },
               {
                 icon: (
@@ -206,7 +210,7 @@ export default function ServicesPage() {
                   </svg>
                 ),
                 title: "Direct Access",
-                description: "Email me anytime with questions",
+                description: "Reach me anytime with questions",
               },
               {
                 icon: (
@@ -214,7 +218,7 @@ export default function ServicesPage() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 ),
-                title: "Year-Round Support",
+                title: "Year-Round Partnership",
                 description: "Not just during tax season",
               },
             ].map((item) => (
@@ -284,8 +288,8 @@ export default function ServicesPage() {
 
       {/* CTA Strip */}
       <CTAStrip
-        title="Ready to Stop Stressing About Taxes?"
-        subtitle="Book a free call and let's see if we're a good fit."
+        title="Ready for a True Financial Partner?"
+        subtitle="Book a free call and let's discuss how I can help you build clarity and wealth."
         primaryButtonText="Book a Free Call"
         primaryButtonHref="/contact"
         secondaryButtonText="Have Questions?"
