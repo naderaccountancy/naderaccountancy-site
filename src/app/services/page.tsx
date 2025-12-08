@@ -193,7 +193,7 @@ export default function ServicesPage() {
               {/* Decorative Line */}
               <div className="w-20 h-1 bg-gradient-to-r from-[var(--color-gold)] to-[var(--color-gold-light)] mx-auto mb-8 rounded-full" />
               <p className="text-gray-600 leading-relaxed mb-10 min-h-[100px]">
-                Built for creators earning under ~$100k/yr. Complete tax preparation, quarterly estimates, deduction optimization, and two strategy sessions per year to keep you on track.
+                Built for creators earning under ~$100k/yr. Monthly bookkeeping, complete tax preparation, quarterly estimates, deduction optimization, and two strategy sessions per year.
               </p>
               <Link 
                 href="/services#essential" 
