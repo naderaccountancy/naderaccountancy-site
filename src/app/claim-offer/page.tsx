@@ -4,31 +4,31 @@ import { CalendlyWidget } from "@/components";
 /* ===========================================
    CLAIM OFFER PAGE
    
-   Complimentary 30-Day Experience for high earners
+   Free Tax Savings Analysis for high earners
    Premium positioning
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Complimentary 30-Day Experience | Nader Accountancy",
-  description: "Experience private-client tax strategy for high earners. Comprehensive review, personalized strategy, and dedicated support—complimentary for qualifying professionals.",
+  title: "Free Tax Savings Analysis | Nader Accountancy",
+  description: "Discover how much you could be saving. Get a personalized analysis of your tax situation with specific opportunities identified—complimentary for qualifying professionals.",
 };
 
 const includedItems = [
   {
-    title: "Comprehensive Tax Assessment",
-    description: "A thorough review of your current structure—income sources, entity setup, investment strategy—to identify opportunities and blind spots.",
+    title: "Comprehensive Situation Review",
+    description: "I'll review your current tax structure—income sources, entity setup, deductions, and investments—to understand your complete financial picture.",
   },
   {
-    title: "Private Strategy Session",
-    description: "One-on-one consultation to develop a personalized roadmap: entity optimization, tax reduction strategies, and forward planning.",
+    title: "Opportunity Identification",
+    description: "Uncover specific tax savings opportunities you may be missing: entity optimization, deduction strategies, timing opportunities, and more.",
   },
   {
-    title: "30 Days of Dedicated Support",
-    description: "Direct access to guidance throughout your experience. Ask questions, get clarity, and make informed decisions about your tax position.",
+    title: "Personalized Strategy Call",
+    description: "A focused one-on-one session to walk through my findings, answer your questions, and discuss strategies tailored to your situation.",
   },
   {
-    title: "Clear Path Forward",
-    description: "At the end of 30 days, you'll have complete clarity on your tax situation—and a clear understanding of what working together looks like.",
+    title: "Written Savings Summary",
+    description: "Walk away with a clear, written summary of opportunities identified and recommended next steps—yours to keep, no obligation.",
   },
 ];
 
@@ -40,12 +40,12 @@ export default function ClaimOfferPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-              By Invitation
+              Complimentary Analysis
             </span>
             <h1 className="mt-4 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-              Complimentary 30-Day
+              Free Tax Savings
               <br />
-              <span className="text-gradient-gold">Strategy Experience</span>
+              <span className="text-gradient-gold">Analysis</span>
             </h1>
             
             {/* Gold Divider */}
@@ -54,8 +54,7 @@ export default function ClaimOfferPage() {
             </div>
             
             <p className="mt-8 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Experience what dedicated, sophisticated tax strategy feels like. 
-              A comprehensive assessment, personalized planning, and white-glove support—at no cost, with no obligation.
+              Discover exactly how much you could be saving. I&apos;ll review your situation, identify specific opportunities, and deliver a personalized savings summary—completely free, no obligation.
             </p>
           </div>
         </div>
@@ -66,10 +65,10 @@ export default function ClaimOfferPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              Your Experience Includes
+              What You&apos;ll Receive
             </h2>
             <p className="mt-4 text-gray-600">
-              The full scope of what you&apos;ll receive during your complimentary period
+              A comprehensive analysis designed to uncover real savings opportunities
             </p>
           </div>
 
@@ -128,10 +127,10 @@ export default function ClaimOfferPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              Request Your Complimentary Experience
+              Request Your Free Analysis
             </h2>
             <p className="mt-4 text-gray-600">
-              Select a time to begin your 30-day strategy experience
+              Select a time to schedule your complimentary tax savings analysis
             </p>
           </div>
 
