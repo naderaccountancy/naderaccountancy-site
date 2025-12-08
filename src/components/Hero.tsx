@@ -47,10 +47,18 @@ export default function Hero() {
 
           {/* CTAs */}
           <div className="animate-fade-in-up opacity-0 animation-delay-300 flex flex-col sm:flex-row gap-4">
-            <Link href="/contact" className="btn-primary text-center">
+            <Link 
+              href="/contact" 
+              className="btn-primary text-center"
+              data-gtm="hero-book-call"
+            >
               Book a Call
             </Link>
-            <Link href="/services" className="btn-secondary text-center">
+            <Link 
+              href="/services" 
+              className="btn-secondary text-center"
+              data-gtm="hero-view-services"
+            >
               View Services
             </Link>
           </div>
