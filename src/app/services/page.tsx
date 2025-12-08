@@ -59,7 +59,7 @@ const pricingPlans = [
     description: "For those with complex, multi-faceted tax situations",
     features: [
       { text: "Everything in Advantage", included: true },
-      { text: "Strategy calls (8x/year)", included: true },
+      { text: "Monthly strategy calls (12x/year)", included: true },
       { text: "Contract & compensation review", included: true },
       { text: "Multi-entity planning & coordination", included: true },
       { text: "Retirement planning (Solo 401k/SEP)", included: true },
@@ -92,7 +92,7 @@ const faqItems = [
   },
   {
     question: "How do the strategy calls work?",
-    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your financial situation, discuss upcoming plans, and optimize your tax position. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get 8 calls per year. You'll get a summary email after each call.",
+    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your financial situation, discuss upcoming plans, and optimize your tax position. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get monthly calls. You'll get a summary email after each call.",
   },
   {
     question: "What if I have multiple income streams?",
