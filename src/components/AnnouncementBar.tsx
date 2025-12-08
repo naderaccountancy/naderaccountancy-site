@@ -64,7 +64,7 @@ export default function AnnouncementBar() {
                 
                 {/* Announcement Text */}
                 <p className="text-sm sm:text-[15px] text-[var(--color-navy-deep)] tracking-wide font-medium leading-[1.55]">
-                  <span className="font-bold">Free Offer:</span>
+                  <span className="font-bold">Free for Creators:</span>
                   <span className="mx-1.5 sm:mx-2 text-[var(--color-navy-deep)]/30">|</span>
                   <span>
                     Complimentary Tax Savings Analysis

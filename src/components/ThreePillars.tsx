@@ -9,34 +9,34 @@ const pillars = [
   {
     number: "01",
     title: "Proactive Tax Strategy",
-    description: "Tax season shouldn't bring surprises. With year-round strategy and quarterly check-ins, you'll always know where you stand—and you'll never overpay because of poor planning.",
+    description: "Creator income is unpredictable—your tax strategy shouldn't be. With year-round planning and quarterly check-ins, you'll never be surprised by a tax bill again.",
     features: [
-      "Quarterly tax projections",
-      "Strategic timing of income/deductions",
-      "Entity structure optimization",
+      "Quarterly estimated tax planning",
+      "Brand deal & sponsorship optimization",
+      "S-corp analysis & implementation",
       "Year-end tax optimization",
     ],
   },
   {
     number: "02",
     title: "Financial Clarity",
-    description: "Understanding your numbers is the foundation of smart decisions. I provide clear financial insights so you always know exactly where you stand and where you're headed.",
+    description: "Know your numbers, grow your business. I help you understand your revenue streams, track profitability, and make confident decisions about your creator business.",
     features: [
-      "Cash flow analysis & forecasting",
+      "Revenue stream analysis",
       "Profit & loss insights",
-      "Income stream coordination",
-      "Decision support for major moves",
+      "Cash flow forecasting",
+      "Decision support for big moves",
     ],
   },
   {
     number: "03",
     title: "Wealth Building Guidance",
-    description: "Beyond taxes, I help you see the bigger picture. From retirement planning to long-term strategy, I'm your partner in building and preserving wealth for the future.",
+    description: "You're building more than a following—you're building wealth. I help you think beyond this year's taxes to long-term financial security.",
     features: [
       "Retirement planning guidance",
       "Investment tax coordination",
-      "Long-term wealth preservation",
-      "Coordination with your advisors",
+      "Building wealth from creator income",
+      "Long-term financial strategy",
     ],
   },
 ];
@@ -48,13 +48,13 @@ export default function ThreePillars() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-            Why High Earners Choose Me
+            Why Creators Choose Me
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
             More Than a CPA—Your Financial Partner
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Tax strategy is my foundation, but I go beyond filing returns. I help you understand your finances, make confident decisions, and build lasting wealth.
+            I understand the creator economy. From AdSense to brand deals to merch, I help you optimize your taxes, understand your numbers, and build real wealth.
           </p>
         </div>
 

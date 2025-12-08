@@ -9,8 +9,8 @@ import { CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "About | Nader Accountancy - Your Strategic Financial Partner",
-  description: "Meet Ben Nader, CPA - a licensed accountant with an M.S. in Taxation. More than a tax preparer, I'm a strategic financial partner for high-earning professionals and business owners.",
+  title: "About | Nader Accountancy - The CPA for Content Creators",
+  description: "Meet Ben Nader, CPA - a licensed accountant with an M.S. in Taxation who specializes in content creators. More than a tax preparer, I'm a strategic financial partner for YouTubers, influencers, and online entrepreneurs.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
               About
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Your Strategic Financial Partner
+              The CPA for Content Creators
             </h1>
           </div>
         </div>
@@ -70,19 +70,19 @@ export default function AboutPage() {
                   M.S. Taxation – LMU
                 </span>
                 <span className="inline-flex items-center px-4 py-2 rounded-full bg-[var(--color-navy-deep)]/5 text-[var(--color-navy-deep)] text-sm font-medium">
-                  Strategic Financial Partner
+                  Creator Economy Specialist
                 </span>
               </div>
 
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I&apos;m more than a tax preparer—I&apos;m a strategic financial partner for high-earning professionals and business owners.
+                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I specialize in content creators—and I&apos;m more than a tax preparer.
                 </p>
                 <p>
-                  I understand complex financial situations—multi-entity structures, investment portfolios, equity compensation, real estate holdings. Beyond just filing your returns, I help you understand your numbers, make confident financial decisions, and build lasting wealth.
+                  I understand the creator economy. AdSense revenue, brand deals, affiliate income, merch sales, courses—I&apos;ve seen it all. I won&apos;t ask you to explain what a CPM is or look confused when you mention your MCN split.
                 </p>
                 <p>
-                  Most accountants treat high earners like any other client—filing returns and moving on. I built my practice to be different: proactive strategy, year-round guidance, and a true partnership focused on your complete financial picture.
+                  Most accountants don&apos;t understand creator income—and it costs you money. I built my practice specifically for creators who want proactive tax strategy, financial clarity, and a partner who actually gets how you make money.
                 </p>
               </div>
             </div>
@@ -90,32 +90,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why High Earners Section */}
+      {/* Why Creators Section */}
       <section className="py-20 bg-[var(--color-gray-50)] pattern-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              Why I Work With High Earners
+              Why I Work With Creators
             </h2>
           </div>
 
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="leading-relaxed mb-6">
-                High-earning professionals and business owners need more than someone who files returns once a year. You have multiple income streams, complex entity structures, significant investments—and you deserve a partner who sees the whole picture.
+                Content creators have unique financial situations that most accountants don&apos;t understand. Irregular income, multiple revenue streams, business expenses that look different from traditional businesses—it requires specialized knowledge.
               </p>
               <p className="leading-relaxed mb-6">
-                I saw too many successful people working with accountants who were purely reactive—filing returns and moving on. No proactive strategy. No financial clarity. No guidance on the decisions that actually matter. That&apos;s why I built a different kind of practice.
+                I saw too many creators overpaying on taxes, missing deductions, or getting hit with surprise quarterly tax bills because their accountant didn&apos;t understand their business. That&apos;s why I decided to specialize.
               </p>
               <p className="leading-relaxed">
-                When you work with me, you get a strategic partner who understands sophisticated financial situations. Someone who helps you understand your numbers, coordinates with your other advisors, and ensures tax strategy is woven into every financial decision you make.
+                When you work with me, you get a financial partner who speaks your language. Someone who understands brand deal structures, knows which expenses are deductible, and helps you build real wealth from your creator income—not just survive tax season.
               </p>
             </div>
 
             {/* Quote */}
             <blockquote className="mt-10 pt-10 border-t border-gray-200">
               <p className="text-xl font-medium text-[var(--color-navy-deep)] italic">
-                &ldquo;My job isn&apos;t just to file your taxes—it&apos;s to be the financial partner you can rely on year-round. Every decision, every strategy, every dollar preserved.&rdquo;
+                &ldquo;You&apos;re building more than a following—you&apos;re building a business. My job is to help you keep more of what you earn and turn creator income into lasting wealth.&rdquo;
               </p>
               <footer className="mt-4 text-[var(--color-gold)] font-semibold">
                 — Ben Nader, CPA
@@ -139,18 +139,18 @@ export default function AboutPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              "Business Income",
-              "Investment Portfolios",
-              "Real Estate Holdings",
-              "Equity Compensation",
-              "Multi-Entity Structures",
+              "YouTube AdSense",
+              "Brand Deals & Sponsorships",
+              "Affiliate Income",
+              "Merchandise Sales",
+              "Course & Digital Products",
               "S-Corp Optimization",
-              "Rental Properties",
-              "Capital Gains Strategy",
-              "Retirement Planning",
-              "Executive Compensation",
-              "Self-Employment",
-              "Trust & Estate",
+              "Multi-Platform Income",
+              "Streaming Revenue",
+              "Patreon & Memberships",
+              "Podcast Sponsorships",
+              "UGC & Freelance",
+              "Creator Businesses",
             ].map((income) => (
               <div
                 key={income}

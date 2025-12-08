@@ -10,21 +10,21 @@ import { CalendlyWidget } from "@/components";
 
 export const metadata: Metadata = {
   title: "Free Tax Savings Analysis | Nader Accountancy",
-  description: "Discover how much you could be saving. Get a personalized analysis of your tax situation with specific opportunities identified—complimentary for qualifying professionals.",
+  description: "Discover how much you could be saving as a content creator. Get a personalized analysis of your tax situation with specific opportunities identified—completely free.",
 };
 
 const includedItems = [
   {
-    title: "Comprehensive Situation Review",
-    description: "I'll review your current tax structure—income sources, entity setup, deductions, and investments—to understand your complete financial picture.",
+    title: "Creator Income Review",
+    description: "I'll review your current tax structure—AdSense, brand deals, affiliate income, courses, and all your revenue streams—to understand your complete picture.",
   },
   {
     title: "Opportunity Identification",
-    description: "Uncover specific tax savings opportunities you may be missing: entity optimization, deduction strategies, timing opportunities, and more.",
+    description: "Uncover specific tax savings opportunities you may be missing: S-corp potential, deduction strategies, entity optimization, and more.",
   },
   {
     title: "Personalized Strategy Call",
-    description: "A focused one-on-one session to walk through my findings, answer your questions, and discuss strategies tailored to your situation.",
+    description: "A focused one-on-one session to walk through my findings, answer your questions, and discuss strategies tailored to your creator business.",
   },
   {
     title: "Written Savings Summary",
@@ -54,7 +54,7 @@ export default function ClaimOfferPage() {
             </div>
             
             <p className="mt-8 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Discover exactly how much you could be saving. I&apos;ll review your situation, identify specific opportunities, and deliver a personalized savings summary—completely free, no obligation.
+              Discover exactly how much you could be saving as a creator. I&apos;ll review your income, identify specific opportunities, and deliver a personalized savings summary—completely free, no obligation.
             </p>
           </div>
         </div>
@@ -101,15 +101,15 @@ export default function ClaimOfferPage() {
       <section className="py-16 bg-[var(--color-navy-deep)]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold text-white mb-6">
-            This Experience Is Designed For
+            This Analysis Is Designed For
           </h2>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             {[
-              "Entrepreneurs & Business Owners",
-              "Executives & High Earners", 
-              "Medical & Legal Professionals",
-              "Real Estate Investors",
-              "High-Net-Worth Individuals",
+              "YouTubers & Video Creators",
+              "Influencers & Social Creators", 
+              "Streamers & Podcasters",
+              "Course Creators & Coaches",
+              "Online Entrepreneurs",
             ].map((item) => (
               <span
                 key={item}

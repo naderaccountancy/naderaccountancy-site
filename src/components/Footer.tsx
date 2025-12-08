@@ -48,7 +48,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Your strategic financial partner. Tax strategy at the core, with year-round guidance to help you build and preserve wealth.
+              The financial partner for content creators. Tax strategy, financial clarity, and year-round guidance to help you build wealth from your content.
             </p>
             <div className="flex space-x-4">
               {/* YouTube */}

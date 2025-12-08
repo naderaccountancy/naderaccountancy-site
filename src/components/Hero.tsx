@@ -28,7 +28,7 @@ export default function Hero() {
           <div className="animate-fade-in-up opacity-0 mb-6">
             <span className="inline-flex items-center px-4 py-1.5 rounded-full bg-[var(--color-gold)]/10 border border-[var(--color-gold)]/30 text-[var(--color-gold)] text-sm font-medium">
               <span className="w-2 h-2 bg-[var(--color-gold)] rounded-full mr-2 animate-pulse" />
-              Strategic Financial Guidance for High Earners
+              The Financial Partner for Content Creators
             </span>
           </div>
 
@@ -36,13 +36,13 @@ export default function Hero() {
           <h1 className="animate-fade-in-up opacity-0 animation-delay-100 text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Your Financial Partner.{" "}
             <span className="text-gradient-gold">
-              Tax Strategy at the Core.
+              Built for Creators.
             </span>
           </h1>
 
           {/* Subheadline */}
           <p className="animate-fade-in-up opacity-0 animation-delay-200 text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl">
-            More than a CPA—a trusted advisor for your complete financial picture. From proactive tax strategy to financial clarity, I help high earners make confident decisions and build lasting wealth.
+            More than a CPA—a trusted advisor who understands the creator economy. From tax strategy to financial clarity, I help YouTubers, influencers, and online entrepreneurs keep more and build lasting wealth.
           </p>
 
           {/* CTAs */}
@@ -57,7 +57,7 @@ export default function Hero() {
 
           {/* Trust Indicators */}
           <div className="animate-fade-in-up opacity-0 animation-delay-400 mt-12 pt-12 border-t border-white/10">
-            <p className="text-gray-400 text-sm mb-4">Trusted by high-earning professionals nationwide</p>
+            <p className="text-gray-400 text-sm mb-4">Trusted by creators nationwide</p>
             <div className="flex flex-wrap gap-6 items-center">
               <div className="flex items-center gap-2">
                 <svg className="w-5 h-5 text-[var(--color-gold)]" fill="currentColor" viewBox="0 0 20 20">
@@ -76,13 +76,13 @@ export default function Hero() {
                   <path fillRule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clipRule="evenodd" />
                   <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
                 </svg>
-                <span className="text-white text-sm font-medium">Financial Strategist</span>
+                <span className="text-white text-sm font-medium">Creator Economy Expert</span>
               </div>
             </div>
             {/* Client types */}
             <div className="flex items-center gap-2 mt-6">
               <span className="text-gray-400 text-sm">Serving:</span>
-              <span className="text-white text-sm font-medium">Entrepreneurs • Executives • Investors • Business Owners • High-Net-Worth Individuals</span>
+              <span className="text-white text-sm font-medium">YouTubers • Influencers • Streamers • Podcasters • Course Creators • Online Entrepreneurs</span>
             </div>
           </div>
         </div>

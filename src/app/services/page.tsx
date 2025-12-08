@@ -9,8 +9,8 @@ import { PricingCard, CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Pricing | Nader Accountancy - Strategic Financial Partnership",
-  description: "Clear, flat-rate pricing for high-earning professionals. Proactive tax strategy, financial clarity, and year-round guidance. $300-$600/month based on your needs.",
+  title: "Pricing | Nader Accountancy - Tax & Financial Services for Creators",
+  description: "Clear, flat-rate pricing for content creators. Proactive tax strategy, financial clarity, and year-round guidance. $300-$600/month based on your needs.",
 };
 
 const pricingPlans = [
@@ -18,13 +18,13 @@ const pricingPlans = [
     id: "essential",
     name: "Essential",
     price: "$300",
-    description: "For professionals ready for proactive tax strategy",
+    description: "For creators ready to get their taxes handled right",
     features: [
       { text: "Federal and state tax return preparation", included: true },
-      { text: "Deduction optimization", included: true },
-      { text: "Income categorization (all sources)", included: true },
+      { text: "Creator income optimization (AdSense, sponsors, etc.)", included: true },
+      { text: "Deduction maximization", included: true },
       { text: "Quarterly estimated tax calculations", included: true },
-      { text: "Quarterly estimated tax payment reminders", included: true },
+      { text: "Quarterly tax payment reminders", included: true },
       { text: "Year-end tax planning", included: true },
       { text: "Bi-annual strategy calls (2x/year)", included: true },
       { text: "Email support (48hr response)", included: true },
@@ -37,16 +37,16 @@ const pricingPlans = [
     id: "advantage",
     name: "Advantage",
     price: "$400",
-    description: "For high earners who want a true financial partner",
+    description: "For growing creators who want a true financial partner",
     features: [
       { text: "Everything in Essential", included: true },
       { text: "Quarterly strategy calls (4x/year)", included: true },
       { text: "Quarterly P&L statements & insights", included: true },
-      { text: "Investment income coordination", included: true },
+      { text: "Multi-platform income coordination", included: true },
       { text: "S-corp election & setup", included: true },
       { text: "Entity structure optimization", included: true },
       { text: "Priority email support (24hr response)", included: true },
-      { text: "Contractor 1099 preparation", included: true },
+      { text: "Contractor 1099 preparation (editors, VAs, etc.)", included: true },
       { text: "Retirement planning guidance", included: false },
     ],
     featured: true,
@@ -56,11 +56,11 @@ const pricingPlans = [
     id: "premier",
     name: "Premier",
     price: "$600",
-    description: "Comprehensive financial partnership for complex situations",
+    description: "Full financial partnership for established creators",
     features: [
       { text: "Everything in Advantage", included: true },
       { text: "Monthly strategy calls (12x/year)", included: true },
-      { text: "Contract & compensation review", included: true },
+      { text: "Brand deal & contract review", included: true },
       { text: "Multi-entity planning & coordination", included: true },
       { text: "Retirement planning guidance", included: true },
       { text: "Priority same-day response", included: true },
@@ -72,23 +72,23 @@ const pricingPlans = [
   },
 ];
 
-// FAQ Items for high-income professionals
+// FAQ Items for content creators
 const faqItems = [
   {
     question: "Who is this service for?",
-    answer: "This service is designed for high-earning professionals and business owners—entrepreneurs, executives, investors, medical professionals, attorneys, and anyone with complex financial situations. If you want more than a tax preparer—a strategic financial partner who helps you understand your numbers and build wealth—this is for you.",
+    answer: "This service is designed for content creators—YouTubers, influencers, streamers, podcasters, course creators, and online entrepreneurs. If you make money from your content and want more than a tax preparer—a financial partner who actually understands the creator economy—this is for you.",
   },
   {
     question: "What do you mean by 'financial partner'?",
-    answer: "I go beyond filing tax returns. I help you understand your complete financial picture, provide clarity on your cash flow and profitability, coordinate tax strategy with your other financial decisions, and serve as a trusted advisor you can rely on year-round. Tax is at the core, but I'm here for the bigger picture.",
+    answer: "I go beyond filing tax returns. I help you understand your creator income, provide clarity on what you're actually earning across platforms, coordinate your tax strategy with business decisions, and serve as a trusted advisor year-round. Tax is at the core, but I'm here for the bigger picture.",
   },
   {
-    question: "What's included in tax return preparation?",
-    answer: "I handle your federal and state tax returns completely. This includes all income sources (W-2, business income, investments, real estate, etc.), deductions, and any necessary schedules. You don't need to figure anything out—just send me your documents and I handle the rest.",
+    question: "Do you actually understand creator income?",
+    answer: "Yes! I specialize in creators. AdSense, brand deals, affiliate income, merch, courses, Patreon, streaming donations—I've seen it all. I won't ask you to explain what a CPM is or look confused at your income sources. I speak creator.",
   },
   {
     question: "What is an S-corp and do I need one?",
-    answer: "An S-corp is a tax election that can save significant money on self-employment taxes—often $15,000-$40,000+ per year for high earners with business income. I'll analyze your situation and tell you honestly if it makes sense. If it does, I'll handle the setup and ongoing compliance.",
+    answer: "An S-corp is a tax election that can save significant money on self-employment taxes—often $10,000-$30,000+ per year for creators earning $80K+. I'll analyze your situation and tell you honestly if it makes sense. If it does, I'll handle the setup and ongoing compliance.",
   },
   {
     question: "Can I cancel or change plans?",
@@ -96,27 +96,27 @@ const faqItems = [
   },
   {
     question: "How do the strategy calls work?",
-    answer: "Strategy calls are video calls where we review your financial situation, discuss upcoming decisions, and optimize your tax position. We'll cover cash flow, profitability, tax projections, and any financial questions you have. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get monthly calls.",
+    answer: "Strategy calls are video calls where we review your creator business, discuss upcoming opportunities (new brand deals, product launches, etc.), and optimize your tax position. We'll cover revenue, expenses, tax projections, and any questions you have. Essential clients get 2 calls per year, Advantage clients get 4, and Premier clients get monthly calls.",
   },
   {
-    question: "What if I have multiple income streams?",
-    answer: "That's exactly who I work with! Most of my clients have income from multiple sources—business income, W-2 salary, investments, rental properties, and more. I'll coordinate everything, give you clarity on each stream, and ensure you're optimizing across your entire financial picture.",
+    question: "What if I have income from multiple platforms?",
+    answer: "That's most creators! YouTube, TikTok, Instagram, Twitch, brand deals, affiliate links, merch—I'll coordinate everything, give you clarity on each stream, and ensure you're optimizing across your entire creator business.",
   },
   {
     question: "How quickly do you respond to questions?",
     answer: "Response times depend on your plan: Essential clients receive responses within 48 hours, Advantage clients within 24 hours, and Premier clients receive priority same-day responses. Urgent tax deadline matters are always handled immediately.",
   },
   {
-    question: "What if my situation is particularly complex?",
-    answer: "Complex situations are my specialty. Multi-entity structures, equity compensation, real estate portfolios, international considerations—I'm equipped to handle sophisticated financial planning with tax strategy at the core. The Premier plan is designed for the most complex situations.",
+    question: "What expenses can creators deduct?",
+    answer: "More than you'd think! Camera gear, computers, software subscriptions, home office, travel for content, props and sets, editing services, music licensing, and more. I'll make sure you're capturing every legitimate deduction for your creator business.",
   },
   {
-    question: "Do you work with clients outside California?",
-    answer: "Absolutely! I work with clients across the United States. All plans include federal and state tax return preparation regardless of where you're located. Video calls make it easy to work together regardless of location.",
+    question: "Do you work with creators outside California?",
+    answer: "Absolutely! I work with creators across the United States. All plans include federal and state tax return preparation regardless of where you're located. Video calls make it easy to work together from anywhere.",
   },
   {
     question: "What makes you different from other accountants?",
-    answer: "I'm a financial partner, not just a tax preparer. Most accountants file your return and move on—I provide year-round guidance, financial clarity, and proactive strategy. With an M.S. in Taxation and a focus on high-income situations, I bring sophisticated thinking to your complete financial picture.",
+    answer: "I specialize in creators and I'm a financial partner, not just a tax preparer. Most accountants don't understand creator income—I do. I provide year-round guidance, help you understand your numbers, and bring proactive strategy to help you build real wealth from your content.",
   },
 ];
 
@@ -131,10 +131,10 @@ export default function ServicesPage() {
               Pricing
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              A Financial Partner, Not Just a Tax Preparer
+              A CPA Who Actually Gets Creators
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Flat-rate monthly pricing that includes proactive tax strategy, financial clarity, and year-round guidance. No hourly surprises—just a true partnership.
+              Flat-rate monthly pricing built for content creators. Proactive tax strategy, financial clarity, and year-round guidance—no hourly surprises.
             </p>
           </div>
         </div>
@@ -197,11 +197,11 @@ export default function ServicesPage() {
               {
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
                   </svg>
                 ),
-                title: "Financial Clarity",
-                description: "Understand your complete picture",
+                title: "Creator Specialist",
+                description: "I understand how you make money",
               },
               {
                 icon: (

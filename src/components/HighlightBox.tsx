@@ -35,7 +35,7 @@ export default function HighlightBox() {
 
             {/* Description */}
             <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto mb-8">
-              Discover how much you could be saving. I&apos;ll review your situation, identify specific opportunities, and deliver a personalized savings summary—completely free.
+              Discover how much you could be saving as a creator. I&apos;ll review your income streams, identify specific opportunities, and deliver a personalized savings summary—completely free.
             </p>
 
             {/* CTA Button */}
