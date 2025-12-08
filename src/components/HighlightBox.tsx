@@ -42,6 +42,7 @@ export default function HighlightBox() {
             <Link
               href="/claim-offer"
               className="inline-flex items-center justify-center gap-2 btn-primary"
+              data-gtm="home-free-analysis"
             >
               <span>Get Your Free Analysis</span>
               <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

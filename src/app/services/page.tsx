@@ -116,7 +116,11 @@ export default function ServicesPage() {
             <span className="text-gradient-gold">grow with confidence.</span>
           </h1>
           <div className="mt-10">
-            <Link href="/contact" className="btn-primary text-lg px-8 py-4 inline-block">
+            <Link 
+              href="/contact" 
+              className="btn-primary text-lg px-8 py-4 inline-block"
+              data-gtm="services-hero-book-call"
+            >
               Book a Call
             </Link>
           </div>
@@ -199,6 +203,7 @@ export default function ServicesPage() {
               <Link 
                 href="/services#essential" 
                 className="block w-full py-4 px-6 bg-[var(--color-gold)] text-[var(--color-navy-deep)] font-semibold rounded-full hover:bg-[var(--color-gold-light)] transition-colors duration-300"
+                data-gtm="services-learn-more-essential"
               >
                 Learn More
               </Link>
@@ -221,6 +226,7 @@ export default function ServicesPage() {
               <Link 
                 href="/services#premier" 
                 className="block w-full py-4 px-6 bg-[var(--color-gold)] text-[var(--color-navy-deep)] font-semibold rounded-full hover:bg-[var(--color-gold-light)] transition-colors duration-300"
+                data-gtm="services-learn-more-premier"
               >
                 Learn More
               </Link>
@@ -331,7 +337,11 @@ export default function ServicesPage() {
             how they earn money. Let&apos;s change that. Book a call and I&apos;ll show you 
             exactly where the opportunities are.
           </p>
-          <Link href="/contact" className="btn-primary text-lg px-8 py-4 inline-block">
+          <Link 
+            href="/contact" 
+            className="btn-primary text-lg px-8 py-4 inline-block"
+            data-gtm="services-cta-book-call"
+          >
             Book a Call
           </Link>
         </div>
