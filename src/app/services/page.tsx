@@ -201,7 +201,7 @@ export default function ServicesPage() {
                 Built for creators earning under ~$100k/yr. Monthly bookkeeping, complete tax preparation, quarterly estimates, deduction optimization, two strategy sessions per year, and more!
               </p>
               <Link 
-                href="/services#essential" 
+                href="/contact" 
                 className="block w-full py-4 px-6 bg-[var(--color-gold)] text-[var(--color-navy-deep)] font-semibold rounded-full hover:bg-[var(--color-gold-light)] transition-colors duration-300"
                 data-gtm="services-learn-more-essential"
               >
@@ -224,7 +224,7 @@ export default function ServicesPage() {
                 Maximize your tax savings when earning ~$100k+/yr. Everything in Essential plus S-Corp election, payroll management, quarterly strategy sessions, quarterly financial health check-ups, and more!
               </p>
               <Link 
-                href="/services#premier" 
+                href="/contact" 
                 className="block w-full py-4 px-6 bg-[var(--color-gold)] text-[var(--color-navy-deep)] font-semibold rounded-full hover:bg-[var(--color-gold-light)] transition-colors duration-300"
                 data-gtm="services-learn-more-premier"
               >
