@@ -31,7 +31,7 @@ export default function ContactPage() {
               Schedule a Consultation
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Not sure if we&apos;re a fit? Let&apos;s find out. Schedule a complimentary call and we&apos;ll discuss your situation—no pressure, no obligation.
+              Ready to keep more of what you earn? Schedule a complimentary call and let&apos;s map out your tax strategy—no pressure, no obligation.
             </p>
           </div>
         </div>
