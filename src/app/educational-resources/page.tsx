@@ -4,12 +4,12 @@ import { CTAStrip } from "@/components";
 /* ===========================================
    EDUCATIONAL RESOURCES PAGE
 
-   YouTube video embeds and educational content for high earners
+   YouTube video embeds and educational content for content creators
    =========================================== */
 
 export const metadata: Metadata = {
   title: "Resources | Nader Accountancy - Tax Strategy Insights",
-  description: "Free educational videos on tax strategy for high earners. S-corps, deductions, entity planning, and wealth preservation strategies.",
+  description: "Free educational videos on tax strategy for content creators. S-corps, deductions, entity planning, and creator-specific tax strategies.",
 };
 
 const videos = [
@@ -39,7 +39,7 @@ export default function EducationalResourcesPage() {
               Tax Strategy Insights
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Learn the tax strategies that can save you thousands. No jargon, no confusion—just clear explanations of what high earners need to know.
+              Learn the tax strategies that can save you thousands. No jargon, no confusion—just clear explanations of what content creators need to know.
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function EducationalResourcesPage() {
               Featured Videos
             </h2>
             <p className="mt-4 text-gray-600">
-              Practical tax strategies for high-earning professionals
+              Practical tax strategies for content creators
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function EducationalResourcesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              What High Earners Need to Know
+              What Content Creators Need to Know
             </h2>
           </div>
 
@@ -119,7 +119,7 @@ export default function EducationalResourcesPage() {
               },
               {
                 title: "Retirement Planning",
-                description: "Solo 401k, SEP IRA, defined benefit plans, and other retirement options for high earners.",
+                description: "Solo 401k, SEP IRA, and retirement options designed for self-employed creators.",
               },
             ].map((topic) => (
               <div
