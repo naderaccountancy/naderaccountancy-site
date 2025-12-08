@@ -16,7 +16,6 @@ import { usePathname } from "next/navigation";
 const SITE_NAME = "Nader Accountancy";
 
 const navLinks = [
-  { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
   { href: "/about", label: "About" },
   { href: "/educational-resources", label: "Resources" },
