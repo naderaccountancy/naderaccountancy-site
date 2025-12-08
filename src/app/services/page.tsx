@@ -99,8 +99,8 @@ const comparisonData = [
   },
   {
     feature: "Deadline reliability",
-    us: "Filed on time, every time. That's non-negotiable.",
-    them: "Extensions are their default strategy.",
+    us: "Clear timelines and proactive communication – no last-minute surprises.",
+    them: "Left guessing where things stand until you chase them down.",
   },
 ];
 
