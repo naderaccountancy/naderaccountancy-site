@@ -9,8 +9,8 @@ import { PricingCard, CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Pricing | Nader Accountancy - Tax Strategy for Creators",
-  description: "Clear, flat-rate pricing for content creators. Tax strategy, preparation, and year-round support. $300-$600/month based on your needs.",
+  title: "Pricing | Nader Accountancy - Tax Strategy for High Earners",
+  description: "Clear, flat-rate pricing for high-earning professionals. Proactive tax strategy, preparation, and year-round support. $300-$600/month based on your needs.",
 };
 
 const pricingPlans = [
@@ -18,11 +18,11 @@ const pricingPlans = [
     id: "essential",
     name: "Essential",
     price: "$300",
-    description: "For emerging creators ready to get their taxes handled right",
+    description: "For professionals ready to elevate their tax strategy",
     features: [
       { text: "Federal and state tax return preparation", included: true },
       { text: "Deduction optimization", included: true },
-      { text: "Income categorization (all platforms)", included: true },
+      { text: "Income categorization (all sources)", included: true },
       { text: "Quarterly estimated tax calculations", included: true },
       { text: "Quarterly estimated tax payment reminders", included: true },
       { text: "Year-end tax planning", included: true },
@@ -37,14 +37,14 @@ const pricingPlans = [
     id: "advantage",
     name: "Advantage",
     price: "$400",
-    description: "For growing creators who need real tax strategy",
+    description: "For high earners who need sophisticated tax planning",
     features: [
       { text: "Everything in Essential", included: true },
       { text: "Quarterly strategy calls (4x/year)", included: true },
       { text: "Quarterly P&L statements", included: true },
-      { text: "Home office deduction optimization", included: true },
+      { text: "Investment income coordination", included: true },
       { text: "S-corp election & setup", included: true },
-      { text: "Entity structure guidance", included: true },
+      { text: "Entity structure optimization", included: true },
       { text: "Priority email support (24hr response)", included: true },
       { text: "Contractor 1099 preparation", included: true },
       { text: "Retirement planning (Solo 401k/SEP)", included: false },
@@ -56,12 +56,12 @@ const pricingPlans = [
     id: "premier",
     name: "Premier",
     price: "$600",
-    description: "For established creators with complex tax needs",
+    description: "For those with complex, multi-faceted tax situations",
     features: [
       { text: "Everything in Advantage", included: true },
       { text: "Strategy calls (8x/year)", included: true },
-      { text: "Contract review for major deals", included: true },
-      { text: "Multi-entity planning & strategy", included: true },
+      { text: "Contract & compensation review", included: true },
+      { text: "Multi-entity planning & coordination", included: true },
       { text: "Retirement planning (Solo 401k/SEP)", included: true },
       { text: "Priority same-day response", included: true },
       { text: "Unlimited email support", included: true },
@@ -72,19 +72,19 @@ const pricingPlans = [
   },
 ];
 
-// FAQ Items for creators
+// FAQ Items for high-income professionals
 const faqItems = [
   {
     question: "Who is this service for?",
-    answer: "This service is designed specifically for content creators and online business owners—YouTubers, podcasters, course creators, streamers, TikTokers, and anyone earning income from digital content. If you're making money online and want to stop overpaying on taxes, this is for you.",
+    answer: "This service is designed for high-earning professionals and business owners—entrepreneurs, executives, investors, medical professionals, attorneys, and anyone with complex financial situations. If you have significant income and want sophisticated tax strategy (not just filing), this is for you.",
   },
   {
     question: "What's included in tax return preparation?",
-    answer: "I handle your federal and state tax returns completely. This includes all your creator income (AdSense, sponsorships, affiliates, digital products, etc.), deductions, and any necessary schedules. You don't need to figure anything out—just send me your documents and I handle the rest.",
+    answer: "I handle your federal and state tax returns completely. This includes all income sources (W-2, business income, investments, real estate, etc.), deductions, and any necessary schedules. You don't need to figure anything out—just send me your documents and I handle the rest.",
   },
   {
     question: "What is an S-corp and do I need one?",
-    answer: "An S-corp is a tax election that can save you significant money on self-employment taxes—often $10,000-$20,000+ per year for creators earning $80K+. I'll analyze your situation and tell you honestly if it makes sense for you. If it does, I'll handle the setup.",
+    answer: "An S-corp is a tax election that can save significant money on self-employment taxes—often $15,000-$40,000+ per year for high earners with business income. I'll analyze your situation and tell you honestly if it makes sense. If it does, I'll handle the setup and ongoing compliance.",
   },
   {
     question: "Can I cancel or change plans?",
@@ -92,27 +92,27 @@ const faqItems = [
   },
   {
     question: "How do the strategy calls work?",
-    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your situation, discuss upcoming plans, and make sure you're set up for tax success. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get 8 calls per year. You'll get a summary email after each call.",
+    answer: "Strategy calls are video calls (Zoom or Google Meet) where we review your financial situation, discuss upcoming plans, and optimize your tax position. Essential clients get 2 calls per year, Advantage clients get 4 calls per year, and Premier clients get 8 calls per year. You'll get a summary email after each call.",
   },
   {
-    question: "What if I have income from multiple platforms?",
-    answer: "That's exactly who I work with! Most creators have income from 3-7+ sources—AdSense, sponsors, affiliates, merch, courses, Patreon, etc. I'll organize it all, categorize everything properly, and make sure you're capturing every deduction.",
+    question: "What if I have multiple income streams?",
+    answer: "That's exactly who I work with! Most of my clients have income from multiple sources—business income, W-2 salary, investments, rental properties, and more. I'll coordinate everything, optimize across all sources, and ensure you're capturing every legitimate savings opportunity.",
   },
   {
     question: "How quickly do you respond to questions?",
     answer: "Response times depend on your plan: Essential clients receive responses within 48 hours, Advantage clients within 24 hours, and Premier clients receive priority same-day responses. Urgent tax deadline matters are always handled immediately.",
   },
   {
-    question: "What if I'm just starting out and don't make much yet?",
-    answer: "If you're earning self-employment income, you need to be handling your taxes correctly—even at lower income levels. Starting with good habits now means you're ready when you grow. The Essential plan is designed exactly for this situation.",
+    question: "What if my situation is particularly complex?",
+    answer: "Complex situations are my specialty. Multi-entity structures, equity compensation, real estate portfolios, international considerations—I'm equipped to handle sophisticated tax planning. The Premier plan is designed for the most complex situations.",
   },
   {
-    question: "Do you work with creators outside California?",
-    answer: "Absolutely! I work with creators across the United States. All plans include federal and state tax return preparation regardless of where you're located. Video calls make it easy to work together regardless of location.",
+    question: "Do you work with clients outside California?",
+    answer: "Absolutely! I work with clients across the United States. All plans include federal and state tax return preparation regardless of where you're located. Video calls make it easy to work together regardless of location.",
   },
   {
     question: "What makes you different from other accountants?",
-    answer: "I work exclusively with content creators—that's it. I understand your income streams, your platforms, and your deductions. You won't have to explain what a brand deal is or how AdSense works. Plus, I focus on strategy year-round, not just filing at tax time.",
+    answer: "I focus on proactive strategy, not just compliance. Most accountants file your return and move on—I plan year-round to minimize your tax burden. With an M.S. in Taxation and a focus on high-income situations, I bring sophisticated strategy that goes far beyond basic tax prep.",
   },
 ];
 
@@ -127,10 +127,10 @@ export default function ServicesPage() {
               Pricing
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Simple, Clear Pricing for Creators
+              Transparent Pricing for Sophisticated Clients
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              No hourly billing surprises. No confusing invoices. Just flat-rate monthly pricing that includes everything you need to handle your taxes with confidence.
+              No hourly billing surprises. No confusing invoices. Just flat-rate monthly pricing that includes proactive strategy and year-round support.
             </p>
           </div>
         </div>
@@ -193,11 +193,11 @@ export default function ServicesPage() {
               {
                 icon: (
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 ),
-                title: "Creator-Focused",
-                description: "I understand your income streams",
+                title: "High-Earner Focused",
+                description: "I understand complex situations",
               },
               {
                 icon: (

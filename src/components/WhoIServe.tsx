@@ -1,39 +1,39 @@
 /* ===========================================
    WHO I SERVE COMPONENT
    
-   Section showcasing target creator client personas
+   Section showcasing target high-income client personas
    =========================================== */
 
 const clientTypes = [
   {
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
       </svg>
     ),
-    title: "YouTubers & Video Creators",
-    subtitle: "AdSense, sponsors, and brand deals",
-    description: "Multiple income streams from AdSense, sponsorships, and affiliate marketing. I'll help you maximize deductions, handle quarterly taxes, and set up the right entity structure.",
+    title: "Business Owners & Entrepreneurs",
+    subtitle: "Multiple entities, complex structures",
+    description: "From single-member LLCs to multi-entity structures, I help optimize your business taxes, manage S-corp elections, and coordinate personal and business planning for maximum savings.",
   },
   {
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
       </svg>
     ),
-    title: "Course Creators & Coaches",
-    subtitle: "Digital products and consulting",
-    description: "Lumpy launch income, digital product sales, and coaching revenue. I'll help you plan for big months, optimize S-corp timing, and manage contractor payments.",
+    title: "Executives & High Earners",
+    subtitle: "W-2 income plus investments",
+    description: "Maximize deductions, optimize equity compensation, and coordinate investment income with your salary. Strategic planning for stock options, RSUs, and deferred compensation.",
   },
   {
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     ),
-    title: "Podcasters & Streamers",
-    subtitle: "Twitch, Patreon, and sponsorships",
-    description: "Subscriptions, donations, bits, and brand deals. I understand the unique tax treatment of each revenue stream and will structure everything for maximum benefit.",
+    title: "Investors & Real Estate Owners",
+    subtitle: "Portfolio income and property holdings",
+    description: "Navigate capital gains strategies, real estate depreciation, 1031 exchanges, and investment income optimization. Comprehensive planning across your entire portfolio.",
   },
 ];
 
@@ -47,10 +47,10 @@ export default function WhoIServe() {
             Who I Work With
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-            Built for Content Creators
+            Built for High-Achieving Professionals
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            I work exclusively with content creators and online business owners. I understand your income streams, your deductions, and your world.
+            I work with successful individuals who have complex financial situations—and who expect their tax strategy to match their ambition.
           </p>
         </div>
 
@@ -83,10 +83,10 @@ export default function WhoIServe() {
           ))}
         </div>
 
-        {/* Additional platforms note */}
+        {/* Additional client note */}
         <div className="mt-12 text-center">
           <p className="text-gray-500 text-sm">
-            Also serving: TikTok creators • Newsletter writers • Affiliate marketers • Online service providers
+            Also serving: Medical professionals • Attorneys • Consultants • Tech professionals • Self-employed specialists
           </p>
         </div>
       </div>

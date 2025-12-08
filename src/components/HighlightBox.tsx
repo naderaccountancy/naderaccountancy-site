@@ -35,7 +35,7 @@ export default function HighlightBox() {
 
             {/* Description */}
             <p className="text-gray-400 leading-relaxed max-w-2xl mx-auto mb-8">
-              Experience what dedicated, creator-focused tax strategy feels like. 
+              Experience what dedicated, high-touch tax strategy feels like. 
               Comprehensive assessment, personalized planning, and 30 days of support—at no cost, with no obligation.
             </p>
 

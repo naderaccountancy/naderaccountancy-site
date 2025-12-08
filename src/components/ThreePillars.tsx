@@ -2,41 +2,41 @@
    THREE PILLARS COMPONENT
    
    Section showcasing the core value propositions
-   Content Creator focused
+   High-income professional focused
    =========================================== */
 
 const pillars = [
   {
     number: "01",
-    title: "No More Tax Surprises",
-    description: "That April panic when you owe $30K and haven't saved for it? Totally preventable. I'll set up quarterly estimates and help you save the right amount all year long.",
+    title: "Proactive Tax Planning",
+    description: "Tax season shouldn't bring surprises. With year-round strategy and quarterly check-ins, you'll always know where you stand—and you'll never overpay because of poor planning.",
     features: [
-      "Quarterly tax payment calculations",
-      "Income forecasting",
-      "Cash flow planning",
-      "Year-end projections",
+      "Quarterly tax projections",
+      "Income forecasting & modeling",
+      "Strategic timing of income/deductions",
+      "Year-end tax optimization",
     ],
   },
   {
     number: "02",
-    title: "Keep More of What You Earn",
-    description: "Most creators miss thousands in legitimate deductions and overpay on self-employment tax. I'll make sure you're capturing every savings opportunity available.",
+    title: "Maximize What You Keep",
+    description: "High earners face complex tax situations—and without the right strategy, you're leaving significant money on the table. I identify every legitimate opportunity to reduce your burden.",
     features: [
-      "Complete deduction optimization",
-      "S-corp analysis & setup",
-      "Equipment & software write-offs",
-      "Home office deduction",
+      "Entity structure optimization",
+      "S-corp analysis & implementation",
+      "Investment tax coordination",
+      "Retirement contribution strategies",
     ],
   },
   {
     number: "03",
-    title: "Someone Who Gets It",
-    description: "I won't ask you to explain what a brand deal is. I understand creator income streams, the platforms you use, and the specific tax rules that apply to your business.",
+    title: "A Strategic Partner",
+    description: "You need more than someone who files returns. You need a tax strategist who understands complex situations, communicates clearly, and helps you make informed decisions.",
     features: [
-      "Multi-platform income handling",
-      "Sponsorship & affiliate tracking",
-      "Contractor 1099 management",
-      "Platform-specific deductions",
+      "Multi-entity coordination",
+      "Equity compensation planning",
+      "Real estate tax strategy",
+      "Long-term wealth preservation",
     ],
   },
 ];
@@ -48,13 +48,13 @@ export default function ThreePillars() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-            Why Creators Choose Me
+            Why High Earners Choose Me
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-            Tax Strategy That Actually Makes Sense
+            Tax Strategy That Matches Your Success
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Clear, creator-focused tax help that eliminates confusion and keeps more money in your pocket.
+            Clear, sophisticated tax planning that eliminates surprises and ensures you keep more of what you&apos;ve earned.
           </p>
         </div>
 

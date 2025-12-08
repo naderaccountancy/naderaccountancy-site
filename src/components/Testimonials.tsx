@@ -5,29 +5,29 @@ import { useState, useEffect } from "react";
 /* ===========================================
    TESTIMONIALS COMPONENT
    
-   Social proof section with creator testimonials
+   Social proof section with high-income client testimonials
    =========================================== */
 
 const testimonials = [
   {
-    quote: "I was doing my own taxes and leaving thousands on the table. Ben helped me set up an S-corp and I'm saving over $15K a year in self-employment tax alone. Plus, no more April panic.",
-    author: "YouTube Creator",
-    role: "500K+ Subscribers",
-    properties: "Tech & Education Content",
+    quote: "I was handling my own taxes and leaving money on the table. Ben set up an S-corp for my consulting business and now I'm saving over $18K a year. The quarterly check-ins keep me on track year-round.",
+    author: "Marketing Consultant",
+    role: "Self-Employed",
+    properties: "Digital Marketing",
     image: null,
   },
   {
-    quote: "Finally, an accountant who doesn't ask me to explain what AdSense is. Ben understands creator income inside and out. The quarterly planning alone has been a game-changer for my stress levels.",
-    author: "Course Creator",
-    role: "$300K+ Annual Revenue",
-    properties: "Online Education",
+    quote: "Between my dental practice and a couple rental properties, my taxes were getting complicated. Ben organized everything, found deductions I'd been missing, and actually explains things in plain English.",
+    author: "Dentist",
+    role: "Private Practice Owner",
+    properties: "Healthcare & Real Estate",
     image: null,
   },
   {
-    quote: "I had income from Twitch, YouTube, sponsors, and Patreon—all mixed together and confusing. Ben organized everything, found deductions I didn't know existed, and made tax season actually manageable.",
-    author: "Streamer & Podcaster",
-    role: "Full-Time Creator",
-    properties: "Gaming & Entertainment",
+    quote: "As a software contractor making good money, I knew I was overpaying but didn't know where to start. Ben walked me through entity structuring and retirement planning—I finally feel like I have a real strategy.",
+    author: "Software Developer",
+    role: "Independent Contractor",
+    properties: "Tech Consulting",
     image: null,
   },
 ];
@@ -49,13 +49,13 @@ export default function Testimonials() {
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-            Creator Experiences
+            Client Experiences
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-            What Creators Are Saying
+            What Clients Are Saying
           </h2>
           <p className="mt-4 text-lg text-gray-600">
-            Hear from content creators who stopped stressing about taxes.
+            Hear from high-earning professionals who elevated their tax strategy.
           </p>
         </div>
 
@@ -133,8 +133,8 @@ export default function Testimonials() {
         {/* Stats Bar */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           {[
-            { number: "$10K+", label: "Avg. Annual Savings" },
-            { number: "100%", label: "Creator-Focused" },
+            { number: "$25K+", label: "Avg. Annual Savings" },
+            { number: "100%", label: "Proactive Planning" },
             { number: "0", label: "April Surprises" },
             { number: "24hr", label: "Response Time" },
           ].map((stat) => (

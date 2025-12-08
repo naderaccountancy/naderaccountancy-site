@@ -4,31 +4,31 @@ import { CalendlyWidget } from "@/components";
 /* ===========================================
    CLAIM OFFER PAGE
    
-   Complimentary 30-Day Experience for creators
+   Complimentary 30-Day Experience for high earners
    Premium positioning
    =========================================== */
 
 export const metadata: Metadata = {
   title: "Complimentary 30-Day Experience | Nader Accountancy",
-  description: "Experience private-client tax strategy for content creators. Comprehensive review, personalized strategy, and dedicated support—complimentary for qualifying creators.",
+  description: "Experience private-client tax strategy for high earners. Comprehensive review, personalized strategy, and dedicated support—complimentary for qualifying professionals.",
 };
 
 const includedItems = [
   {
     title: "Comprehensive Tax Assessment",
-    description: "A thorough review of your current structure—income streams, entity setup, deduction strategy—to identify opportunities and blind spots.",
+    description: "A thorough review of your current structure—income sources, entity setup, investment strategy—to identify opportunities and blind spots.",
   },
   {
     title: "Private Strategy Session",
-    description: "One-on-one consultation to develop a personalized roadmap: S-corp analysis, optimization opportunities, and forward planning.",
+    description: "One-on-one consultation to develop a personalized roadmap: entity optimization, tax reduction strategies, and forward planning.",
   },
   {
     title: "30 Days of Dedicated Support",
-    description: "Direct access to guidance throughout your experience. Ask questions, get clarity, and make informed decisions about your taxes.",
+    description: "Direct access to guidance throughout your experience. Ask questions, get clarity, and make informed decisions about your tax position.",
   },
   {
     title: "Clear Path Forward",
-    description: "At the end of 30 days, you'll have complete clarity on your tax position—and a clear understanding of what working together looks like.",
+    description: "At the end of 30 days, you'll have complete clarity on your tax situation—and a clear understanding of what working together looks like.",
   },
 ];
 
@@ -54,7 +54,7 @@ export default function ClaimOfferPage() {
             </div>
             
             <p className="mt-8 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-              Experience what dedicated, creator-focused tax strategy feels like. 
+              Experience what dedicated, sophisticated tax strategy feels like. 
               A comprehensive assessment, personalized planning, and white-glove support—at no cost, with no obligation.
             </p>
           </div>
@@ -106,11 +106,11 @@ export default function ClaimOfferPage() {
           </h2>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             {[
-              "YouTubers & Video Creators",
-              "Course Creators & Coaches", 
-              "Podcasters & Streamers",
-              "Digital Product Sellers",
-              "Full-Time Content Creators",
+              "Entrepreneurs & Business Owners",
+              "Executives & High Earners", 
+              "Medical & Legal Professionals",
+              "Real Estate Investors",
+              "High-Net-Worth Individuals",
             ].map((item) => (
               <span
                 key={item}

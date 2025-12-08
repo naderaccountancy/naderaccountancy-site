@@ -4,24 +4,24 @@ import { CTAStrip } from "@/components";
 /* ===========================================
    EDUCATIONAL RESOURCES PAGE
 
-   YouTube video embeds and educational content for creators
+   YouTube video embeds and educational content for high earners
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Resources | Nader Accountancy - Tax Tips for Creators",
-  description: "Free educational videos on tax strategy for content creators. S-corps, deductions, quarterly taxes, and more.",
+  title: "Resources | Nader Accountancy - Tax Strategy Insights",
+  description: "Free educational videos on tax strategy for high earners. S-corps, deductions, entity planning, and wealth preservation strategies.",
 };
 
 const videos = [
   {
     id: "KXZKfpBQAyQ",
     title: "Ultimate Tax Write-Off Guide",
-    description: "Comprehensive guide to everyday tax write-offs for creators. Learn what you can deduct—from equipment to home office to software subscriptions.",
+    description: "Comprehensive guide to legitimate tax deductions. Learn what you can write off—from business expenses to home office to professional services.",
   },
   {
     id: "o2H9Fbc7NFc",
     title: "Travel Write-Offs Guide",
-    description: "Everything you need to know about deducting travel as a creator. Conferences, collaborations, content trips—what counts and what doesn't.",
+    description: "Everything you need to know about deducting business travel. Conferences, client meetings, business trips—what counts and what doesn't.",
   },
 ];  
 
@@ -36,10 +36,10 @@ export default function EducationalResourcesPage() {
               Resources
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Free Tax Education for Creators
+              Tax Strategy Insights
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Learn the tax strategies that can save you thousands. No jargon, no confusion—just clear explanations of what you need to know.
+              Learn the tax strategies that can save you thousands. No jargon, no confusion—just clear explanations of what high earners need to know.
             </p>
           </div>
         </div>
@@ -53,7 +53,7 @@ export default function EducationalResourcesPage() {
               Featured Videos
             </h2>
             <p className="mt-4 text-gray-600">
-              Practical tax tips designed specifically for content creators
+              Practical tax strategies for high-earning professionals
             </p>
           </div>
 
@@ -91,7 +91,7 @@ export default function EducationalResourcesPage() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              What Creators Need to Know
+              What High Earners Need to Know
             </h2>
           </div>
 
@@ -107,19 +107,19 @@ export default function EducationalResourcesPage() {
               },
               {
                 title: "Deductions",
-                description: "Equipment, software, home office, travel, meals—what you can deduct and how to document it.",
+                description: "Business expenses, home office, professional services, travel—what you can deduct and how to document it.",
               },
               {
-                title: "Business Expenses",
-                description: "The difference between personal and business expenses, and why separating them matters.",
+                title: "Investment Tax Planning",
+                description: "Capital gains strategies, tax-loss harvesting, and coordination with your overall tax picture.",
               },
               {
                 title: "Entity Structure",
-                description: "LLC vs S-corp vs sole proprietor—what's right for your situation and when to make the switch.",
+                description: "LLC vs S-corp vs C-corp—what's right for your situation and when to restructure.",
               },
               {
                 title: "Retirement Planning",
-                description: "Solo 401k, SEP IRA, and other retirement options for self-employed creators.",
+                description: "Solo 401k, SEP IRA, defined benefit plans, and other retirement options for high earners.",
               },
             ].map((topic) => (
               <div
@@ -157,7 +157,7 @@ export default function EducationalResourcesPage() {
                     </svg>
                   ),
                   title: "YouTube Channel",
-                  description: "Subscribe for regular videos on creator taxes, deductions, and money tips.",
+                  description: "Subscribe for regular videos on tax strategy, deductions, and wealth preservation.",
                 },
                 {
                   icon: (
@@ -165,7 +165,7 @@ export default function EducationalResourcesPage() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                     </svg>
                   ),
-                  title: "Free Discovery Call",
+                  title: "Free Consultation",
                   description: "Book a call to discuss your specific situation and get personalized guidance.",
                 },
                 {

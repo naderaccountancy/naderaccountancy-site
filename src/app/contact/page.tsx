@@ -4,12 +4,12 @@ import { CalendlyWidget } from "@/components";
 /* ===========================================
    CONTACT PAGE
    
-   Calendly booking for creators
+   Calendly booking for high-income professionals
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Contact | Nader Accountancy - Book a Free Call",
-  description: "Book a free discovery call. Let's talk about your creator business, your tax situation, and how I can help you stop overpaying.",
+  title: "Contact | Nader Accountancy - Schedule a Consultation",
+  description: "Schedule a complimentary consultation. Let's discuss your financial situation, tax strategy, and how sophisticated planning can preserve more of what you've built.",
 };
 
 const CONTACT_CONFIG = {
@@ -24,13 +24,13 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-              Let&apos;s Chat
+              Let&apos;s Connect
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Book a Free Discovery Call
+              Schedule a Consultation
             </h1>
             <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Not sure if we&apos;re a fit? Let&apos;s find out. Book a free call and we&apos;ll talk through your situation—no pressure, no obligation.
+              Not sure if we&apos;re a fit? Let&apos;s find out. Schedule a complimentary call and we&apos;ll discuss your situation—no pressure, no obligation.
             </p>
           </div>
         </div>
@@ -48,18 +48,18 @@ export default function ContactPage() {
               {[
                 {
                   step: "1",
-                  title: "Your Creator Business",
-                  description: "Tell me about your content, your platforms, and your income streams.",
+                  title: "Your Financial Situation",
+                  description: "Tell me about your income sources, businesses, investments, and financial goals.",
                 },
                 {
                   step: "2",
-                  title: "Your Current Tax Situation",
-                  description: "Are you DIY-ing it? Working with someone? Let's talk about where you're at.",
+                  title: "Your Current Tax Strategy",
+                  description: "Are you working with someone? Handling it yourself? Let's discuss where you're at.",
                 },
                 {
                   step: "3",
-                  title: "Quick Wins & Next Steps",
-                  description: "I'll share thoughts on opportunities you might be missing.",
+                  title: "Opportunities & Next Steps",
+                  description: "I'll share initial thoughts on potential optimization strategies.",
                 },
               ].map((item) => (
                 <div key={item.step} className="bg-white rounded-xl p-6 shadow-sm text-center">
@@ -108,8 +108,8 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
             {[
               {
-                q: "Is the call really free?",
-                a: "Yes, 100% free with no obligation. It's a chance for us to see if we're a good fit for each other.",
+                q: "Is the consultation really free?",
+                a: "Yes, 100% complimentary with no obligation. It's a chance for us to see if we're a good fit for each other.",
               },
               {
                 q: "How long is the call?",
@@ -117,7 +117,7 @@ export default function ContactPage() {
               },
               {
                 q: "What should I prepare?",
-                a: "Just a general idea of your income, platforms you use, and your biggest tax frustrations. No documents needed.",
+                a: "Just a general idea of your income sources, current tax situation, and your biggest concerns. No documents needed.",
               },
               {
                 q: "What if I'm not ready to commit?",

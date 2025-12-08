@@ -28,7 +28,7 @@ const credentials = [
     ),
     title: "Master's in Taxation",
     subtitle: "Loyola Marymount University",
-    detail: "Advanced Tax Education",
+    detail: "Advanced Tax Strategy",
   },
   {
     icon: (
@@ -46,8 +46,8 @@ const credentials = [
         <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
       </svg>
     ),
-    title: "5+ Years Experience",
-    subtitle: "Real Estate Taxation Focus",
+    title: "Complex Situations",
+    subtitle: "High-Net-Worth Focus",
     detail: "Specialized Expertise",
   },
 ];

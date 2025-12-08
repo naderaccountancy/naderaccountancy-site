@@ -6,7 +6,7 @@ import Link from "next/link";
 /* ===========================================
    ANNOUNCEMENT BAR COMPONENT
    
-   Creator-focused announcement bar
+   High-income professional focused announcement bar
    =========================================== */
 
 export default function AnnouncementBar() {
@@ -69,7 +69,7 @@ export default function AnnouncementBar() {
                   <span>
                     Complimentary 30-Day Strategy Experience
                   </span>
-                  <span className="hidden md:inline text-[var(--color-navy-deep)]/70 font-semibold ml-1">— No Commitment Necessary</span>
+                  <span className="hidden md:inline text-[var(--color-navy-deep)]/70 font-semibold ml-1">— For Qualifying High Earners</span>
                 </p>
               </div>
 

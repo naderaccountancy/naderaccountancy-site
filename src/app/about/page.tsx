@@ -5,12 +5,12 @@ import { CTAStrip } from "@/components";
 /* ===========================================
    ABOUT PAGE
    
-   Personal bio for creator-focused CPA
+   Personal bio for high-income focused CPA
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "About | Nader Accountancy - Your Creator-Focused CPA",
-  description: "Meet Ben Nader, CPA - a licensed accountant who works exclusively with content creators. I understand your income streams and speak your language.",
+  title: "About | Nader Accountancy - Tax Strategy for High Earners",
+  description: "Meet Ben Nader, CPA - a licensed accountant with an M.S. in Taxation, specializing in sophisticated tax strategy for high-earning professionals and business owners.",
 };
 
 export default function AboutPage() {
@@ -24,7 +24,7 @@ export default function AboutPage() {
               About
             </span>
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
-              Your Creator-Focused CPA
+              Your Strategic Tax Partner
             </h1>
           </div>
         </div>
@@ -70,19 +70,19 @@ export default function AboutPage() {
                   M.S. Taxation – LMU
                 </span>
                 <span className="inline-flex items-center px-4 py-2 rounded-full bg-[var(--color-navy-deep)]/5 text-[var(--color-navy-deep)] text-sm font-medium">
-                  Creator-Focused Practice
+                  High-Earner Focused Practice
                 </span>
               </div>
 
               <div className="space-y-5 text-gray-600 leading-relaxed">
                 <p>
-                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I work exclusively with content creators and online business owners.
+                  I&apos;m a licensed CPA with a <strong className="text-[var(--color-navy-deep)]">Master&apos;s in Taxation from Loyola Marymount University</strong>. But here&apos;s what really matters: I specialize in sophisticated tax strategy for high-earning professionals and business owners.
                 </p>
                 <p>
-                  I grew up in the creator world. I understand how AdSense works. I know the difference between a sponsorship and an affiliate deal. I won&apos;t ask you to explain what a brand partnership is or look confused when you mention your Patreon income.
+                  I understand complex financial situations—multi-entity structures, investment portfolios, equity compensation, real estate holdings. I won&apos;t ask you to explain your business model or look confused by your income streams.
                 </p>
                 <p>
-                  Most accountants treat creators like any other small business—and miss thousands in deductions and savings opportunities as a result. I built my practice specifically to fix that problem.
+                  Most accountants treat high earners like any other client—and miss significant opportunities as a result. I built my practice specifically to provide the proactive, strategic planning that successful people deserve.
                 </p>
               </div>
             </div>
@@ -90,32 +90,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Why Creators Section */}
+      {/* Why High Earners Section */}
       <section className="py-20 bg-[var(--color-gray-50)] pattern-bg">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-[var(--color-navy-deep)]">
-              Why I Work With Creators
+              Why I Work With High Earners
             </h2>
           </div>
 
           <div className="bg-white rounded-2xl p-8 md:p-12 shadow-lg">
             <div className="prose prose-lg max-w-none text-gray-600">
               <p className="leading-relaxed mb-6">
-                Content creators have unique tax situations that most accountants don&apos;t understand. You&apos;ve got income from five different platforms, you&apos;re not sure what&apos;s deductible, you&apos;ve heard about S-corps but don&apos;t know if they apply to you, and April feels like a nightmare waiting to happen.
+                High-earning professionals and business owners have unique tax situations that most accountants don&apos;t adequately address. You have multiple income streams, complex entity structures, significant investments—and April shouldn&apos;t feel like a nightmare.
               </p>
               <p className="leading-relaxed mb-6">
-                I saw too many creators overpaying on taxes, missing obvious deductions, or getting hit with surprise bills because their accountant didn&apos;t understand their business. That&apos;s why I decided to specialize.
+                I saw too many successful people overpaying on taxes, missing optimization opportunities, or getting hit with surprise bills because their accountant wasn&apos;t being proactive. That&apos;s why I decided to specialize.
               </p>
               <p className="leading-relaxed">
-                When you work with me, you get someone who actually speaks your language. No explaining your business model. No confused looks when you mention your revenue streams. Just clear, creator-focused tax strategy that keeps more money in your pocket.
+                When you work with me, you get a strategic partner who understands sophisticated financial situations. No explaining your business structure. No blank stares when discussing equity compensation. Just clear, proactive tax strategy that preserves more of what you&apos;ve built.
               </p>
             </div>
 
             {/* Quote */}
             <blockquote className="mt-10 pt-10 border-t border-gray-200">
               <p className="text-xl font-medium text-[var(--color-navy-deep)] italic">
-                &ldquo;Every dollar you save on taxes is a dollar you can reinvest in your content, your team, or yourself. My job is to find those dollars.&rdquo;
+                &ldquo;Every dollar you save on taxes is a dollar you can reinvest in your business, your portfolio, or your future. My job is to find those dollars.&rdquo;
               </p>
               <footer className="mt-4 text-[var(--color-gold)] font-semibold">
                 — Ben Nader, CPA
@@ -130,27 +130,27 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-              I Get It
+              Areas of Expertise
             </span>
             <h2 className="mt-3 text-3xl font-bold text-[var(--color-navy-deep)]">
-              Creator Income I Work With
+              Complex Situations I Handle
             </h2>
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {[
-              "YouTube AdSense",
-              "Sponsorships",
-              "Affiliate Income",
-              "Course Sales",
-              "Coaching",
-              "Merch Revenue",
-              "Patreon/Memberships",
-              "Twitch/Streaming",
-              "TikTok Creator Fund",
-              "Podcast Ads",
-              "Digital Products",
-              "Consulting",
+              "Business Income",
+              "Investment Portfolios",
+              "Real Estate Holdings",
+              "Equity Compensation",
+              "Multi-Entity Structures",
+              "S-Corp Optimization",
+              "Rental Properties",
+              "Capital Gains Strategy",
+              "Retirement Planning",
+              "Executive Compensation",
+              "Self-Employment",
+              "Trust & Estate",
             ].map((income) => (
               <div
                 key={income}
@@ -213,12 +213,12 @@ export default function AboutPage() {
               {
                 icon: (
                   <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                    <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 ),
-                title: "Creator-Focused Practice",
-                subtitle: "100% Specialized",
-                detail: "Exclusively serving content creators & online businesses",
+                title: "High-Earner Focused Practice",
+                subtitle: "Specialized Expertise",
+                detail: "Serving high-income professionals & business owners",
               },
             ].map((credential) => (
               <div

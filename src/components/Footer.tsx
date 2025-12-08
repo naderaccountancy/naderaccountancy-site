@@ -3,7 +3,7 @@ import Link from "next/link";
 /* ===========================================
    FOOTER COMPONENT
    
-   Creator-focused footer
+   High-income professional focused footer
    =========================================== */
 
 const FOOTER_CONFIG = {
@@ -48,7 +48,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
-              Tax strategy for content creators and online business owners. Stop overpaying on taxes.
+              Sophisticated tax strategy for high-earning professionals and business owners. Preserve more of what you&apos;ve built.
             </p>
             <div className="flex space-x-4">
               {/* YouTube */}
