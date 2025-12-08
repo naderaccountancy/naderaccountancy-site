@@ -9,8 +9,9 @@ import { CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "About | Nader Accountancy - The CPA for Content Creators",
-  description: "Meet Ben Nader, CPA - a licensed accountant with an M.S. in Taxation who specializes in content creators. More than a tax preparer, I'm a strategic financial partner for YouTubers, influencers, and online entrepreneurs.",
+  title: "About Ben Nader | Content Creator CPA & Tax Specialist",
+  description: "Meet Ben Nader, CPA - licensed accountant with M.S. in Taxation specializing in content creator taxes. Expert in YouTuber, influencer, and streamer tax strategy. Your financial partner in the creator economy.",
+  keywords: ["content creator CPA", "YouTuber accountant", "influencer tax specialist", "creator economy CPA", "Ben Nader CPA"],
 };
 
 export default function AboutPage() {
@@ -216,9 +217,9 @@ export default function AboutPage() {
                     <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                   </svg>
                 ),
-                title: "High-Earner Focused Practice",
-                subtitle: "Specialized Expertise",
-                detail: "Serving high-income professionals & business owners",
+                title: "Creator Economy Specialist",
+                subtitle: "Content Creator Focus",
+                detail: "Serving YouTubers, influencers, and online entrepreneurs",
               },
             ].map((credential) => (
               <div

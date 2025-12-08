@@ -9,8 +9,9 @@ import { CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Calculators | Nader Accountancy - Free Tax Tools",
-  description: "Free tax calculators for content creators. Estimate prize winnings taxes, S-Corp savings, quarterly taxes, and more.",
+  title: "Free Tax Calculators for Content Creators | Estimate Your Taxes",
+  description: "Free tax calculators built for content creators. Calculate S-corp savings, quarterly taxes, self-employment tax, and see how much you could save as a YouTuber or influencer.",
+  keywords: ["content creator tax calculator", "YouTuber tax estimator", "influencer S-corp calculator", "creator quarterly tax calculator", "self-employment tax calculator"],
 };
 
 const calculators = [

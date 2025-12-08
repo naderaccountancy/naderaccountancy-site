@@ -8,8 +8,9 @@ import { CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Resources | Nader Accountancy - Tax Strategy Insights",
-  description: "Free educational videos on tax strategy for content creators. S-corps, deductions, entity planning, and creator-specific tax strategies.",
+  title: "Content Creator Tax Tips & Resources | Free Tax Education",
+  description: "Free tax education for content creators. Learn about S-corps, write-offs, quarterly taxes, and tax strategies for YouTubers, influencers, and streamers.",
+  keywords: ["content creator tax tips", "YouTuber tax deductions", "influencer write-offs", "creator tax education", "S-corp for influencers"],
 };
 
 const videos = [

@@ -9,8 +9,9 @@ import { CTAStrip } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Pricing | Nader Accountancy - Tax & Financial Services for Creators",
-  description: "Simple, month-to-month pricing for content creators. Essential plan at $300/mo, Premier with S-corp at $400/mo. No long-term contracts.",
+  title: "Content Creator Tax Services Pricing | CPA for YouTubers & Influencers",
+  description: "Affordable tax services for content creators starting at $300/mo. Monthly bookkeeping, tax preparation, S-corp setup, and year-round support for YouTubers, influencers, and streamers.",
+  keywords: ["content creator tax services pricing", "YouTuber accountant cost", "influencer CPA pricing", "content creator bookkeeping", "S-corp for creators"],
 };
 
 // FAQ Items for content creators

@@ -8,8 +8,9 @@ import { CalendlyWidget } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Contact | Nader Accountancy - Schedule a Consultation",
-  description: "Schedule a complimentary consultation. Let's discuss your financial situation, tax strategy, and how sophisticated planning can preserve more of what you've built.",
+  title: "Book a Free Consultation | Content Creator Tax Services",
+  description: "Schedule a free consultation with a CPA who specializes in content creators. Discuss your YouTube, influencer, or streaming income and discover tax-saving strategies.",
+  keywords: ["content creator tax consultation", "YouTuber CPA consultation", "influencer accountant free call", "creator tax help"],
 };
 
 const CONTACT_CONFIG = {
