@@ -26,10 +26,6 @@ const includedItems = [
     title: "Personalized Strategy Call",
     description: "A focused one-on-one session to walk through my findings, answer your questions, and discuss strategies tailored to your creator business.",
   },
-  {
-    title: "Written Savings Summary",
-    description: "Walk away with a clear, written summary of opportunities identified and recommended next steps—yours to keep, no obligation.",
-  },
 ];
 
 export default function ClaimOfferPage() {
