@@ -5,6 +5,9 @@ import { Navbar, Footer, AnnouncementBar } from "@/components";
 
 const GTM_ID = "GTM-T5LTVRHC";
 
+// ⚠️ MAINTENANCE MODE - Set to true to hide the site
+const MAINTENANCE_MODE = true;
+
 /* ===========================================
    ROOT LAYOUT
    
@@ -68,11 +71,11 @@ export const metadata: Metadata = {
     images: ["/og-image.jpg"],
   },
   robots: {
-    index: true,
-    follow: true,
+    index: !MAINTENANCE_MODE,
+    follow: !MAINTENANCE_MODE,
     googleBot: {
-      index: true,
-      follow: true,
+      index: !MAINTENANCE_MODE,
+      follow: !MAINTENANCE_MODE,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -124,27 +127,70 @@ export default function RootLayout({
           />
         </noscript>
 
-        {/* Skip to main content for accessibility */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-gold)] focus:text-[var(--color-navy-deep)] focus:rounded-lg focus:font-medium"
-        >
-          Skip to main content
-        </a>
+        {MAINTENANCE_MODE ? (
+          /* ========== MAINTENANCE MODE PAGE ========== */
+          <div className="min-h-screen bg-gradient-to-br from-[#0a1628] via-[#0f172a] to-[#1e293b] flex items-center justify-center p-6">
+            <div className="text-center max-w-lg">
+              {/* Logo/Brand */}
+              <div className="mb-8">
+                <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#d4af37] to-[#b8962d] mb-6">
+                  <svg className="w-10 h-10 text-[#0f172a]" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                  </svg>
+                </div>
+                <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
+                  Nader Accountancy
+                </h1>
+              </div>
+              
+              {/* Message */}
+              <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 mb-8">
+                <h2 className="text-xl md:text-2xl font-semibold text-[#d4af37] mb-4">
+                  Coming Soon
+                </h2>
+                <p className="text-gray-300 leading-relaxed">
+                  We&apos;re working on something exciting. Our website will be back online shortly.
+                </p>
+              </div>
+              
+              {/* Contact info */}
+              <p className="text-gray-400 text-sm">
+                Questions? Reach out at{" "}
+                <a 
+                  href="mailto:ben@naderaccountancy.com" 
+                  className="text-[#d4af37] hover:text-[#e5c44a] transition-colors"
+                >
+                  ben@naderaccountancy.com
+                </a>
+              </p>
+            </div>
+          </div>
+        ) : (
+          /* ========== NORMAL SITE ========== */
+          <>
+            {/* Skip to main content for accessibility */}
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-[var(--color-gold)] focus:text-[var(--color-navy-deep)] focus:rounded-lg focus:font-medium"
+            >
+              Skip to main content
+            </a>
 
-        {/* Announcement Bar */}
-        <AnnouncementBar />
+            {/* Announcement Bar */}
+            <AnnouncementBar />
 
-        {/* Navigation */}
-        <Navbar />
+            {/* Navigation */}
+            <Navbar />
 
-        {/* Main Content */}
-        <div id="main-content">
-          {children}
-        </div>
+            {/* Main Content */}
+            <div id="main-content">
+              {children}
+            </div>
 
-        {/* Footer */}
-        <Footer />
+            {/* Footer */}
+            <Footer />
+          </>
+        )}
       </body>
     </html>
   );
