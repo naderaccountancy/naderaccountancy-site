@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
-import { Navbar, Footer, AnnouncementBar } from "@/components";
+import { Navbar, Footer } from "@/components";
 
 const GTM_ID = "GTM-T5LTVRHC";
 
 // ⚠️ MAINTENANCE MODE - Set to true to hide the site
-const MAINTENANCE_MODE = true;
+const MAINTENANCE_MODE = false;
 
 /* ===========================================
    ROOT LAYOUT
@@ -23,27 +23,20 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Content Creator Tax Services & Accounting | Nader Accountancy",
+    default: "Tax Services & Planning | Nader Accountancy",
     template: "%s | Nader Accountancy",
   },
-  description: "Specialized tax services and accounting for content creators, YouTubers, influencers, and streamers. Expert CPA helping creators save thousands on taxes with S-corp strategies, bookkeeping, and year-round tax planning.",
+  description: "Expert CPA services for individuals and businesses. Tax return preparation starting at $1,000 or year-round tax planning starting at $400/month.",
   keywords: [
-    "content creator tax services",
-    "content creator accountant",
-    "content creator CPA",
-    "YouTuber tax services",
-    "influencer accountant",
-    "influencer tax help",
-    "streamer tax services",
-    "TikTok creator taxes",
-    "social media influencer accountant",
-    "creator economy CPA",
-    "YouTube AdSense taxes",
-    "content creator bookkeeping",
-    "S-corp for content creators",
-    "influencer tax deductions",
-    "creator tax planning",
-    "online entrepreneur accountant",
+    "tax services",
+    "tax preparation",
+    "CPA services",
+    "tax planning",
+    "accountant",
+    "tax return preparation",
+    "year-round tax planning",
+    "small business taxes",
+    "individual tax returns",
   ],
   authors: [{ name: "Ben Nader, CPA" }],
   creator: "Nader Accountancy",
@@ -53,21 +46,21 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://naderaccountancy.com",
     siteName: "Nader Accountancy",
-    title: "Content Creator Tax Services & Accounting | Nader Accountancy",
-    description: "Expert CPA specializing in content creators, YouTubers, and influencers. Save thousands on taxes with creator-focused tax strategy and bookkeeping.",
+    title: "Tax Services & Planning | Nader Accountancy",
+    description: "Expert CPA services for individuals and businesses. Tax return preparation or year-round tax planning tailored to your needs.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nader Accountancy - Content Creator Tax Services",
+        alt: "Nader Accountancy - Tax Services",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Content Creator Tax Services & Accounting | Nader Accountancy",
-    description: "Expert CPA specializing in content creators, YouTubers, and influencers. Save thousands on taxes with creator-focused tax strategy.",
+    title: "Tax Services & Planning | Nader Accountancy",
+    description: "Expert CPA services for individuals and businesses. Tax return preparation or year-round tax planning tailored to your needs.",
     images: ["/og-image.jpg"],
   },
   robots: {
@@ -175,9 +168,6 @@ export default function RootLayout({
             >
               Skip to main content
             </a>
-
-            {/* Announcement Bar */}
-            <AnnouncementBar />
 
             {/* Navigation */}
             <Navbar />

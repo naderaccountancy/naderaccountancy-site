@@ -2,25 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { usePathname } from "next/navigation";
 
 /* ===========================================
    NAVBAR COMPONENT
    
-   To customize:
-   - Change "Your Name, CPA" below to your actual name
-   - Modify navigation links as needed
+   Simple navigation for two-page site
    =========================================== */
 
-// Company name
 const SITE_NAME = "Nader Accountancy";
-
-const navLinks = [
-  { href: "/services", label: "Services" },
-  { href: "/about", label: "About" },
-  { href: "/educational-resources", label: "Resources" },
-  { href: "/calculators", label: "Calculators" },
-];
 
 const socialLinks = [
   {
@@ -41,20 +30,10 @@ const socialLinks = [
       </svg>
     ),
   },
-  {
-    href: "https://www.linkedin.com/company/nader-accountancy/",
-    label: "LinkedIn",
-    icon: (
-      <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-      </svg>
-    ),
-  },
 ];
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
 
   return (
     <header
@@ -74,28 +53,15 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
-                  pathname === link.href
-                    ? "bg-[var(--color-gold)]/10 text-[var(--color-gold)]"
-                    : "text-gray-300 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="hidden md:flex items-center space-x-4">
             <Link
               href="/contact"
-              className="ml-4 btn-primary text-sm !py-2.5 !px-5"
+              className="btn-primary text-sm !py-2.5 !px-5"
             >
-              Book a Call
+              Book a Consultation
             </Link>
             {/* Social Media Icons */}
-            <div className="ml-4 flex items-center space-x-2">
+            <div className="ml-2 flex items-center space-x-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -146,33 +112,19 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen ? "max-h-80 pb-4" : "max-h-0"
+            isOpen ? "max-h-60 pb-4" : "max-h-0"
           }`}
         >
-          <div className="flex flex-col space-y-1 pt-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                onClick={() => setIsOpen(false)}
-                className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
-                  pathname === link.href
-                    ? "bg-[var(--color-gold)]/10 text-[var(--color-gold)]"
-                    : "text-gray-300 hover:text-white hover:bg-white/5"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
+          <div className="flex flex-col space-y-3 pt-2">
             <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="btn-primary text-sm text-center mt-2 !py-3"
+              className="btn-primary text-sm text-center !py-3"
             >
-              Book a Call
+              Book a Consultation
             </Link>
             {/* Social Media Icons - Mobile */}
-            <div className="flex items-center justify-center space-x-4 mt-4 pt-4 border-t border-white/10">
+            <div className="flex items-center justify-center space-x-4 mt-2 pt-4 border-t border-white/10">
               {socialLinks.map((social) => (
                 <a
                   key={social.label}
@@ -193,5 +145,3 @@ export default function Navbar() {
     </header>
   );
 }
-
-

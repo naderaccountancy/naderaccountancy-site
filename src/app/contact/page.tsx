@@ -8,9 +8,9 @@ import { CalendlyWidget } from "@/components";
    =========================================== */
 
 export const metadata: Metadata = {
-  title: "Book a Free Consultation | Content Creator Tax Services",
-  description: "Schedule a free consultation with a CPA who specializes in content creators. Discuss your YouTube, influencer, or streaming income and discover tax-saving strategies.",
-  keywords: ["content creator tax consultation", "YouTuber CPA consultation", "influencer accountant free call", "creator tax help"],
+  title: "Book a Free Consultation",
+  description: "Schedule a free consultation with a CPA to discuss your tax situation and discover strategies to minimize your tax burden.",
+  keywords: ["tax consultation", "CPA consultation", "accountant free call", "tax help"],
 };
 
 const CONTACT_CONFIG = {
@@ -30,9 +30,6 @@ export default function ContactPage() {
             <h1 className="mt-3 text-4xl sm:text-5xl font-bold text-white">
               Schedule a Consultation
             </h1>
-            <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-              Ready to keep more of what you earn? Schedule a complimentary call and let&apos;s map out your tax strategy—no pressure, no obligation.
-            </p>
           </div>
         </div>
       </section>
