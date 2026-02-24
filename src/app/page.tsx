@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "Tax Services & Planning | Nader Accountancy",
-  description: "Expert CPA services for individuals and businesses. Tax return preparation starting at $1,000 or year-round tax planning starting at $400/month.",
+  description: "Expert CPA services for individuals and businesses. Tax return preparation starting at $500 or year-round tax planning starting at $400/month.",
 };
 
 const pricingTiers = [
@@ -17,7 +17,7 @@ const pricingTiers = [
     id: "tax-prep",
     name: "Tax Return Preparation",
     description: "Professional preparation and filing of your annual tax returns",
-    price: "1,000",
+    price: "500",
     priceLabel: "starting at",
     priceSuffix: "",
     features: [
