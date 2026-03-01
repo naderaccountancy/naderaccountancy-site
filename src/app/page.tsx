@@ -130,26 +130,6 @@ const steps = [
   },
 ];
 
-const testimonials = [
-  {
-    quote:
-      "Ben completely changed the way I think about my taxes. He found deductions I had no idea about and set me up with a strategy that saves me thousands every year. I finally feel like I have someone in my corner.",
-    name: "Marcus T.",
-    role: "Small Business Owner",
-  },
-  {
-    quote:
-      "I used to dread tax season. Ben made the whole process painless and actually enjoyable. He explains everything in plain English and is always available when I have questions. Highly recommend.",
-    name: "Jessica R.",
-    role: "Freelance Designer",
-  },
-  {
-    quote:
-      "Switching to Ben was the best financial decision I\u2019ve made. He restructured my business entity and I\u2019m saving over $15K a year in taxes. Worth every penny.",
-    name: "David L.",
-    role: "S-Corp Owner",
-  },
-];
 
 export default function Home() {
   return (
@@ -452,55 +432,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ===== SECTION 6: TESTIMONIALS ===== */}
-      <section className="py-20 sm:py-24 bg-[var(--color-gray-50)]">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-16">
-            <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
-              Testimonials
-            </span>
-            <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-              What Clients Are Saying
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            {testimonials.map((testimonial) => (
-              <div
-                key={testimonial.name}
-                className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300"
-              >
-                <svg
-                  className="w-10 h-10 text-[var(--color-gold)]/30 mb-4"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
-                </svg>
-                <p className="text-gray-700 leading-relaxed mb-6 text-sm">
-                  &ldquo;{testimonial.quote}&rdquo;
-                </p>
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] font-bold text-sm">
-                    {testimonial.name
-                      .split(" ")
-                      .map((n) => n[0])
-                      .join("")}
-                  </div>
-                  <div>
-                    <p className="font-semibold text-[var(--color-navy-deep)] text-sm">
-                      {testimonial.name}
-                    </p>
-                    <p className="text-gray-500 text-xs">{testimonial.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ===== SECTION 7: ABOUT ME ===== */}
+      {/* ===== SECTION 6: ABOUT ME ===== */}
       <section className="py-20 sm:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-16">
