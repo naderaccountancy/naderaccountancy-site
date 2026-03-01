@@ -13,7 +13,7 @@ const SITE_NAME = "Nader Accountancy";
 
 const socialLinks = [
   {
-    href: "https://www.youtube.com/@BenNaderCPA",
+    href: "https://www.youtube.com/@NaderAccountancy",
     label: "YouTube",
     icon: (
       <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

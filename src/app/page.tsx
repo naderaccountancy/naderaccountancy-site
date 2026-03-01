@@ -162,21 +162,14 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24 md:pt-44 md:pb-32">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Headshot Placeholder */}
+            {/* Headshot */}
             <div className="flex-shrink-0 animate-fade-in-up opacity-0">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full bg-[var(--color-navy-light)] border-4 border-[var(--color-gold)]/30 flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <svg
-                    className="w-20 h-20 text-[var(--color-gold)]/40 mx-auto"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                  <span className="text-xs text-gray-500 mt-1 block">
-                    Photo coming soon
-                  </span>
-                </div>
+              <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-[var(--color-gold)]/30 overflow-hidden">
+                <img
+                  src="/ben-nader-headshot.png"
+                  alt="Ben Nader, CPA"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 
@@ -520,21 +513,14 @@ export default function Home() {
           </div>
 
           <div className="flex flex-col md:flex-row items-center gap-12 max-w-4xl mx-auto">
-            {/* Photo Placeholder */}
+            {/* Photo */}
             <div className="flex-shrink-0">
-              <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl bg-[var(--color-gray-50)] border-2 border-[var(--color-gold)]/20 flex items-center justify-center overflow-hidden">
-                <div className="text-center">
-                  <svg
-                    className="w-16 h-16 text-gray-300 mx-auto"
-                    fill="currentColor"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                  </svg>
-                  <span className="text-xs text-gray-400 mt-2 block">
-                    Photo coming soon
-                  </span>
-                </div>
+              <div className="w-56 h-56 sm:w-64 sm:h-64 rounded-2xl border-2 border-[var(--color-gold)]/20 overflow-hidden">
+                <img
+                  src="/ben-nader-headshot.png"
+                  alt="Ben Nader, CPA"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
 

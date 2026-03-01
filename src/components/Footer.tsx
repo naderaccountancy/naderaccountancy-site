@@ -83,7 +83,7 @@ export default function Footer() {
             <div className="flex justify-center md:justify-end space-x-4 mt-6">
               {/* YouTube */}
               <a
-                href="https://www.youtube.com/@BenNaderCPA"
+                href="https://www.youtube.com/@NaderAccountancy"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full bg-[var(--color-navy-light)] flex items-center justify-center text-gray-400 hover:bg-[var(--color-gold)] hover:text-[var(--color-navy-deep)] transition-all"
