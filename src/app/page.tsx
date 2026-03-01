@@ -142,9 +142,9 @@ export default function Home() {
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-24 md:pt-44 md:pb-32">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Headshot */}
-            <div className="flex-shrink-0 animate-fade-in-up opacity-0">
-              <div className="w-48 h-48 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-[var(--color-gold)]/30 overflow-hidden">
+            {/* Headshot — desktop only */}
+            <div className="hidden lg:block flex-shrink-0 animate-fade-in-up opacity-0">
+              <div className="w-64 h-64 rounded-full border-4 border-[var(--color-gold)]/30 overflow-hidden">
                 <img
                   src="/ben-nader-headshot.png"
                   alt="Ben Nader, CPA"
