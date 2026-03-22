@@ -13,7 +13,7 @@ const pricingTiers = [
     name: "Tax Return Preparation",
     description:
       "Professional preparation and filing of your annual tax returns",
-    price: "500",
+    price: "1,000",
     priceLabel: "starting at",
     priceSuffix: "",
     features: [
