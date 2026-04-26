@@ -32,10 +32,10 @@ export const metadata: Metadata = {
 
 const trustBarItems = [
   "Licensed CPA",
-  "Master\u2019s in Tax",
-  "Year-Round Tax Planning",
-  "Bookkeeping + Tax Compliance",
-  "Entity & S Corp Guidance",
+  "Creator Tax Help",
+  "Know What to Save",
+  "Get Organized",
+  "Ready for Tax Season",
 ];
 
 const audienceCards = [
@@ -177,7 +177,7 @@ export default function CreatorTaxCpaLanding() {
             </p>
 
             <h1 className="animate-fade-in-up opacity-0 animation-delay-100 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
-              OnlyFans, Fansly, or Other Creator Income?{" "}
+              OnlyFans, Fansly, or Creator Income?{" "}
               <span className="text-gradient-gold block mt-2">Don&apos;t Let Taxes Become a Mess.</span>
             </h1>
 
