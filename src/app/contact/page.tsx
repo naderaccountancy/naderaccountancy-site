@@ -93,8 +93,42 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ===== GOOD FIT GRID ===== */}
+      {/* ===== SCHEDULE A STRATEGY CALL (Calendly) ===== */}
       <section className="py-16 sm:py-20 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div id="apply" className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg border border-gray-100">
+            <div className="text-center mb-6">
+              <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
+                Step 1
+              </span>
+              <h2 className="mt-2 text-2xl sm:text-3xl font-bold text-[var(--color-navy-deep)] mb-3">
+                Schedule a Strategy Call
+              </h2>
+              <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
+                Use the calendar below to schedule a strategy call. Tell us about your income, entity, and current tax situation so we can recommend the right engagement.
+              </p>
+            </div>
+            <CalendlyWidget />
+          </div>
+
+          {/* Direct Contact */}
+          <div className="mt-8 text-center">
+            <p className="text-gray-600 mb-2 text-sm">Prefer email?</p>
+            <a
+              href={`mailto:${CONTACT_CONFIG.email}`}
+              className="inline-flex items-center gap-2 text-[var(--color-gold-dark)] hover:text-[var(--color-gold)] transition-colors font-medium"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              {CONTACT_CONFIG.email}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== GOOD FIT GRID ===== */}
+      <section className="py-16 sm:py-20 bg-[var(--color-gray-50)]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
@@ -123,8 +157,8 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* ===== EXPECTATIONS / CALENDLY ===== */}
-      <section className="py-16 sm:py-20 bg-[var(--color-gray-50)]">
+      {/* ===== APPLICATION PROCESS ===== */}
+      <section className="py-16 sm:py-20 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
@@ -139,7 +173,7 @@ export default function ContactPage() {
             {expectations.map((item) => (
               <div
                 key={item.step}
-                className="bg-white rounded-xl p-6 shadow-sm border border-gray-100"
+                className="bg-[var(--color-gray-50)] rounded-xl p-6 border border-gray-100"
               >
                 <div className="w-10 h-10 rounded-full bg-[var(--color-gold)] flex items-center justify-center text-[var(--color-navy-deep)] font-bold mb-4">
                   {item.step}
@@ -154,23 +188,10 @@ export default function ContactPage() {
             ))}
           </div>
 
-          {/* Calendly Embed - apply / schedule a strategy call */}
-          <div id="apply" className="bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
-            <div className="text-center mb-6">
-              <h3 className="text-xl sm:text-2xl font-bold text-[var(--color-navy-deep)] mb-2">
-                Schedule a Strategy Call
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-base max-w-2xl mx-auto">
-                Use the calendar below to schedule a strategy call. Tell us about your income, entity, and current tax situation so we can recommend the right engagement.
-              </p>
-            </div>
-            <CalendlyWidget />
-          </div>
-
           {/* Strategy session anchor */}
           <div
             id="strategy-session"
-            className="mt-10 bg-[var(--color-navy-deep)] rounded-2xl p-8 sm:p-10 text-center"
+            className="bg-[var(--color-navy-deep)] rounded-2xl p-8 sm:p-10 text-center"
           >
             <span className="text-[var(--color-gold)] font-semibold text-sm uppercase tracking-wider">
               Tax Strategy Session
@@ -192,20 +213,6 @@ export default function ContactPage() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </a>
-          </div>
-
-          {/* Direct Contact */}
-          <div className="mt-10 text-center">
-            <p className="text-gray-600 mb-2 text-sm">Prefer email?</p>
-            <a
-              href={`mailto:${CONTACT_CONFIG.email}`}
-              className="inline-flex items-center gap-2 text-[var(--color-gold-dark)] hover:text-[var(--color-gold)] transition-colors font-medium"
-            >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-              </svg>
-              {CONTACT_CONFIG.email}
             </a>
           </div>
         </div>
