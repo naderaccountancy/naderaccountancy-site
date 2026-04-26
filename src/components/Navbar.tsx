@@ -14,10 +14,16 @@ import { useState } from "react";
 
 const SITE_NAME = "Nader Accountancy";
 
-const MINIMAL_NAV_ROUTES: Record<string, { ctaLabel: string; ctaHref: string }> = {
+const MINIMAL_NAV_ROUTES: Record<
+  string,
+  { ctaLabel: string; ctaHref: string; ctaMobileHref?: string }
+> = {
   "/creator-tax-cpa": {
     ctaLabel: "Book a Free Creator Tax Call",
     ctaHref: "#book-call",
+    // Mobile bypasses the on-page Calendly embed (which causes nested
+    // scrolling inside the iframe) and goes straight to Calendly.
+    ctaMobileHref: "https://calendly.com/ben-naderaccountancy/new-meeting",
   },
 };
 
@@ -48,6 +54,7 @@ export default function Navbar() {
   const minimalConfig = pathname ? MINIMAL_NAV_ROUTES[pathname] : undefined;
 
   if (minimalConfig) {
+    const mobileHref = minimalConfig.ctaMobileHref ?? minimalConfig.ctaHref;
     return (
       <header
         className="fixed left-0 right-0 z-50 bg-[var(--color-navy-deep)]/95 backdrop-blur-md border-b border-[var(--color-navy-light)]/20"
@@ -58,10 +65,19 @@ export default function Navbar() {
             <span className="text-[var(--color-gold)] font-semibold text-lg sm:text-xl tracking-wide">
               {SITE_NAME}
             </span>
+            {/* Desktop: smooth-scroll to embed */}
             <a
               href={minimalConfig.ctaHref}
               data-gtm="creator-landing-nav-cta"
-              className="creator-landing-nav-cta btn-primary text-xs sm:text-sm !py-2.5 !px-4 sm:!px-5"
+              className="creator-landing-nav-cta btn-primary text-xs sm:text-sm !py-2.5 !px-4 sm:!px-5 hidden md:inline-flex"
+            >
+              {minimalConfig.ctaLabel}
+            </a>
+            {/* Mobile: jump straight to Calendly to avoid nested scrolling */}
+            <a
+              href={mobileHref}
+              data-gtm="creator-landing-nav-cta"
+              className="creator-landing-nav-cta btn-primary text-xs sm:text-sm !py-2.5 !px-4 inline-flex md:hidden"
             >
               {minimalConfig.ctaLabel}
             </a>

@@ -8,7 +8,12 @@ import { CalendlyWidget } from "@/components";
    (Google Ads, social ad links, etc.)
    - Not linked from navbar, footer, homepage, or sitemap
    - noindex, nofollow at the page level
+   - Mobile: skip the embed and link straight to
+     Calendly's full booking page to avoid the
+     nested-scroll issue on small screens.
    =========================================== */
+
+const CALENDLY_URL = "https://calendly.com/ben-naderaccountancy/new-meeting";
 
 export const metadata: Metadata = {
   title: "CPA Tax Help for Creators With Platform Income | Nader Accountancy",
@@ -186,10 +191,22 @@ export default function CreatorTaxCpaLanding() {
             </p>
 
             <div className="animate-fade-in-up opacity-0 animation-delay-300 flex flex-col items-center gap-3">
+              {/* Desktop: smooth-scroll to inline embed */}
               <a
                 href="#book-call"
                 data-gtm="creator-landing-primary-cta"
-                className="creator-landing-primary-cta btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
+                className="creator-landing-primary-cta btn-primary text-base sm:text-lg px-8 py-4 hidden md:inline-flex items-center justify-center gap-2"
+              >
+                Book a Free Creator Tax Call
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
+              </a>
+              {/* Mobile: open Calendly directly to avoid nested scrolling */}
+              <a
+                href={CALENDLY_URL}
+                data-gtm="creator-landing-primary-cta"
+                className="creator-landing-primary-cta btn-primary text-base sm:text-lg px-8 py-4 inline-flex md:hidden items-center justify-center gap-2"
               >
                 Book a Free Creator Tax Call
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -432,11 +449,29 @@ export default function CreatorTaxCpaLanding() {
             </p>
           </div>
 
+          {/* Desktop / tablet (>=768px): inline Calendly embed */}
           <div
             data-gtm="creator-calendly-click"
-            className="creator-calendly-click bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100"
+            className="creator-calendly-click hidden md:block bg-white rounded-2xl p-4 sm:p-6 shadow-lg border border-gray-100"
           >
-            <CalendlyWidget />
+            <CalendlyWidget height={780} />
+          </div>
+
+          {/* Mobile (<768px): direct link avoids nested-scroll inside the iframe */}
+          <div className="md:hidden text-center">
+            <a
+              href={CALENDLY_URL}
+              data-gtm="creator-calendly-click"
+              className="creator-calendly-click btn-primary text-base px-8 py-4 inline-flex items-center justify-center gap-2 w-full sm:w-auto"
+            >
+              Continue to Booking
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </a>
+            <p className="text-gray-500 text-sm mt-4 max-w-xs mx-auto leading-relaxed">
+              Opens our scheduling page so you can pick a time without scrolling inside the form.
+            </p>
           </div>
         </div>
       </section>
@@ -456,10 +491,22 @@ export default function CreatorTaxCpaLanding() {
           <p className="text-gray-300 mb-10 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
             If you earn income through platforms, subscriptions, brand deals, or 1099 work, your tax situation needs a system. Book a free creator tax call and see what level of support makes sense.
           </p>
+          {/* Desktop: smooth-scroll to inline embed */}
           <a
             href="#book-call"
             data-gtm="creator-landing-final-cta"
-            className="creator-landing-final-cta btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
+            className="creator-landing-final-cta btn-primary text-base sm:text-lg px-8 py-4 hidden md:inline-flex items-center justify-center gap-2"
+          >
+            Book a Free Creator Tax Call
+            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </a>
+          {/* Mobile: open Calendly directly to avoid nested scrolling */}
+          <a
+            href={CALENDLY_URL}
+            data-gtm="creator-landing-final-cta"
+            className="creator-landing-final-cta btn-primary text-base sm:text-lg px-8 py-4 inline-flex md:hidden items-center justify-center gap-2"
           >
             Book a Free Creator Tax Call
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
