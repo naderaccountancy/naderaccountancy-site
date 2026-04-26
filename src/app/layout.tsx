@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: "Tax Services & Planning | Nader Accountancy",
     template: "%s | Nader Accountancy",
   },
-  description: "Expert CPA services for individuals and businesses. Tax return preparation starting at $1,000 or year-round tax planning starting at $400/month.",
+  description: "Expert CPA services for individuals and businesses. Tax return preparation starting at $1,000 or year-round tax planning starting at $300/month.",
   keywords: [
     "tax services",
     "tax preparation",
