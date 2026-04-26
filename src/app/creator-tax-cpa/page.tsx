@@ -177,12 +177,12 @@ export default function CreatorTaxCpaLanding() {
             </p>
 
             <h1 className="animate-fade-in-up opacity-0 animation-delay-100 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
-              Making Money on OnlyFans, Fansly, or Other Platforms?{" "}
+              OnlyFans, Fansly, or Other Creator Income?{" "}
               <span className="text-gradient-gold block mt-2">Don&apos;t Let Taxes Become a Mess.</span>
             </h1>
 
             <p className="animate-fade-in-up opacity-0 animation-delay-200 text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
-              I help creators figure out what to save, what to pay, and what to do before tax season.
+              I help creators know what to save, what to pay, and what to do before tax season.
             </p>
 
             <div className="animate-fade-in-up opacity-0 animation-delay-300 flex flex-col items-center gap-3">
@@ -197,7 +197,7 @@ export default function CreatorTaxCpaLanding() {
                 </svg>
               </a>
               <p className="text-sm text-gray-400 mt-2">
-                For creators who want taxes handled without guessing.
+                No guessing. No scrambling at tax time.
               </p>
             </div>
           </div>
