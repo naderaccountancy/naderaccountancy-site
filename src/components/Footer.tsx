@@ -32,7 +32,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-gray-400 text-sm leading-relaxed">
-              Professional tax services tailored to your needs.
+              Year-round tax planning and advisory for high-income self-employed professionals, creators, and business owners.
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export default function Footer() {
                   href="/contact"
                   className="text-gray-400 hover:text-[var(--color-gold)] transition-colors text-sm"
                 >
-                  Contact
+                  Apply
                 </Link>
               </li>
             </ul>

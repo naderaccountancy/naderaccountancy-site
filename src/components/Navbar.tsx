@@ -58,7 +58,7 @@ export default function Navbar() {
               href="/contact"
               className="btn-primary text-sm !py-2.5 !px-5"
             >
-              Book a Consultation
+              Apply to Work With Us
             </Link>
             {/* Social Media Icons */}
             <div className="ml-2 flex items-center space-x-2">
@@ -121,7 +121,7 @@ export default function Navbar() {
               onClick={() => setIsOpen(false)}
               className="btn-primary text-sm text-center !py-3"
             >
-              Book a Consultation
+              Apply to Work With Us
             </Link>
             {/* Social Media Icons - Mobile */}
             <div className="flex items-center justify-center space-x-4 mt-2 pt-4 border-t border-white/10">

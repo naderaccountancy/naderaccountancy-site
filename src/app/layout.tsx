@@ -23,20 +23,25 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 
 export const metadata: Metadata = {
   title: {
-    default: "Tax Services & Planning | Nader Accountancy",
+    default: "Tax Planning & Advisory for Self-Employed & Business Owners | Nader Accountancy",
     template: "%s | Nader Accountancy",
   },
-  description: "Expert CPA services for individuals and businesses. Tax return preparation starting at $1,000 or year-round tax planning starting at $300/month.",
+  description:
+    "Year-round tax planning, compliance, and advisory for high-income self-employed professionals, creators, consultants, LLC owners, S corp owners, and small business owners.",
   keywords: [
-    "tax services",
-    "tax preparation",
-    "CPA services",
     "tax planning",
-    "accountant",
-    "tax return preparation",
     "year-round tax planning",
-    "small business taxes",
-    "individual tax returns",
+    "tax advisory",
+    "CPA",
+    "tax strategy session",
+    "self-employed CPA",
+    "creator CPA",
+    "LLC tax planning",
+    "S corp tax planning",
+    "business CPA",
+    "estimated taxes",
+    "bookkeeping",
+    "tax cleanup",
   ],
   authors: [{ name: "Ben Nader, CPA" }],
   creator: "Nader Accountancy",
@@ -46,21 +51,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://naderaccountancy.com",
     siteName: "Nader Accountancy",
-    title: "Tax Services & Planning | Nader Accountancy",
-    description: "Expert CPA services for individuals and businesses. Tax return preparation or year-round tax planning tailored to your needs.",
+    title: "Tax Planning & Advisory for Self-Employed & Business Owners | Nader Accountancy",
+    description:
+      "Tax planning and compliance for high-income self-employed professionals and business owners who don't want surprise tax bills.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Nader Accountancy - Tax Services",
+        alt: "Nader Accountancy - Tax Planning & Advisory",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Tax Services & Planning | Nader Accountancy",
-    description: "Expert CPA services for individuals and businesses. Tax return preparation or year-round tax planning tailored to your needs.",
+    title: "Tax Planning & Advisory for Self-Employed & Business Owners | Nader Accountancy",
+    description:
+      "Tax planning and compliance for high-income self-employed professionals and business owners who don't want surprise tax bills.",
     images: ["/og-image.jpg"],
   },
   robots: {
