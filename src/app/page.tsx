@@ -241,10 +241,10 @@ export default function Home() {
                 Nader Accountancy helps consultants, LLC owners, S corp owners, small business owners, and creators stay compliant, plan quarterly taxes, understand their entity structure, and avoid surprise tax bills.
               </p>
 
-              <div className="animate-fade-in-up opacity-0 animation-delay-300 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <div className="animate-fade-in-up opacity-0 animation-delay-300">
                 <Link
                   href="/contact"
-                  className="btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
+                  className="btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center gap-2"
                 >
                   Apply to Work With Us
                   <svg
@@ -260,12 +260,6 @@ export default function Home() {
                       d="M9 5l7 7-7 7"
                     />
                   </svg>
-                </Link>
-                <Link
-                  href="/contact#strategy-session"
-                  className="btn-secondary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
-                >
-                  Book a Paid Strategy Session
                 </Link>
               </div>
             </div>
@@ -756,21 +750,15 @@ export default function Home() {
           <p className="text-gray-300 mb-10 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
             Apply to work with Nader Accountancy. We&apos;ll review your situation and recommend the right level of support.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Link
               href="/contact"
-              className="btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
+              className="btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center gap-2"
             >
               Apply to Work With Us
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
               </svg>
-            </Link>
-            <Link
-              href="/contact#strategy-session"
-              className="btn-secondary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center"
-            >
-              Book a Paid Strategy Session
             </Link>
           </div>
         </div>
