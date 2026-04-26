@@ -1,9 +1,14 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 /* ===========================================
    FOOTER COMPONENT
    
-   Simple footer for two-page site
+   Renders a minimal version on dedicated landing
+   pages: branding, copyright, and disclaimer only,
+   to keep the page focused on a single CTA.
    =========================================== */
 
 const FOOTER_CONFIG = {
@@ -11,8 +16,39 @@ const FOOTER_CONFIG = {
   email: "ben@naderaccountancy.com",
 };
 
+const MINIMAL_FOOTER_ROUTES = new Set<string>(["/creator-tax-cpa"]);
+
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const pathname = usePathname();
+  const isMinimal = pathname ? MINIMAL_FOOTER_ROUTES.has(pathname) : false;
+
+  if (isMinimal) {
+    return (
+      <footer className="bg-[var(--color-navy-deep)] text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+          <div className="flex flex-col items-center text-center gap-4">
+            <div className="flex items-center space-x-2">
+              <div className="w-10 h-10 rounded-lg bg-gradient-gold flex items-center justify-center">
+                <span className="text-[var(--color-navy-deep)] font-bold text-lg">
+                  NA
+                </span>
+              </div>
+              <span className="text-white font-semibold text-lg">
+                {FOOTER_CONFIG.name}
+              </span>
+            </div>
+            <p className="text-gray-500 text-sm">
+              © {currentYear} {FOOTER_CONFIG.name}. All rights reserved.
+            </p>
+            <p className="text-gray-500 text-xs max-w-xl leading-relaxed">
+              <strong>Disclaimer:</strong> Information provided is for general purposes only and does not constitute tax, legal, or financial advice.
+            </p>
+          </div>
+        </div>
+      </footer>
+    );
+  }
 
   return (
     <footer className="bg-[var(--color-navy-deep)] text-white">

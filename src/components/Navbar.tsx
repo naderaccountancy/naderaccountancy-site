@@ -1,15 +1,25 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 /* ===========================================
    NAVBAR COMPONENT
    
-   Simple navigation for two-page site
+   Renders a stripped-down version on dedicated
+   landing pages so the only conversion goal is
+   the page's primary CTA.
    =========================================== */
 
 const SITE_NAME = "Nader Accountancy";
+
+const MINIMAL_NAV_ROUTES: Record<string, { ctaLabel: string; ctaHref: string }> = {
+  "/creator-tax-cpa": {
+    ctaLabel: "Book a Free Creator Tax Call",
+    ctaHref: "#book-call",
+  },
+};
 
 const socialLinks = [
   {
@@ -34,6 +44,32 @@ const socialLinks = [
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+  const minimalConfig = pathname ? MINIMAL_NAV_ROUTES[pathname] : undefined;
+
+  if (minimalConfig) {
+    return (
+      <header
+        className="fixed left-0 right-0 z-50 bg-[var(--color-navy-deep)]/95 backdrop-blur-md border-b border-[var(--color-navy-light)]/20"
+        style={{ top: "var(--announcement-offset, 0px)" }}
+      >
+        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-20">
+            <span className="text-[var(--color-gold)] font-semibold text-lg sm:text-xl tracking-wide">
+              {SITE_NAME}
+            </span>
+            <a
+              href={minimalConfig.ctaHref}
+              data-gtm="creator-landing-nav-cta"
+              className="creator-landing-nav-cta btn-primary text-xs sm:text-sm !py-2.5 !px-4 sm:!px-5"
+            >
+              {minimalConfig.ctaLabel}
+            </a>
+          </div>
+        </nav>
+      </header>
+    );
+  }
 
   return (
     <header

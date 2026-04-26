@@ -139,7 +139,7 @@ const processSteps = [
     number: "1",
     title: "Book a Call",
     description:
-      "Schedule a complimentary tax planning call and answer a few quick questions before the meeting.",
+      "Book a free creator tax call and answer a few quick questions before the meeting.",
   },
   {
     number: "2",
@@ -173,19 +173,16 @@ export default function CreatorTaxCpaLanding() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 md:pt-44 md:pb-28">
           <div className="text-center">
             <p className="animate-fade-in-up opacity-0 text-[var(--color-gold)] font-semibold text-sm sm:text-base uppercase tracking-wider mb-4">
-              Nader Accountancy &nbsp;|&nbsp; CPA Tax Help for Online Creators
+              Nader Accountancy &nbsp;|&nbsp; Tax Help for Creators
             </p>
 
             <h1 className="animate-fade-in-up opacity-0 animation-delay-100 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
-              Making Money Online?{" "}
-              <span className="text-gradient-gold">Let&apos;s Get Your Taxes Handled.</span>
+              Making Money on OnlyFans, Fansly, or Other Platforms?{" "}
+              <span className="text-gradient-gold block mt-2">Don&apos;t Let Taxes Become a Mess.</span>
             </h1>
 
-            <p className="animate-fade-in-up opacity-0 animation-delay-200 text-lg sm:text-xl text-gray-300 mb-4 leading-relaxed max-w-3xl mx-auto">
-              CPA help for OnlyFans, Fansly, influencers, and online creators who need tax planning, bookkeeping, quarterly tax estimates, and tax return support.
-            </p>
-            <p className="animate-fade-in-up opacity-0 animation-delay-200 text-base sm:text-lg text-gray-400 mb-10 leading-relaxed max-w-3xl mx-auto">
-              If you earn money from subscriptions, tips, brand deals, or platform payouts, taxes can get messy fast. Nader Accountancy helps you understand what you owe, what to set aside, and what steps to take before tax season.
+            <p className="animate-fade-in-up opacity-0 animation-delay-200 text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
+              I help creators figure out what to save, what to pay, and what to do before tax season.
             </p>
 
             <div className="animate-fade-in-up opacity-0 animation-delay-300 flex flex-col items-center gap-3">
@@ -194,13 +191,13 @@ export default function CreatorTaxCpaLanding() {
                 data-gtm="creator-landing-primary-cta"
                 className="creator-landing-primary-cta btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
               >
-                Book a Complimentary Tax Planning Call
+                Book a Free Creator Tax Call
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>
               </a>
               <p className="text-sm text-gray-400 mt-2">
-                CPA-led tax support for creators, influencers, and self-employed online earners.
+                For creators who want taxes handled without guessing.
               </p>
             </div>
           </div>
@@ -413,15 +410,9 @@ export default function CreatorTaxCpaLanding() {
             <h2 className="mt-3 text-2xl sm:text-3xl font-bold text-[var(--color-navy-deep)] mb-4">
               What the Initial Call Is For
             </h2>
-            <p className="text-gray-700 leading-relaxed mb-5">
-              The initial call is used to understand your situation and determine what level of support you may need. If we&apos;re a good fit, we&apos;ll recommend the appropriate next step.
+            <p className="text-gray-700 leading-relaxed">
+              The call is meant to understand your situation and see what kind of help makes sense. Detailed tax advice, projections, return reviews, and implementation are provided after you become a client.
             </p>
-            <div className="border-l-4 border-[var(--color-gold)] bg-[var(--color-gray-50)] p-4 rounded-r-lg">
-              <p className="text-gray-700 text-sm leading-relaxed">
-                <span className="font-semibold text-[var(--color-navy-deep)]">Note:</span>{" "}
-                This is not a full tax planning engagement, tax projection, return review, or implementation session. Specific tax advice and implementation are provided after engagement.
-              </p>
-            </div>
           </div>
         </div>
       </section>
@@ -434,7 +425,7 @@ export default function CreatorTaxCpaLanding() {
               Schedule
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Book a Complimentary Tax Planning Call
+              Book a Free Creator Tax Call
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed">
               Pick a time that works for you. Tell us about your income, entity, and current tax situation so we can recommend the right level of support.
@@ -463,14 +454,14 @@ export default function CreatorTaxCpaLanding() {
             Ready to Stop Guessing on Taxes?
           </h2>
           <p className="text-gray-300 mb-10 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
-            If you earn income through platforms, subscriptions, brand deals, or 1099 work, your tax situation needs a system. Book a complimentary call and see what level of support makes sense.
+            If you earn income through platforms, subscriptions, brand deals, or 1099 work, your tax situation needs a system. Book a free creator tax call and see what level of support makes sense.
           </p>
           <a
             href="#book-call"
             data-gtm="creator-landing-final-cta"
             className="creator-landing-final-cta btn-primary text-base sm:text-lg px-8 py-4 inline-flex items-center justify-center gap-2"
           >
-            Book a Complimentary Tax Planning Call
+            Book a Free Creator Tax Call
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
