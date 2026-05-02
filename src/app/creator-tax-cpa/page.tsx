@@ -16,9 +16,10 @@ import { CalendlyWidget } from "@/components";
 const CALENDLY_URL = "https://calendly.com/ben-naderaccountancy/new-meeting";
 
 export const metadata: Metadata = {
-  title: "CPA Tax Help for Creators With Platform Income | Nader Accountancy",
+  title:
+    "Creator Tax CPA & 1099 Tax Help | Tax Help for Creators | Nader Accountancy",
   description:
-    "Tax planning, bookkeeping, quarterly estimates, entity structure, and tax return support for creators earning through platforms, subscriptions, brand deals, and 1099 income.",
+    "CPA-led tax help for creators, influencers, and 1099 earners: platform payouts, brand deals, subscriptions, quarterly taxes, and LLC or S-Corp questions. OnlyFans tax help, Fansly tax help, and organized planning year-round.",
   alternates: { canonical: undefined },
   robots: {
     index: false,
@@ -37,27 +38,17 @@ export const metadata: Metadata = {
 
 const trustBarItems = [
   "Licensed CPA",
-  "Creator Tax Help",
-  "Know What to Save",
-  "Get Organized",
-  "Ready for Tax Season",
+  "CPA-Led Support",
+  "1099 & Platform Income",
+  "Planning & Compliance",
+  "Year-Round Guidance",
 ];
 
 const audienceCards = [
   {
-    title: "OnlyFans & Fansly Creators",
+    title: "Digital Creators & Influencers",
     description:
-      "Platform income, subscription revenue, 1099s, business expenses, and quarterly tax planning.",
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-  },
-  {
-    title: "Influencers & Digital Creators",
-    description:
-      "Brand deals, affiliate income, sponsorships, content expenses, and inconsistent cash flow.",
+      "UGC, YouTube, TikTok, Instagram, and other channels where income mixes ad revenue, affiliates, and sponsorships.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
@@ -65,9 +56,19 @@ const audienceCards = [
     ),
   },
   {
+    title: "OnlyFans & Fansly Creators",
+    description:
+      "Subscription and tip income, platform payouts, 1099s, and expense tracking under the same creator tax umbrella.",
+    icon: (
+      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    ),
+  },
+  {
     title: "High-Income 1099 Earners",
     description:
-      "Self-employed professionals who need more than basic tax filing.",
+      "Self-employment with multiple payors, uneven cash flow, and estimated taxes that need a clear plan.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -75,9 +76,9 @@ const audienceCards = [
     ),
   },
   {
-    title: "LLC & S Corp Owners",
+    title: "LLC & S-Corp Owners",
     description:
-      "Creators and business owners who need help understanding entity structure, payroll, and compliance.",
+      "Entity choice, owner pay, reasonable compensation, and filing obligations explained in plain language.",
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
@@ -87,56 +88,71 @@ const audienceCards = [
 ];
 
 const problems = [
-  "You made good money but have no idea what you owe.",
-  "You\u2019re not sure how much to set aside for taxes.",
-  "You\u2019re behind on quarterly estimated payments.",
-  "Your books are messy or nonexistent.",
-  "You formed an LLC but don\u2019t know if it actually helps you.",
-  "You\u2019re wondering whether an S corp makes sense.",
-  "You\u2019re not sure what expenses are actually deductible.",
-  "You want a CPA who understands creator income before tax season \u2014 not after it\u2019s too late.",
+  "Your income shows up as platform payouts, 1099s, and deposits\u2014but your records don\u2019t match.",
+  "You\u2019re not sure how much to reserve for federal and state taxes as income changes month to month.",
+  "Brand deals, sponsorships, and subscriptions sit in different accounts with different tax forms.",
+  "Quarterly estimated taxes feel guessy, or you\u2019ve missed payment deadlines.",
+  "You need business expense tracking that holds up if questions arise\u2014not a shoebox of screenshots.",
+  "You have an LLC or are considering an S corporation and want compliance and structure explained clearly.",
+  "You want tax help for creators that fits OnlyFans, Fansly, social platforms, and 1099 work\u2014not a one-size filing shop.",
+  "You want a creator tax CPA who plans with you during the year, not only when returns are due.",
 ];
 
 const services = [
   {
-    title: "Tax Planning",
+    title: "CPA-Led Tax Planning",
     description:
-      "Plan ahead before the year is over so you\u2019re not surprised at filing time.",
+      "Clarity on what to set aside, what to pay, and what to track before year-end\u2014aligned to your actual income streams.",
   },
   {
-    title: "Quarterly Estimated Taxes",
+    title: "1099 & Platform Payouts",
     description:
-      "Calculate and manage federal and state estimated payments throughout the year.",
+      "Sort multiple 1099s, platform statements, and deposits so reporting matches how you really earn.",
   },
   {
-    title: "Bookkeeping Setup & Cleanup",
+    title: "Brand Deals & Sponsorships",
     description:
-      "Organize income, expenses, accounts, and records so tax planning is actually possible.",
+      "Support for contracted revenue, deliverables, and how those payments flow into your tax picture.",
+  },
+  {
+    title: "Subscriptions & Tips",
+    description:
+      "Help organizing recurring fan revenue, tips, and payout timing alongside other creator income.",
+  },
+  {
+    title: "Business Expense Tracking",
+    description:
+      "Structure for documenting ordinary and necessary expenses tied to your content and business activity.",
+  },
+  {
+    title: "Quarterly Tax Planning",
+    description:
+      "Estimated payment planning and timing so you can approach federal and state obligations with a plan.",
+  },
+  {
+    title: "LLC & S-Corp Guidance",
+    description:
+      "Plain-language guidance on entity tradeoffs, payroll considerations, and ongoing compliance expectations.",
   },
   {
     title: "Tax Return Preparation",
     description:
-      "Prepare and file individual and business tax returns based on your facts and records.",
+      "Preparation and filing for individuals and businesses based on complete, organized records.",
   },
   {
-    title: "LLC & S Corp Analysis",
+    title: "Bookkeeping & Year-Round Support",
     description:
-      "Review whether your entity setup makes sense and what compliance comes with it.",
-  },
-  {
-    title: "Prior-Year Cleanup",
-    description:
-      "Help creators who are behind, disorganized, or need to clean up older tax years.",
+      "Setup, cleanup, and ongoing rhythm so tax season reflects a year of organized books\u2014not a rescue mission.",
   },
 ];
 
 const whyBullets = [
-  "Direct CPA communication",
-  "Professional, judgment-free support",
-  "Experience with 1099 and platform income",
-  "Year-round planning, not just tax prep",
-  "Bookkeeping and tax compliance in one place",
-  "Guidance around LLCs, S corps, and quarterly estimates",
+  "CPA-led support with direct communication and clear expectations",
+  "Built for messy creator income: platforms, 1099s, and multiple payors",
+  "OnlyFans tax help and Fansly tax help sit alongside YouTube, TikTok, brand deals, and other streams",
+  "1099 tax help focused on organization, compliance, and planning—not vague promises",
+  "Year-round tax support so filing reflects how you actually operated",
+  "LLC and S-Corp questions answered with your real numbers in view",
 ];
 
 const processSteps = [
@@ -178,16 +194,16 @@ export default function CreatorTaxCpaLanding() {
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pt-36 pb-20 md:pt-44 md:pb-28">
           <div className="text-center">
             <p className="animate-fade-in-up opacity-0 text-[var(--color-gold)] font-semibold text-sm sm:text-base uppercase tracking-wider mb-4">
-              Nader Accountancy &nbsp;|&nbsp; Tax Help for Creators
+              Nader Accountancy &nbsp;|&nbsp; Creator Tax CPA
             </p>
 
             <h1 className="animate-fade-in-up opacity-0 animation-delay-100 text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-6">
-              OnlyFans, Fansly, or Creator Income?{" "}
-              <span className="text-gradient-gold block mt-2">Don&apos;t Let Taxes Become a Mess.</span>
+              Tax Help for Creators, Influencers{" "}
+              <span className="text-gradient-gold block mt-2">&amp; 1099 Earners</span>
             </h1>
 
             <p className="animate-fade-in-up opacity-0 animation-delay-200 text-lg sm:text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl mx-auto">
-              I help creators know what to save, what to pay, and what to do before tax season.
+              Creator income is rarely one tidy paycheck. Nader Accountancy helps you know what to save, what to pay, what to deduct, and how to stay organized—before tax season catches you off guard. Real tax help for creators with platform payouts, 1099s, and business expenses.
             </p>
 
             <div className="animate-fade-in-up opacity-0 animation-delay-300 flex flex-col items-center gap-3">
@@ -214,7 +230,7 @@ export default function CreatorTaxCpaLanding() {
                 </svg>
               </a>
               <p className="text-sm text-gray-400 mt-2">
-                No guessing. No scrambling at tax time.
+                CPA-led planning, compliance, and organization year-round.
               </p>
             </div>
           </div>
@@ -250,8 +266,11 @@ export default function CreatorTaxCpaLanding() {
               Who This Is For
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Built for Creators and Self-Employed Earners
+              Creators, Influencers &amp; Independent Earners
             </h2>
+            <p className="mt-4 text-gray-600 leading-relaxed">
+              From UGC and sponsorships to OnlyFans, Fansly, and high-income 1099 work—if your income is fragmented, you deserve a creator tax CPA who speaks your language.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
@@ -280,7 +299,7 @@ export default function CreatorTaxCpaLanding() {
               Problems We Help Solve
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-              If This Sounds Like You, We Should Talk
+              If This Sounds Familiar, Let&apos;s Talk
             </h2>
           </div>
 
@@ -310,8 +329,11 @@ export default function CreatorTaxCpaLanding() {
               Services
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Creator Tax Support That Goes Beyond Filing
+              What We Help With
             </h2>
+            <p className="mt-4 text-gray-600 leading-relaxed max-w-3xl mx-auto">
+              Tax help for creators means aligning platform payouts, 1099 tax help, brand and subscription revenue, quarterly planning, and entity questions into one coherent approach.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6">
@@ -346,10 +368,10 @@ export default function CreatorTaxCpaLanding() {
               Why Nader Accountancy
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl font-bold text-white">
-              A CPA Firm That Understands Creator Income
+              A CPA Firm That Understands How Creators Actually Earn
             </h2>
             <p className="mt-5 text-gray-300 leading-relaxed">
-              Creator income is still business income. The problem is that many creators don&apos;t have a system for taxes, bookkeeping, estimated payments, deductions, and entity planning. Nader Accountancy helps turn that chaos into a year-round tax process.
+              Your income may be business income, but the sources are rarely simple: platforms, sponsors, fans, affiliates, and 1099s arriving on different schedules. Nader Accountancy focuses on clarity and compliance—organized records, realistic quarterly planning, and entity guidance tied to your facts. That is the difference between basic filing and creator tax CPA support built for messy, real-world income.
             </p>
           </div>
 
@@ -428,7 +450,7 @@ export default function CreatorTaxCpaLanding() {
               What the Initial Call Is For
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              The call is meant to understand your situation and see what kind of help makes sense. Detailed tax advice, projections, return reviews, and implementation are provided after you become a client.
+              The call is to understand your income streams, entity status, and priorities—and to see whether our CPA-led support is a fit. Detailed tax advice, projections, return reviews, and implementation are provided after engagement.
             </p>
           </div>
         </div>
@@ -445,7 +467,7 @@ export default function CreatorTaxCpaLanding() {
               Book a Free Creator Tax Call
             </h2>
             <p className="mt-4 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-              Pick a time that works for you. Tell us about your income, entity, and current tax situation so we can recommend the right level of support.
+              Pick a time that works for you. Share how you earn—platforms, 1099s, OnlyFans or Fansly, brand deals, or business income—so we can recommend appropriate planning, bookkeeping, or prep.
             </p>
           </div>
 
@@ -486,10 +508,10 @@ export default function CreatorTaxCpaLanding() {
             Final Step
           </span>
           <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-5 leading-tight">
-            Ready to Stop Guessing on Taxes?
+            Move From Scattered Income to a Clear Plan
           </h2>
           <p className="text-gray-300 mb-10 max-w-xl mx-auto text-base sm:text-lg leading-relaxed">
-            If you earn income through platforms, subscriptions, brand deals, or 1099 work, your tax situation needs a system. Book a free creator tax call and see what level of support makes sense.
+            Whether you need OnlyFans tax help, Fansly tax help, or support across social platforms and 1099s, the goal is the same: organized records, compliant reporting, and planning you can follow. Book a free creator tax call to discuss your situation.
           </p>
           {/* Desktop: smooth-scroll to inline embed */}
           <a
@@ -514,7 +536,7 @@ export default function CreatorTaxCpaLanding() {
             </svg>
           </a>
           <p className="mt-6 text-gray-400 text-sm max-w-2xl mx-auto leading-relaxed">
-            For creators, self-employed professionals, and business owners looking for tax planning, bookkeeping, compliance, cleanup, or advisory support.
+            For influencers, digital creators, subscription platforms, and high-income 1099 earners who want CPA-led tax help—not a rushed seasonal filing.
           </p>
         </div>
       </section>
