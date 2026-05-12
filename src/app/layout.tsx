@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Navbar, Footer } from "@/components";
 
@@ -91,8 +92,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        {/* Google Tag Manager - Head Script */}
-        <script
+        {/* Google Tag Manager (loaded via next/script for proper Next.js handling) */}
+        <Script
+          id="gtm-script"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -107,17 +110,17 @@ export default function RootLayout({
         {/* Preconnect to external resources for better performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        
+
         {/* Favicon */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-        
+
         {/* Theme color for mobile browsers */}
         <meta name="theme-color" content="#0f172a" />
       </head>
       <body className={`${plusJakartaSans.variable} font-sans antialiased`}>
-        {/* Google Tag Manager (noscript) */}
+        {/* Google Tag Manager (noscript fallback) */}
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
