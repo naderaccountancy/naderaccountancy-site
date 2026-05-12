@@ -102,12 +102,18 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-4">
+          <div className="hidden md:flex items-center space-x-5">
+            <Link
+              href="/creator-tax-cpa"
+              className="text-gray-300 hover:text-[var(--color-gold)] transition-colors text-sm font-medium"
+            >
+              For Creators
+            </Link>
             <Link
               href="/contact"
               className="btn-primary text-sm !py-2.5 !px-5"
             >
-              Apply to Work With Us
+              Book a Free Consult
             </Link>
             {/* Social Media Icons */}
             <div className="ml-2 flex items-center space-x-2">
@@ -161,16 +167,23 @@ export default function Navbar() {
         {/* Mobile Navigation */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
-            isOpen ? "max-h-60 pb-4" : "max-h-0"
+            isOpen ? "max-h-80 pb-4" : "max-h-0"
           }`}
         >
           <div className="flex flex-col space-y-3 pt-2">
             <Link
+              href="/creator-tax-cpa"
+              onClick={() => setIsOpen(false)}
+              className="text-gray-200 hover:text-[var(--color-gold)] transition-colors text-base font-medium text-center py-3 rounded-lg bg-white/5"
+            >
+              For Creators
+            </Link>
+            <Link
               href="/contact"
               onClick={() => setIsOpen(false)}
-              className="btn-primary text-sm text-center !py-3"
+              className="btn-primary text-sm text-center !py-3 min-h-[56px] inline-flex items-center justify-center"
             >
-              Apply to Work With Us
+              Book a Free Consult
             </Link>
             {/* Social Media Icons - Mobile */}
             <div className="flex items-center justify-center space-x-4 mt-2 pt-4 border-t border-white/10">
