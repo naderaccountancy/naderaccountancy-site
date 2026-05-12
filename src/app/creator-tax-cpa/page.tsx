@@ -60,7 +60,7 @@ const audienceCards: ReadonlyArray<{
 }> = [
   {
     title: "Digital Creators & Influencers",
-    body: "YouTube, TikTok, Instagram, Twitch. Ad revenue, sponsorships, affiliates, and fan support, coordinated into one clean tax picture.",
+    body: "YouTube, TikTok, Instagram, Twitch. Ad payouts, sponsorships, affiliate links, fan support, all organized in one place.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -80,7 +80,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "Content Creators & Subscription Platforms",
-    body: "Subscription income, tips, platform payouts, and 1099s. No judgment, no awkwardness, just clean books and a real plan.",
+    body: "Subscription income, tips, platform payouts, and 1099s. No judgment, no awkward questions, just clean books and a real plan.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -100,7 +100,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "UGC & Brand Deal Creators",
-    body: "Multiple brand contracts, 1099s arriving from everywhere, and uneven cash flow. We make it make sense.",
+    body: "Brand deals stacking up, 1099s from companies you forgot you worked with, and income that swings month to month. We make it all make sense.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -120,7 +120,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "High Income 1099 Creators",
-    body: "Once you cross six figures, tax planning is not optional. Quarterly projections, S-corp analysis, and year-end strategy.",
+    body: "Once you cross six figures, the IRS pays closer attention. We figure out what to pay each quarter, whether an S-corp would save you money, and how to lower your bill before year end.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -141,14 +141,14 @@ const audienceCards: ReadonlyArray<{
 ];
 
 const soundFamiliarItems: ReadonlyArray<string> = [
-  "Your income shows up as platform payouts, 1099s, and deposits, but your records do not match.",
-  "You do not know how much to set aside for taxes each month.",
-  "Brand deals, sponsorships, and subscriptions sit in different accounts on different schedules.",
-  "Quarterly estimated taxes feel like guesswork, or you have missed deadlines.",
+  "Money lands in your accounts from platforms, 1099s, and direct deposits, but your records are a mess.",
+  "You have no idea how much to set aside for taxes each month.",
+  "Brand deals, sponsorships, and subscription income all hit different accounts on different schedules.",
+  "Quarterly tax payments feel like a guess, or you have missed deadlines.",
   "Your bookkeeping is a Notes app and a folder of screenshots.",
-  "You have an LLC, or are wondering if you need an S-corp, and no one has given you a straight answer.",
-  "You want a CPA who actually understands how creators earn, not a generic filing shop.",
-  "You want someone who plans with you year-round, not someone you only see in April.",
+  "You have an LLC, or you are wondering if you need an S-corp, and no one has given you a straight answer.",
+  "You want a CPA who actually understands how creators make money, not a generic filing shop.",
+  "You want someone who works with you year-round, not someone you only see in April.",
 ];
 
 const services: ReadonlyArray<{
@@ -157,55 +157,55 @@ const services: ReadonlyArray<{
   icon: React.ReactNode;
 }> = [
   {
-    title: "CPA Led Tax Planning",
-    body: "Know what to set aside, what to pay, and what to track before year-end.",
+    title: "A Real Tax Plan",
+    body: "Know what to set aside, what to pay, and what to track. No more guessing.",
     icon: <ServiceIcon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />,
   },
   {
-    title: "Quarterly Tax Projections",
-    body: "Estimated payments planned and timed so April never blindsides you.",
+    title: "Quarterly Tax Help",
+    body: "We figure out what you owe every three months so the IRS never surprises you.",
     icon: (
       <ServiceIcon path="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
     ),
   },
   {
-    title: "Bookkeeping",
-    body: "Monthly books that reflect how you actually earn, not a tax season rescue mission.",
+    title: "Bookkeeping, Done For You",
+    body: "Clean monthly books that reflect how you actually earn, not a tax season rescue mission.",
     icon: (
       <ServiceIcon path="M4 7h16M4 12h16M4 17h10" />
     ),
   },
   {
-    title: "1099 & Platform Payout Reconciliation",
-    body: "Sort multiple 1099s, platform statements, and deposits cleanly.",
+    title: "Income From Everywhere, Sorted",
+    body: "YouTube, TikTok, Stripe, brand deals, 1099s. We organize all of it.",
     icon: (
       <ServiceIcon path="M3 10h18M5 6h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
     ),
   },
   {
-    title: "Tax Return Preparation",
+    title: "Tax Returns Filed",
     body: "Personal and business returns filed on accurate, organized books.",
     icon: (
       <ServiceIcon path="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
     ),
   },
   {
-    title: "Entity Structure Review",
-    body: "LLC, S-corp, sole prop. Clear guidance based on your actual numbers.",
+    title: "LLC or S-Corp? We'll Tell You.",
+    body: "Real guidance based on your actual numbers, not a generic answer.",
     icon: (
       <ServiceIcon path="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
     ),
   },
   {
-    title: "Year End Tax Strategy",
-    body: "Proactive moves before December 31 to lower next year's bill.",
+    title: "Lower Next Year's Bill",
+    body: "Moves we make before December 31 that save you money in April.",
     icon: (
       <ServiceIcon path="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
     ),
   },
   {
     title: "Direct CPA Support",
-    body: "Email and phone access with defined response times. You will not be ghosted.",
+    body: "Email and phone access with response times you can count on. You will not be ghosted.",
     icon: (
       <ServiceIcon path="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
     ),
@@ -213,21 +213,21 @@ const services: ReadonlyArray<{
 ];
 
 const creatorPlanFeatures: ReadonlyArray<string> = [
-  "Monthly bookkeeping",
-  "Annual personal tax return preparation",
-  "Quarterly tax projections",
-  "Estimated payment planning",
-  "Entity structure review",
-  "Year end tax planning",
-  "Email and phone support with defined response times",
+  "Bookkeeping done for you every month",
+  "Your personal tax return filed each year",
+  "We tell you what to pay every quarter",
+  "A plan for those quarterly IRS payments, so you never miss one",
+  "An honest answer on whether your business setup is right for you",
+  "Year-end moves to lower your tax bill",
+  "Real email and phone support, with response times you can count on",
 ];
 
 const sCorpPlanFeatures: ReadonlyArray<string> = [
-  "S-corp business tax return (Form 1120-S)",
-  "Reasonable compensation analysis",
-  "Business and individual tax coordination",
-  "Owner pay & distribution planning",
-  "Priority response times",
+  "Your S-corp's business tax return filed (Form 1120-S)",
+  "We figure out the right salary to pay yourself (the IRS has rules, we handle them)",
+  "Your business and personal taxes coordinated, so nothing falls through the cracks",
+  "A plan for how to pay yourself: salary vs. distributions",
+  "Faster response times",
 ];
 
 const processSteps: ReadonlyArray<{
@@ -272,7 +272,7 @@ const faqItems: ReadonlyArray<{ question: string; answer: string }> = [
   {
     question: "Do you work with creators in every state?",
     answer:
-      "Yes, I work with creators nationwide. Everything is remote.",
+      "Yes, all 50 states. Everything is remote, you will never need to come into an office.",
   },
   {
     question: "How much income do I need to make to be a fit?",
@@ -292,7 +292,7 @@ const faqItems: ReadonlyArray<{ question: string; answer: string }> = [
   {
     question: "What software do you use for bookkeeping?",
     answer:
-      "We use modern cloud accounting tools, primarily QuickBooks Online. If you are already on something, we will evaluate it during onboarding.",
+      "We use QuickBooks Online for most clients. If you are already using something else, we will take a look at it together when we start.",
   },
   {
     question: "How fast do you respond?",
@@ -392,19 +392,6 @@ function YouTubeIcon({ className = "w-6 h-6" }: { className?: string }) {
   );
 }
 
-function XIcon({ className = "w-6 h-6" }: { className?: string }) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="currentColor"
-      aria-hidden="true"
-    >
-      <path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.844l-5.36-7.012L4.6 22H1.34l8.02-9.166L1 2h7.02l4.84 6.4L18.244 2zm-2.4 18h1.866L7.27 4H5.27l10.574 16z" />
-    </svg>
-  );
-}
-
 const SOCIAL_LINKS: ReadonlyArray<{
   name: string;
   url: string;
@@ -413,7 +400,6 @@ const SOCIAL_LINKS: ReadonlyArray<{
   { name: "TikTok", url: "https://www.tiktok.com/@naderaccountancy", Icon: TikTokIcon },
   { name: "Instagram", url: "https://www.instagram.com/naderaccountancy/", Icon: InstagramIcon },
   { name: "YouTube", url: "https://www.youtube.com/@NaderAccountancy", Icon: YouTubeIcon },
-  { name: "X", url: "https://x.com/naderaccountancy", Icon: XIcon },
 ];
 
 /* ===========================================
@@ -449,10 +435,10 @@ export default function CreatorTaxCpaLanding() {
               </h1>
 
               <p className="animate-fade-in-up opacity-0 animation-delay-200 text-base sm:text-lg lg:text-xl text-gray-300 mb-6 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Tax planning, bookkeeping, and entity strategy for content
-                creators and influencers. You work directly with me, Ben Nader,
-                CPA, not handed to a junior associate. No judgment, no jargon,
-                no surprise tax bills.
+                Stop guessing what to set aside for taxes, stop wondering if
+                your bookkeeping is right, and stop dreading April. You work
+                with me, a CPA who actually understands creators and how to
+                plan for tax season year-round.
               </p>
 
               <p className="animate-fade-in-up opacity-0 animation-delay-300 text-xs sm:text-sm text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -547,8 +533,8 @@ export default function CreatorTaxCpaLanding() {
               Built for Creators Who Treat This Like a Business
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-              If your income is fragmented across platforms, 1099s, and brand
-              deals, and you are ready to stop guessing on taxes, this is for you.
+              If your money comes in from a bunch of different places, and you
+              are tired of guessing what to do about taxes, this is for you.
             </p>
           </div>
 
@@ -610,7 +596,7 @@ export default function CreatorTaxCpaLanding() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-5 flex justify-center lg:justify-start">
-              <div className="relative w-full max-w-sm sm:max-w-md lg:max-w-none">
+              <div className="relative w-full mx-auto max-w-[280px] sm:max-w-[320px] md:max-w-md lg:max-w-none">
                 <div
                   className="absolute inset-0 bg-gradient-to-br from-[var(--color-gold)]/20 to-transparent rounded-3xl blur-2xl"
                   aria-hidden="true"

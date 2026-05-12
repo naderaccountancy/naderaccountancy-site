@@ -20,10 +20,7 @@ const MINIMAL_NAV_ROUTES: Record<
 > = {
   "/creator-tax-cpa": {
     ctaLabel: "Book a Free Creator Tax Call",
-    ctaHref: "#book-call",
-    // Mobile bypasses the on-page Calendly embed (which causes nested
-    // scrolling inside the iframe) and goes straight to Calendly.
-    ctaMobileHref: "https://calendly.com/ben-naderaccountancy/new-meeting",
+    ctaHref: "#book",
   },
 };
 

@@ -104,18 +104,6 @@ export default function Footer() {
                     <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
                   </svg>
                 </a>
-                {/* X */}
-                <a
-                  href="https://x.com/naderaccountancy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="X"
-                  className="w-9 h-9 rounded-full bg-[var(--color-navy-light)] flex items-center justify-center text-gray-300 hover:bg-[var(--color-gold)] hover:text-[var(--color-navy-deep)] transition-all"
-                >
-                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                    <path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.844l-5.36-7.012L4.6 22H1.34l8.02-9.166L1 2h7.02l4.84 6.4L18.244 2z" />
-                  </svg>
-                </a>
               </div>
             </div>
           </div>
