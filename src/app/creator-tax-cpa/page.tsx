@@ -227,7 +227,6 @@ const sCorpPlanFeatures: ReadonlyArray<string> = [
   "We figure out the right salary to pay yourself (the IRS has rules, we handle them)",
   "Your business and personal taxes coordinated, so nothing falls through the cracks",
   "A plan for how to pay yourself: salary vs. distributions",
-  "Faster response times",
 ];
 
 const processSteps: ReadonlyArray<{
