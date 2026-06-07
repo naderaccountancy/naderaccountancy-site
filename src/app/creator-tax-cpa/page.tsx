@@ -19,7 +19,7 @@ const CALENDLY_URL =
 const PAGE_TITLE =
   "Creator Tax CPA | Tax Help for Content Creators & Influencers | Nader Accountancy";
 const PAGE_DESCRIPTION =
-  "A CPA who actually gets creator income. Tax planning, bookkeeping, and entity strategy for content creators and influencers. Work directly with Ben Nader, CPA.";
+  "A licensed CPA who answers the same day and writes off only what holds up under audit. Tax planning, bookkeeping, and S-corp strategy for creators. Direct access to Ben Nader, CPA. 150K+ creators follow @NaderAccountancy.";
 const OG_IMAGE = "/images/ben-headshot-v2.jpg";
 
 export const metadata: Metadata = {
@@ -80,7 +80,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "Content Creators & Subscription Platforms",
-    body: "Subscription income, tips, platform payouts, and 1099s. No judgment, no awkward questions, just clean books and a real plan.",
+    body: "Subscription income, tips, platform payouts, and 1099s. High-volume direct deposits, multi-platform earnings, and the tax planning that comes with them. Clean books, a real plan, and an S-corp analysis when the numbers support it.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -468,7 +468,9 @@ export default function CreatorTaxCpaLanding() {
                   </svg>
                 </a>
                 <p className="text-xs sm:text-sm text-gray-400 max-w-md mx-auto lg:mx-0">
-                  30 minute call. No prep needed. We will figure out if we are a fit.
+                  30 minutes. I will review your current setup, flag what is
+                  costing you money, and tell you what I would do. No prep
+                  needed. No pressure.
                 </p>
               </div>
             </div>
@@ -491,6 +493,50 @@ export default function CreatorTaxCpaLanding() {
                   />
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SECTION: TWO PROMISES ===== */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
+              The Two Things I Promise in Writing
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+              This is what makes working with me different. Both are
+              non-negotiable.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
+                Same-Day Responses, Every Business Day
+              </h3>
+              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                Email or text me before 6pm PT and you will hear back from me
+                the same day. Not a bookkeeper. Not a chatbot. Not a junior
+                associate. Me. For IRS notices or deadline issues, I respond
+                within 2 hours during business hours. Most creator CPAs make you
+                wait a week. I do not.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
+                Deductions That Hold Up Under Audit
+              </h3>
+              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                Every write-off on your return is one I can defend in front of
+                the IRS. No gym memberships. No personal wardrobes. No
+                aggressive plays that save you $3,000 this year and cost you
+                $30,000 when the notice arrives. Real CPA judgment, based on
+                actual tax code, not creator-internet myths. Your return will be
+                clean.
+              </p>
             </div>
           </div>
         </div>
@@ -586,8 +632,34 @@ export default function CreatorTaxCpaLanding() {
 
           <p className="mt-10 sm:mt-12 text-center text-base sm:text-lg lg:text-xl font-semibold text-[var(--color-navy-deep)] max-w-3xl mx-auto leading-relaxed">
             You do not need another generic accountant. You need a CPA who has
-            spent years inside creator finances.
+            spent years inside creator finances. If you nodded at three or more
+            of those, the 30-minute call will save you more than its cost in tax
+            strategy alone.
           </p>
+
+          <div className="mt-8 sm:mt-10 flex justify-center">
+            <a
+              href="#book"
+              data-gtm="creator-landing-sound-familiar-cta"
+              className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-4 inline-flex items-center justify-center gap-2 w-full sm:w-auto max-w-full"
+            >
+              Book a Free Creator Tax Call
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -746,7 +818,7 @@ export default function CreatorTaxCpaLanding() {
                 </p>
                 <div className="mt-3 flex items-baseline gap-1">
                   <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
-                    $400
+                    $350
                   </span>
                   <span className="text-lg sm:text-xl font-semibold text-gray-500">
                     / month
@@ -788,7 +860,7 @@ export default function CreatorTaxCpaLanding() {
                 </p>
                 <div className="mt-3 flex items-baseline gap-1">
                   <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
-                    $600
+                    $550
                   </span>
                   <span className="text-lg sm:text-xl font-semibold text-gray-500">
                     / month
@@ -899,6 +971,47 @@ export default function CreatorTaxCpaLanding() {
           </div>
 
           <CreatorTaxFAQ items={faqItems as unknown as { question: string; answer: string }[]} />
+        </div>
+      </section>
+
+      {/* ===== SECTION: SWITCHING FROM ANOTHER FIRM ===== */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-navy-deep)]">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-balance">
+            Already With Another Creator Accountant?
+          </h2>
+          <p className="mt-6 text-base sm:text-lg text-gray-300 leading-relaxed max-w-[700px] mx-auto">
+            If you are with another firm and the response times have slowed, the
+            bookkeeping feels off, or the advice is making you nervous,
+            switching is straightforward. I review your last return at no cost
+            on the intro call. If we move forward, I transition everything in
+            your first 30 days, including reaching out to your current firm so
+            you do not have to.
+          </p>
+
+          <div className="mt-8 sm:mt-10 flex justify-center">
+            <a
+              href="#book"
+              data-gtm="creator-landing-switching-cta"
+              className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-4 inline-flex items-center justify-center gap-2 w-full sm:w-auto max-w-full"
+            >
+              See If We Are a Fit
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
       </section>
 
