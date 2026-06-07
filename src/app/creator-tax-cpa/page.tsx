@@ -259,55 +259,46 @@ const processSteps: ReadonlyArray<{
 
 const faqItems: ReadonlyArray<{ question: string; answer: string }> = [
   {
-    question: "Do you work with adult content creators?",
+    question: "What if I am behind on taxes or have not filed in years?",
     answer:
-      "Yes, fully and without judgment. Subscription and tip income gets reported and planned for the same way any other 1099 income does. Your business is your business.",
+      "I handle this regularly. Whether you are one year behind or five, I will assess the scope on our call and quote a flat fee for the cleanup. Once you are caught up, we move into the normal monthly engagement. No judgment, no lecture.",
   },
   {
     question:
-      "I am behind on taxes, or have not filed in years. Can you help?",
+      "Do you work with subscription platform creators like OnlyFans or Fansly?",
     answer:
-      "Yes. Cleanup is one of the most common situations new clients come to me with. We will get prior years filed and put a forward plan in place. No lectures.",
+      "Yes. A significant portion of my clients earn through subscription platforms. I treat the income the same way I treat any creator income. No awkward conversations, no extra fees, just clean books and a real plan.",
   },
   {
-    question: "Do you work with creators in every state?",
+    question: "Do I have to be in California to work with you?",
     answer:
-      "Yes, all 50 states. Everything is remote, you will never need to come into an office.",
+      "No. I work with creators across all 50 states. Tax is federal first, and state tax is something I handle wherever you live. Multi-state issues from brand deals or travel are part of what I plan around.",
   },
   {
-    question: "How much income do I need to make to be a fit?",
+    question: "How fast do you actually respond?",
     answer:
-      "Most clients are earning $75K+ in creator income, but the better question is whether you are treating it like a business. If you are past the hobby stage and ready for real structure, we are likely a fit.",
+      "Same business day on email and text before 6pm PT. Within 2 hours during business hours for IRS notices or anything time sensitive. I will not ghost you for a week. This is in writing because I mean it.",
   },
   {
-    question: "Will I work with you directly, or with an associate?",
+    question: "What if I already have an LLC or S-corp set up wrong?",
     answer:
-      "You work with me. I am a solo CPA practice by design, so when you reach out, you get the CPA, not a hand off.",
+      "Common. I will unwind the existing structure if needed and rebuild it correctly. If your S-corp election was filed incorrectly, missed the deadline, or your reasonable compensation is off, I will fix it and document the corrections properly.",
   },
   {
-    question: "Do I need an LLC or S-corp to work with you?",
+    question: "What is your stance on aggressive deductions?",
     answer:
-      "No. Part of what we figure out on the first call is whether your current entity structure makes sense or needs to change.",
+      "Conservative where it matters, aggressive where the tax code actually supports it. I will not write off your gym membership, personal clothing, or your hair and nails just because you appear on camera. I will find every defensible deduction the code allows. If we cannot defend it in front of an auditor, it does not go on the return.",
   },
   {
-    question: "What software do you use for bookkeeping?",
+    question: "What happens if I get audited?",
     answer:
-      "We use QuickBooks Online for most clients. If you are already using something else, we will take a look at it together when we start.",
+      "I represent you. Audit response is included in the Creator + S-Corp tier and available as a flat fee add-on at the Creator tier. Because of how I prepare returns, audits are rare among my clients, and when they happen, they resolve quickly.",
   },
   {
-    question: "How fast do you respond?",
+    question:
+      "I am currently with another creator accounting firm. Is switching easy?",
     answer:
-      "Email responses within 1 business day for Creator clients, same day for Creator + S-Corp clients during business hours.",
-  },
-  {
-    question: "Are engagements month to month?",
-    answer:
-      "Yes. No annual contracts, no lock in. Cancel any time.",
-  },
-  {
-    question: "What if I do not have clean books yet?",
-    answer:
-      "That is the most common starting point. Bookkeeping cleanup is part of onboarding. We will get you to a clean baseline before moving forward.",
+      "Yes. I review your last return at no cost during our intro call. If we move forward, I handle the transition in your first 30 days. You do not need to contact your current firm to let them know, I take care of that side too.",
   },
 ];
 
