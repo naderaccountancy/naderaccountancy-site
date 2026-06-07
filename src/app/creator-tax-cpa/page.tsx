@@ -808,7 +808,7 @@ export default function CreatorTaxCpaLanding() {
                 </p>
                 <div className="mt-3 flex items-baseline gap-1">
                   <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
-                    $350
+                    $400
                   </span>
                   <span className="text-lg sm:text-xl font-semibold text-gray-500">
                     / month
