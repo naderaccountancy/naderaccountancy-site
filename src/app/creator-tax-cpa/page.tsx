@@ -401,9 +401,8 @@ export default function CreatorTaxCpaLanding() {
         />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-16 sm:pt-36 sm:pb-20 lg:pt-40 lg:pb-24">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
-            {/* Left column */}
-            <div className="lg:col-span-7 text-center lg:text-left">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center">
               <p className="animate-fade-in-up opacity-0 text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider mb-4">
                 Nader Accountancy &nbsp;|&nbsp; Creator Tax CPA
               </p>
@@ -413,17 +412,17 @@ export default function CreatorTaxCpaLanding() {
                 <span className="text-gradient-gold">Gets Creator Income.</span>
               </h1>
 
-              <p className="animate-fade-in-up opacity-0 animation-delay-200 text-base sm:text-lg lg:text-xl text-gray-300 mb-6 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+              <p className="animate-fade-in-up opacity-0 animation-delay-200 text-base sm:text-lg lg:text-xl text-gray-300 mb-6 leading-relaxed max-w-2xl mx-auto">
                 A licensed CPA who actually understands how creators earn.
                 Clean books, a real quarterly plan, and deductions that hold up
                 under audit.
               </p>
 
-              <p className="animate-fade-in-up opacity-0 animation-delay-300 text-xs sm:text-sm text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
+              <p className="animate-fade-in-up opacity-0 animation-delay-300 text-xs sm:text-sm text-gray-400 mb-8 max-w-2xl mx-auto">
                 CPA · Master&apos;s in Taxation · @NaderAccountancy · 150K+ followers
               </p>
 
-              <div className="animate-fade-in-up opacity-0 animation-delay-400 flex flex-col items-center lg:items-start gap-3">
+              <div className="animate-fade-in-up opacity-0 animation-delay-400 flex flex-col items-center gap-3">
                 <a
                   href="#book"
                   data-gtm="creator-landing-hero-cta"
@@ -445,31 +444,11 @@ export default function CreatorTaxCpaLanding() {
                     />
                   </svg>
                 </a>
-                <p className="text-xs sm:text-sm text-gray-400 max-w-md mx-auto lg:mx-0">
+                <p className="text-xs sm:text-sm text-gray-400 max-w-md mx-auto">
                   30 minutes. I will review your current setup, flag what is
                   costing you money, and tell you what I would do. No prep
                   needed. No pressure.
                 </p>
-              </div>
-            </div>
-
-            {/* Right column */}
-            <div className="lg:col-span-5 flex justify-center lg:justify-end">
-              <div className="animate-fade-in-up opacity-0 animation-delay-200 relative w-full max-w-sm sm:max-w-md lg:max-w-none">
-                <div
-                  className="absolute inset-0 bg-gradient-to-tr from-[var(--color-gold)]/30 via-transparent to-[var(--color-gold)]/10 rounded-3xl blur-2xl"
-                  aria-hidden="true"
-                />
-                <div className="relative aspect-[4/5] rounded-3xl overflow-hidden border border-[var(--color-gold)]/30 shadow-2xl bg-[var(--color-navy)]">
-                  <Image
-                    src="/images/ben-headshot-v2.jpg"
-                    alt="Ben Nader, CPA, founder of Nader Accountancy and creator tax specialist."
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 480px"
-                    priority
-                    className="object-cover"
-                  />
-                </div>
               </div>
             </div>
           </div>
@@ -514,19 +493,19 @@ export default function CreatorTaxCpaLanding() {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 lg:gap-6 items-stretch">
             {services.map((service) => (
               <div
                 key={service.title}
-                className="p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-[var(--color-gold)]/40 hover:shadow-md transition-all"
+                className="p-4 sm:p-5 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-[var(--color-gold)]/40 hover:shadow-md transition-all h-full flex flex-col"
               >
-                <div className="w-11 h-11 rounded-lg bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] mb-4">
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] mb-3 [&>svg]:w-5 [&>svg]:h-5">
                   {service.icon}
                 </div>
-                <h3 className="font-bold text-[var(--color-navy-deep)] mb-2 text-base">
+                <h3 className="font-bold text-[var(--color-navy-deep)] mb-1.5 sm:mb-2 text-sm sm:text-base leading-snug">
                   {service.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
+                <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">
                   {service.body}
                 </p>
               </div>
@@ -535,52 +514,8 @@ export default function CreatorTaxCpaLanding() {
         </div>
       </section>
 
-      {/* ===== SECTION: TWO PROMISES ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              The Two Things I Promise in Writing
-            </h2>
-            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-              This is what makes working with me different. Both are
-              non-negotiable.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
-                Same-Day Responses, Every Business Day
-              </h3>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Email or text me before 6pm PT and you will hear back from me
-                the same day. Not a bookkeeper. Not a chatbot. Not a junior
-                associate. Me. For IRS notices or deadline issues, I respond
-                within 2 hours during business hours. Most creator CPAs make you
-                wait a week. I do not.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
-                Deductions That Hold Up Under Audit
-              </h3>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Every write-off on your return is one I can defend in front of
-                the IRS. No gym memberships. No personal wardrobes. No
-                aggressive plays that save you $3,000 this year and cost you
-                $30,000 when the notice arrives. Real CPA judgment, based on
-                actual tax code, not creator-internet myths. Your return will be
-                clean.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ===== SECTION 7: PRICING ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
             <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
@@ -696,6 +631,50 @@ export default function CreatorTaxCpaLanding() {
             together. Engagements are month to month with no long term
             commitment.
           </p>
+        </div>
+      </section>
+
+      {/* ===== SECTION: TWO PROMISES ===== */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
+              The Two Things I Promise in Writing
+            </h2>
+            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
+              This is what makes working with me different. Both are
+              non-negotiable.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
+            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
+                Same-Day Responses, Every Business Day
+              </h3>
+              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                Email or text me before 6pm PT and you will hear back from me
+                the same day. Not a bookkeeper. Not a chatbot. Not a junior
+                associate. Me. For IRS notices or deadline issues, I respond
+                within 2 hours during business hours. Most creator CPAs make you
+                wait a week. I do not.
+              </p>
+            </div>
+
+            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
+                Deductions That Hold Up Under Audit
+              </h3>
+              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
+                Every write-off on your return is one I can defend in front of
+                the IRS. No gym memberships. No personal wardrobes. No
+                aggressive plays that save you $3,000 this year and cost you
+                $30,000 when the notice arrives. Real CPA judgment, based on
+                actual tax code, not creator-internet myths. Your return will be
+                clean.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
