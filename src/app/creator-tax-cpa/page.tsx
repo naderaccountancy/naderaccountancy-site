@@ -60,7 +60,7 @@ const audienceCards: ReadonlyArray<{
 }> = [
   {
     title: "Digital Creators & Influencers",
-    body: "YouTube, TikTok, Instagram, Twitch. Ad payouts, sponsorships, affiliate links, fan support, all organized in one place.",
+    body: "YouTube, TikTok, Instagram, Twitch. Ad revenue, sponsorships, affiliate, and fan support, organized in one place.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -80,7 +80,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "Content Creators & Subscription Platforms",
-    body: "Subscription income, tips, platform payouts, and 1099s. High-volume direct deposits, multi-platform earnings, and the tax planning that comes with them. Clean books, a real plan, and an S-corp analysis when the numbers support it.",
+    body: "Subscription income, tips, and 1099s. Clean books, quarterly planning, and an S-corp analysis when the numbers support it.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -100,7 +100,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "UGC & Brand Deal Creators",
-    body: "Brand deals stacking up, 1099s from companies you forgot you worked with, and income that swings month to month. We make it all make sense.",
+    body: "Stacking brand deals, scattered 1099s, swing months. We make it all make sense.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -120,7 +120,7 @@ const audienceCards: ReadonlyArray<{
   },
   {
     title: "High Income 1099 Creators",
-    body: "Once you cross six figures, the IRS pays closer attention. We figure out what to pay each quarter, whether an S-corp would save you money, and how to lower your bill before year end.",
+    body: "Past six figures, the IRS pays closer attention. Quarterly strategy, S-corp analysis, and year-end moves to lower the bill.",
     icon: (
       <svg
         className="w-6 h-6"
@@ -140,17 +140,6 @@ const audienceCards: ReadonlyArray<{
   },
 ];
 
-const soundFamiliarItems: ReadonlyArray<string> = [
-  "Money lands in your accounts from platforms, 1099s, and direct deposits, but your records are a mess.",
-  "You have no idea how much to set aside for taxes each month.",
-  "Brand deals, sponsorships, and subscription income all hit different accounts on different schedules.",
-  "Quarterly tax payments feel like a guess, or you have missed deadlines.",
-  "Your bookkeeping is a Notes app and a folder of screenshots.",
-  "You have an LLC, or you are wondering if you need an S-corp, and no one has given you a straight answer.",
-  "You want a CPA who actually understands how creators make money, not a generic filing shop.",
-  "You want someone who works with you year-round, not someone you only see in April.",
-];
-
 const services: ReadonlyArray<{
   title: string;
   body: string;
@@ -158,26 +147,26 @@ const services: ReadonlyArray<{
 }> = [
   {
     title: "A Real Tax Plan",
-    body: "Know what to set aside, what to pay, and what to track. No more guessing.",
+    body: "What to set aside, what to pay, what to track.",
     icon: <ServiceIcon path="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />,
   },
   {
     title: "Quarterly Tax Help",
-    body: "We figure out what you owe every three months so the IRS never surprises you.",
+    body: "We calculate what you owe every three months. No surprises in April.",
     icon: (
       <ServiceIcon path="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
     ),
   },
   {
     title: "Bookkeeping, Done For You",
-    body: "Clean monthly books that reflect how you actually earn, not a tax season rescue mission.",
+    body: "Clean monthly books that reflect how you actually earn.",
     icon: (
       <ServiceIcon path="M4 7h16M4 12h16M4 17h10" />
     ),
   },
   {
     title: "Income From Everywhere, Sorted",
-    body: "YouTube, TikTok, Stripe, brand deals, 1099s. We organize all of it.",
+    body: "YouTube, TikTok, Stripe, brand deals, 1099s. All organized.",
     icon: (
       <ServiceIcon path="M3 10h18M5 6h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2z" />
     ),
@@ -191,21 +180,21 @@ const services: ReadonlyArray<{
   },
   {
     title: "LLC or S-Corp? We'll Tell You.",
-    body: "Real guidance based on your actual numbers, not a generic answer.",
+    body: "Real guidance based on your numbers, not a generic answer.",
     icon: (
       <ServiceIcon path="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
     ),
   },
   {
     title: "Lower Next Year's Bill",
-    body: "Moves we make before December 31 that save you money in April.",
+    body: "Year-end moves that save you money in April.",
     icon: (
       <ServiceIcon path="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
     ),
   },
   {
     title: "Direct CPA Support",
-    body: "Email and phone access with response times you can count on. You will not be ghosted.",
+    body: "Email and phone access. Same-day response, every business day.",
     icon: (
       <ServiceIcon path="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
     ),
@@ -425,10 +414,9 @@ export default function CreatorTaxCpaLanding() {
               </h1>
 
               <p className="animate-fade-in-up opacity-0 animation-delay-200 text-base sm:text-lg lg:text-xl text-gray-300 mb-6 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                Stop guessing what to set aside for taxes, stop wondering if
-                your bookkeeping is right, and stop dreading April. You work
-                with me, a CPA who actually understands creators and how to
-                plan for tax season year-round.
+                A licensed CPA who actually understands how creators earn.
+                Clean books, a real quarterly plan, and deductions that hold up
+                under audit.
               </p>
 
               <p className="animate-fade-in-up opacity-0 animation-delay-300 text-xs sm:text-sm text-gray-400 mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -488,8 +476,67 @@ export default function CreatorTaxCpaLanding() {
         </div>
       </section>
 
-      {/* ===== SECTION: TWO PROMISES ===== */}
+      {/* ===== SECTION 2: SOCIAL PROOF BAR ===== */}
+      <section className="bg-[var(--color-navy-deep)] border-t border-[var(--color-gold)]/10">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
+          <div className="text-center">
+            <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-400 font-medium">
+              Trusted creator tax content seen across
+            </p>
+            <div className="mt-5 flex items-center justify-center gap-6 sm:gap-10 text-gray-400">
+              {SOCIAL_LINKS.map(({ name, Icon }) => (
+                <span key={name} className="opacity-80 hover:opacity-100 transition-opacity">
+                  <Icon className="w-7 h-7 sm:w-8 sm:h-8" />
+                  <span className="sr-only">{name}</span>
+                </span>
+              ))}
+            </div>
+            <p className="mt-5 text-sm sm:text-base text-gray-300">
+              150,000+ creators follow{" "}
+              <span className="text-[var(--color-gold)] font-semibold">
+                @NaderAccountancy
+              </span>{" "}
+              for tax guidance.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SECTION: WHAT WE HELP WITH ===== */}
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+            <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
+              Services
+            </span>
+            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
+              What You Get When We Work Together
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+            {services.map((service) => (
+              <div
+                key={service.title}
+                className="p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-[var(--color-gold)]/40 hover:shadow-md transition-all"
+              >
+                <div className="w-11 h-11 rounded-lg bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] mb-4">
+                  {service.icon}
+                </div>
+                <h3 className="font-bold text-[var(--color-navy-deep)] mb-2 text-base">
+                  {service.title}
+                </h3>
+                <p className="text-sm text-gray-600 leading-relaxed">
+                  {service.body}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ===== SECTION: TWO PROMISES ===== */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
@@ -532,129 +579,128 @@ export default function CreatorTaxCpaLanding() {
         </div>
       </section>
 
-      {/* ===== SECTION 2: SOCIAL PROOF BAR ===== */}
-      <section className="bg-[var(--color-navy-deep)] border-t border-[var(--color-gold)]/10">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12">
-          <div className="text-center">
-            <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-400 font-medium">
-              Trusted creator tax content seen across
-            </p>
-            <div className="mt-5 flex items-center justify-center gap-6 sm:gap-10 text-gray-400">
-              {SOCIAL_LINKS.map(({ name, Icon }) => (
-                <span key={name} className="opacity-80 hover:opacity-100 transition-opacity">
-                  <Icon className="w-7 h-7 sm:w-8 sm:h-8" />
-                  <span className="sr-only">{name}</span>
-                </span>
-              ))}
-            </div>
-            <p className="mt-5 text-sm sm:text-base text-gray-300">
-              150,000+ creators follow{" "}
-              <span className="text-[var(--color-gold)] font-semibold">
-                @NaderAccountancy
-              </span>{" "}
-              for tax guidance.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* ===== SECTION 3: WHO THIS IS FOR ===== */}
+      {/* ===== SECTION 7: PRICING ===== */}
       <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
             <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
-              Who This Is For
+              Pricing
             </span>
             <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Built for Creators Who Treat This Like a Business
+              Simple Monthly Pricing. No Long Term Contracts.
             </h2>
             <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-              If your money comes in from a bunch of different places, and you
-              are tired of guessing what to do about taxes, this is for you.
+              Two plans built for serious creators. Pick the one that fits how
+              your business is structured.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6 lg:gap-8 max-w-5xl mx-auto">
-            {audienceCards.map((card) => (
-              <div key={card.title} className="card p-6 sm:p-7 group">
-                <div className="w-12 h-12 rounded-xl bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] mb-5 group-hover:scale-110 transition-transform duration-300">
-                  {card.icon}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-stretch">
+            {/* CREATOR */}
+            <div className="relative bg-white rounded-2xl p-7 sm:p-8 flex flex-col shadow-lg hover:shadow-xl border border-gray-100 transition-all duration-300">
+              <div className="mb-5">
+                <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-gold)]">
+                  Creator
+                </p>
+                <div className="mt-3 flex items-baseline gap-1">
+                  <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
+                    $300
+                  </span>
+                  <span className="text-lg sm:text-xl font-semibold text-gray-500">
+                    / month
+                  </span>
                 </div>
-                <h3 className="text-base sm:text-lg font-bold text-[var(--color-navy-deep)] mb-2">
-                  {card.title}
-                </h3>
-                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-                  {card.body}
+                <p className="mt-2 text-xs sm:text-sm italic text-gray-500">
+                  Direct CPA access. No juniors. Audit-defensible positions.
+                </p>
+                <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+                  For creators operating as sole proprietors or single member
+                  LLCs.
                 </p>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* ===== SECTION 4: SOUND FAMILIAR ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-            <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
-              Sound Familiar?
-            </span>
-            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Sound Familiar?
-            </h2>
-          </div>
+              <hr className="border-gray-100 my-2" />
 
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
-            {soundFamiliarItems.map((item) => (
-              <li
-                key={item}
-                className="flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-xl bg-white border border-gray-100 shadow-sm"
+              <ul className="mt-5 space-y-3 mb-8 flex-grow">
+                {creatorPlanFeatures.map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <CheckIcon className="text-[var(--color-gold)] flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">
+                      {feature}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="#book"
+                data-gtm="creator-landing-pricing-creator-cta"
+                className="btn-primary block w-full text-center py-3.5"
               >
-                <span className="flex-shrink-0 w-7 h-7 rounded-full bg-green-50 text-green-600 flex items-center justify-center mt-0.5">
-                  <CheckIcon className="w-4 h-4" />
-                </span>
-                <span className="text-sm sm:text-base text-gray-700 leading-relaxed">
-                  {item}
-                </span>
-              </li>
-            ))}
-          </ul>
+                Book a Free Creator Tax Call
+              </a>
+            </div>
 
-          <p className="mt-10 sm:mt-12 text-center text-base sm:text-lg lg:text-xl font-semibold text-[var(--color-navy-deep)] max-w-3xl mx-auto leading-relaxed">
-            You do not need another generic accountant. You need a CPA who has
-            spent years inside creator finances. If you nodded at three or more
-            of those, the 30-minute call will save you more than its cost in tax
-            strategy alone.
+            {/* CREATOR + S-CORP */}
+            <div className="pricing-featured relative bg-white rounded-2xl p-7 sm:p-8 flex flex-col shadow-2xl lg:scale-[1.02] transition-all duration-300">
+              <div className="mb-5 mt-2">
+                <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-gold)]">
+                  Creator + S-Corp
+                </p>
+                <div className="mt-3 flex items-baseline gap-1">
+                  <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
+                    $400
+                  </span>
+                  <span className="text-lg sm:text-xl font-semibold text-gray-500">
+                    / month
+                  </span>
+                </div>
+                <p className="mt-2 text-xs sm:text-sm italic text-gray-500">
+                  Direct CPA access. No juniors. Audit-defensible positions.
+                </p>
+                <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
+                  For creators with S-corp elections, or ready to make one,
+                  earning $100K+.
+                </p>
+              </div>
+
+              <hr className="border-gray-100 my-2" />
+
+              <p className="mt-4 text-sm font-semibold text-[var(--color-navy-deep)]">
+                Everything in Creator, plus:
+              </p>
+
+              <ul className="mt-3 space-y-3 mb-8 flex-grow">
+                {sCorpPlanFeatures.map((feature) => (
+                  <li key={feature} className="flex items-start gap-3">
+                    <CheckIcon className="text-[var(--color-gold)] flex-shrink-0 mt-0.5" />
+                    <span className="text-sm sm:text-base text-gray-700">
+                      {feature}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              <a
+                href="#book"
+                data-gtm="creator-landing-pricing-scorp-cta"
+                className="btn-primary block w-full text-center py-3.5"
+              >
+                Book a Free Creator Tax Call
+              </a>
+            </div>
+          </div>
+
+          <p className="mt-10 text-center text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Not sure which fits? Book a free call and we will figure it out
+            together. Engagements are month to month with no long term
+            commitment.
           </p>
-
-          <div className="mt-8 sm:mt-10 flex justify-center">
-            <a
-              href="#book"
-              data-gtm="creator-landing-sound-familiar-cta"
-              className="btn-primary text-base sm:text-lg px-6 sm:px-8 py-4 inline-flex items-center justify-center gap-2 w-full sm:w-auto max-w-full"
-            >
-              Book a Free Creator Tax Call
-              <svg
-                className="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                aria-hidden="true"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </a>
-          </div>
         </div>
       </section>
 
       {/* ===== SECTION 5: MEET BEN ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
             <div className="lg:col-span-5 flex justify-center lg:justify-start">
@@ -750,150 +796,30 @@ export default function CreatorTaxCpaLanding() {
         </div>
       </section>
 
-      {/* ===== SECTION 6: WHAT WE HELP WITH ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
+      {/* ===== SECTION: WHO THIS IS FOR ===== */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-            <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
-              Services
-            </span>
-            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              What You Get When We Work Together
+          <div className="text-center max-w-3xl mx-auto mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
+              What I Handle for Creators
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
-            {services.map((service) => (
-              <div
-                key={service.title}
-                className="p-6 rounded-xl bg-white border border-gray-100 shadow-sm hover:border-[var(--color-gold)]/40 hover:shadow-md transition-all"
-              >
-                <div className="w-11 h-11 rounded-lg bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] mb-4">
-                  {service.icon}
+          <div className="grid grid-cols-2 gap-3 sm:gap-6 lg:gap-8 max-w-5xl mx-auto">
+            {audienceCards.map((card) => (
+              <div key={card.title} className="card p-4 sm:p-7 group">
+                <div className="w-9 h-9 sm:w-12 sm:h-12 rounded-lg sm:rounded-xl bg-[var(--color-navy-deep)] flex items-center justify-center text-[var(--color-gold)] mb-3 sm:mb-5 group-hover:scale-110 transition-transform duration-300 [&>svg]:w-5 [&>svg]:h-5 sm:[&>svg]:w-6 sm:[&>svg]:h-6">
+                  {card.icon}
                 </div>
-                <h3 className="font-bold text-[var(--color-navy-deep)] mb-2 text-base">
-                  {service.title}
+                <h3 className="text-sm sm:text-lg font-bold text-[var(--color-navy-deep)] mb-1.5 sm:mb-2 leading-snug">
+                  {card.title}
                 </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  {service.body}
+                <p className="text-xs sm:text-base text-gray-600 leading-relaxed">
+                  {card.body}
                 </p>
               </div>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ===== SECTION 7: PRICING ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-            <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
-              Pricing
-            </span>
-            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Simple Monthly Pricing. No Long Term Contracts.
-            </h2>
-            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-              Two plans built for serious creators. Pick the one that fits how
-              your business is structured.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto items-stretch">
-            {/* CREATOR */}
-            <div className="relative bg-white rounded-2xl p-7 sm:p-8 flex flex-col shadow-lg hover:shadow-xl border border-gray-100 transition-all duration-300">
-              <div className="mb-5">
-                <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-gold)]">
-                  Creator
-                </p>
-                <div className="mt-3 flex items-baseline gap-1">
-                  <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
-                    $300
-                  </span>
-                  <span className="text-lg sm:text-xl font-semibold text-gray-500">
-                    / month
-                  </span>
-                </div>
-                <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
-                  For creators operating as sole proprietors or single member
-                  LLCs.
-                </p>
-              </div>
-
-              <hr className="border-gray-100 my-2" />
-
-              <ul className="mt-5 space-y-3 mb-8 flex-grow">
-                {creatorPlanFeatures.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3">
-                    <CheckIcon className="text-[var(--color-gold)] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base text-gray-700">
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="#book"
-                data-gtm="creator-landing-pricing-creator-cta"
-                className="block w-full text-center py-3.5 rounded-lg font-semibold transition-all bg-[var(--color-navy-deep)] text-white hover:bg-[var(--color-navy-light)]"
-              >
-                Book a Call
-              </a>
-            </div>
-
-            {/* CREATOR + S-CORP */}
-            <div className="pricing-featured relative bg-white rounded-2xl p-7 sm:p-8 flex flex-col shadow-2xl lg:scale-[1.02] transition-all duration-300">
-              <div className="mb-5 mt-2">
-                <p className="text-xs font-bold uppercase tracking-widest text-[var(--color-gold)]">
-                  Creator + S-Corp
-                </p>
-                <div className="mt-3 flex items-baseline gap-1">
-                  <span className="text-4xl sm:text-5xl font-bold text-[var(--color-navy-deep)]">
-                    $400
-                  </span>
-                  <span className="text-lg sm:text-xl font-semibold text-gray-500">
-                    / month
-                  </span>
-                </div>
-                <p className="mt-3 text-sm sm:text-base text-gray-600 leading-relaxed">
-                  For creators with S-corp elections, or ready to make one,
-                  earning $100K+.
-                </p>
-              </div>
-
-              <hr className="border-gray-100 my-2" />
-
-              <p className="mt-4 text-sm font-semibold text-[var(--color-navy-deep)]">
-                Everything in Creator, plus:
-              </p>
-
-              <ul className="mt-3 space-y-3 mb-8 flex-grow">
-                {sCorpPlanFeatures.map((feature) => (
-                  <li key={feature} className="flex items-start gap-3">
-                    <CheckIcon className="text-[var(--color-gold)] flex-shrink-0 mt-0.5" />
-                    <span className="text-sm sm:text-base text-gray-700">
-                      {feature}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-
-              <a
-                href="#book"
-                data-gtm="creator-landing-pricing-scorp-cta"
-                className="btn-primary block w-full text-center py-3.5"
-              >
-                Book a Call
-              </a>
-            </div>
-          </div>
-
-          <p className="mt-10 text-center text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Not sure which fits? Book a free call and we will figure it out
-            together. Engagements are month to month with no long term
-            commitment.
-          </p>
         </div>
       </section>
 
@@ -948,24 +874,8 @@ export default function CreatorTaxCpaLanding() {
         </div>
       </section>
 
-      {/* ===== SECTION 9: FAQ ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-            <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
-              FAQ
-            </span>
-            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              Common Questions From Creators
-            </h2>
-          </div>
-
-          <CreatorTaxFAQ items={faqItems as unknown as { question: string; answer: string }[]} />
-        </div>
-      </section>
-
       {/* ===== SECTION: SWITCHING FROM ANOTHER FIRM ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-navy-deep)]">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-navy-deep)] border-t border-[var(--color-gold)]/10">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white text-balance">
             Already With Another Creator Accountant?
@@ -1002,6 +912,22 @@ export default function CreatorTaxCpaLanding() {
               </svg>
             </a>
           </div>
+        </div>
+      </section>
+
+      {/* ===== SECTION 9: FAQ ===== */}
+      <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
+            <span className="text-[var(--color-gold)] font-semibold text-xs sm:text-sm uppercase tracking-wider">
+              FAQ
+            </span>
+            <h2 className="mt-3 text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
+              Common Questions From Creators
+            </h2>
+          </div>
+
+          <CreatorTaxFAQ items={faqItems as unknown as { question: string; answer: string }[]} />
         </div>
       </section>
 
