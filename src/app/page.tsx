@@ -477,8 +477,9 @@ export default function Home() {
                   <span className="text-gray-400">/month</span>
                 </div>
                 <p className="text-gray-300 leading-relaxed text-sm mb-5">
-                  For self-employed, creators, and business owners earning
-                  $150k+ who want a CPA running their tax system all year.
+                  For self-employed professionals and business owners who are
+                  tired of reactive, once-a-year tax prep and want a CPA on it
+                  year-round.
                 </p>
               </div>
 
