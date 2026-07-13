@@ -14,7 +14,7 @@ import { CreatorTaxFAQ, CreatorCalendlyEmbed } from "@/components";
    =========================================== */
 
 const CALENDLY_URL =
-  "https://calendly.com/ben-naderaccountancy/tax-planning-advisory-call-clone ";
+  "https://calendly.com/ben-naderaccountancy/tax-planning-advisory-call-clone";
 
 const PAGE_TITLE =
   "Creator Tax CPA | Tax Help for Content Creators & Influencers | Nader Accountancy";

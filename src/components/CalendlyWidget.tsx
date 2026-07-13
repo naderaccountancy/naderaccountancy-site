@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { withCalendlyTheme } from "./calendlyTheme";
 
 declare global {
   interface Window {
@@ -48,6 +49,8 @@ export default function CalendlyWidget({
 
   const effectiveHeight = isMobile ? mobileHeight : height;
 
+  const themedUrl = withCalendlyTheme(url);
+
   useEffect(() => {
     const initWidget = () => {
       if (!window.Calendly || !containerRef.current) return;
@@ -55,7 +58,7 @@ export default function CalendlyWidget({
       // Calendly expects the container to be empty before initializing
       containerRef.current.innerHTML = "";
       window.Calendly.initInlineWidget({
-        url,
+        url: themedUrl,
         parentElement: containerRef.current,
       });
     };
@@ -85,13 +88,13 @@ export default function CalendlyWidget({
         containerRef.current.innerHTML = "";
       }
     };
-  }, [url]);
+  }, [themedUrl]);
 
   return (
     <div
       ref={containerRef}
       className="calendly-inline-widget"
-      data-url={url}
+      data-url={themedUrl}
       style={{ minWidth, height: effectiveHeight }}
     />
   );

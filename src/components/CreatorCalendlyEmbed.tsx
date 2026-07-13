@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { InlineWidget } from "react-calendly";
+import { CALENDLY_PAGE_SETTINGS } from "./calendlyTheme";
 
 const PLACEHOLDER_MARKER = "CALENDLY_URL_PLACEHOLDER";
 
@@ -62,13 +63,7 @@ export default function CreatorCalendlyEmbed({
       <InlineWidget
         url={trimmedUrl}
         styles={{ height: `${effectiveHeight}px`, minWidth: "320px" }}
-        pageSettings={{
-          backgroundColor: "ffffff",
-          primaryColor: "d4a853",
-          textColor: "0f172a",
-          hideEventTypeDetails: false,
-          hideLandingPageDetails: false,
-        }}
+        pageSettings={CALENDLY_PAGE_SETTINGS}
       />
     </div>
   );
