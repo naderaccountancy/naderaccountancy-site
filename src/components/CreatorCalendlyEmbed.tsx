@@ -1,8 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { InlineWidget } from "react-calendly";
-import { CALENDLY_PAGE_SETTINGS } from "./calendlyTheme";
+import CalendlyWidget from "./CalendlyWidget";
 
 const PLACEHOLDER_MARKER = "CALENDLY_URL_PLACEHOLDER";
 
@@ -19,21 +17,6 @@ export default function CreatorCalendlyEmbed({
   mobileHeight = 1100,
   minHeight = 600,
 }: CreatorCalendlyEmbedProps) {
-  // On mobile the Calendly booking UI stacks vertically and is taller than the
-  // default height, which produces an internal scrollbar. Use a taller height
-  // on small screens so the whole widget fits and the page scrolls naturally.
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const query = window.matchMedia("(max-width: 767px)");
-    const update = () => setIsMobile(query.matches);
-    update();
-    query.addEventListener("change", update);
-    return () => query.removeEventListener("change", update);
-  }, []);
-
-  const effectiveHeight = isMobile ? mobileHeight : height;
-
   const trimmedUrl = url.trim();
   const isPlaceholder =
     !trimmedUrl || trimmedUrl.includes(PLACEHOLDER_MARKER);
@@ -60,10 +43,10 @@ export default function CreatorCalendlyEmbed({
 
   return (
     <div className="w-full">
-      <InlineWidget
+      <CalendlyWidget
         url={trimmedUrl}
-        styles={{ height: `${effectiveHeight}px`, minWidth: "320px" }}
-        pageSettings={CALENDLY_PAGE_SETTINGS}
+        height={height}
+        mobileHeight={mobileHeight}
       />
     </div>
   );
