@@ -445,7 +445,7 @@ export default function CreatorTaxCpaLanding() {
                   </svg>
                 </a>
                 <p className="text-xs sm:text-sm text-gray-400 max-w-md mx-auto">
-                  30 minutes. I will review your current setup, flag what is
+                  10 minutes. I will review your current setup, flag what is
                   costing you money, and tell you what I would do. No prep
                   needed. No pressure.
                 </p>
@@ -882,7 +882,7 @@ export default function CreatorTaxCpaLanding() {
               the same. Book a free call. We will figure out if we are a fit.
             </p>
             <p className="mt-3 text-xs sm:text-sm text-gray-500 leading-relaxed">
-              30 minutes. No sales pressure. You will leave the call with a
+              10 minutes. No sales pressure. You will leave the call with a
               clearer picture of where you stand, even if we do not work
               together.
             </p>
