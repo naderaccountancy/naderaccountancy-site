@@ -634,50 +634,6 @@ export default function CreatorTaxCpaLanding() {
         </div>
       </section>
 
-      {/* ===== SECTION: TWO PROMISES ===== */}
-      <section className="py-16 sm:py-20 lg:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-14">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-[var(--color-navy-deep)]">
-              The Two Things I Promise in Writing
-            </h2>
-            <p className="mt-4 text-base sm:text-lg text-gray-600 leading-relaxed">
-              This is what makes working with me different. Both are
-              non-negotiable.
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 max-w-5xl mx-auto">
-            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
-                Same-Day Responses, Every Business Day
-              </h3>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Email or text me before 6pm PT and you will hear back from me
-                the same day. Not a bookkeeper. Not a chatbot. Not a junior
-                associate. Me. For IRS notices or deadline issues, I respond
-                within 2 hours during business hours. Most creator CPAs make you
-                wait a week. I do not.
-              </p>
-            </div>
-
-            <div className="rounded-2xl bg-[var(--color-navy-deep)] p-7 sm:p-8 h-full flex flex-col border border-[var(--color-gold)]/20">
-              <h3 className="text-lg sm:text-xl font-bold text-white mb-3">
-                Deductions That Hold Up Under Audit
-              </h3>
-              <p className="text-sm sm:text-base text-gray-300 leading-relaxed">
-                Every write-off on your return is one I can defend in front of
-                the IRS. No gym memberships. No personal wardrobes. No
-                aggressive plays that save you $3,000 this year and cost you
-                $30,000 when the notice arrives. Real CPA judgment, based on
-                actual tax code, not creator-internet myths. Your return will be
-                clean.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* ===== SECTION 5: MEET BEN ===== */}
       <section className="py-16 sm:py-20 lg:py-24 bg-[var(--color-gray-50)]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
