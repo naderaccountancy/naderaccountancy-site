@@ -116,16 +116,10 @@ export default function Footer() {
               </p>
               <div className="flex items-center justify-center md:justify-end gap-5">
                 <Link
-                  href="/privacy-policy"
+                  href="/privacy"
                   className="hover:text-[var(--color-gold)] transition-colors"
                 >
                   Privacy Policy
-                </Link>
-                <Link
-                  href="/terms"
-                  className="hover:text-[var(--color-gold)] transition-colors"
-                >
-                  Terms
                 </Link>
               </div>
             </div>
@@ -180,6 +174,14 @@ export default function Footer() {
                   className="text-gray-400 hover:text-[var(--color-gold)] transition-colors text-sm"
                 >
                   Apply
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/privacy"
+                  className="text-gray-400 hover:text-[var(--color-gold)] transition-colors text-sm"
+                >
+                  Privacy Policy
                 </Link>
               </li>
             </ul>
