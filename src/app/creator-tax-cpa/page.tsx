@@ -194,9 +194,9 @@ const services: ReadonlyArray<{
   },
   {
     title: "Direct CPA Support",
-    body: "Email and phone access. Same-day response, every business day.",
+    body: "Direct access to your CPA. Same-day response, every business day.",
     icon: (
-      <ServiceIcon path="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      <ServiceIcon path="M8 10h.01M12 10h.01M16 10h.01M21 12c0 4.418-4.03 8-9 8a9.9 9.9 0 01-4.255-.949L3 20l1.395-3.72A7.454 7.454 0 013 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
     ),
   },
 ];
@@ -208,7 +208,7 @@ const creatorPlanFeatures: ReadonlyArray<string> = [
   "A plan for those quarterly IRS payments, so you never miss one",
   "An honest answer on whether your business setup is right for you",
   "Year-end moves to lower your tax bill",
-  "Real email and phone support, with response times you can count on",
+  "Direct CPA access, with response times you can count on",
 ];
 
 const sCorpPlanFeatures: ReadonlyArray<string> = [
@@ -265,7 +265,7 @@ const faqItems: ReadonlyArray<{ question: string; answer: string }> = [
   {
     question: "How fast do you actually respond?",
     answer:
-      "Same business day on email and text before 6pm PT. Within 2 hours during business hours for IRS notices or anything time sensitive. I will not ghost you for a week. This is in writing because I mean it.",
+      "Direct access with same-business-day responses before 6pm PT. Within 2 hours during business hours for IRS notices or anything time sensitive. I will not ghost you for a week. This is in writing because I mean it.",
   },
   {
     question: "What if I already have an LLC or S-corp set up wrong?",

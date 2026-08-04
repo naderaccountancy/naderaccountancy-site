@@ -69,7 +69,7 @@ const advisoryFeatures: ReadonlyArray<string> = [
   "Entity structure review",
   "Year-end planning",
   "Business and personal tax coordination",
-  "Direct email and phone access",
+  "Direct CPA access",
 ];
 
 const strategySessionFeatures: ReadonlyArray<string> = [
@@ -238,11 +238,11 @@ const faqs: ReadonlyArray<{ q: string; a: string }> = [
   },
   {
     q: "Are you fully remote?",
-    a: "Yes. I work with clients across the US through video calls, secure portal, and direct email and phone access.",
+    a: "Yes. I work with clients across the US through video meetings, a secure portal, and direct CPA access.",
   },
   {
     q: "How fast do you respond to clients?",
-    a: "Monthly advisory clients get direct email and phone access with defined response times. You will not be ghosted between January and March.",
+    a: "Monthly advisory clients get direct access to their CPA with defined response times. You will not be ghosted between January and March.",
   },
 ];
 
